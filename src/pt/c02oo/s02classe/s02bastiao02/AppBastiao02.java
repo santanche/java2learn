@@ -1,12 +1,12 @@
-package pt.c02oo.s02classe.bastiao02;
+package pt.c02oo.s02classe.s02bastiao02;
 
-public class AppBastiao02B
+public class AppBastiao02
 {
     public static void main(String[] args)
            throws InterruptedException     // isso eh usado por causa do Thread.sleep
     {
-        BastiaoB theBastian;
-        theBastian = new BastiaoB(1, "acordado");
+        Bastiao theBastian;
+        theBastian = new Bastiao(1, "acordado");
         theBastian.aparece();
         
         for (int b = 1; b <= 3; b++) {

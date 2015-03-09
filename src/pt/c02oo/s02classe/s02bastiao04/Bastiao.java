@@ -1,14 +1,16 @@
-package pt.c02oo.s02classe.bastiao02;
+package pt.c02oo.s02classe.s02bastiao04;
 
-public class BastiaoA
+public class Bastiao
 {
     int idade;
-    String estado;
+    static String estado;
+    String nome;
     
-    public BastiaoA(int pIdade, String pEstado)
+    public Bastiao(int idade, String estado, String nome)
     {
-        idade = pIdade;
-        estado = pEstado;
+        this.idade = idade;
+        Bastiao.estado = estado;
+        this.nome = nome;
     }
     
     public void aparece()
@@ -26,6 +28,8 @@ public class BastiaoA
         // barba
         if (idade >= 3)
             System.out.println("*****");
+        
+        System.out.println(nome);
         
         System.out.println();
     }

@@ -1,4 +1,4 @@
-package pt.c02oo.s02classe.bastiao06;
+package pt.c02oo.s02classe.s02bastiao06;
 
 public class AppBastiao06
 {

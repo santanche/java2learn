@@ -1,6 +1,6 @@
-package pt.c02oo.s02classe.bastiao03;
+package pt.c02oo.s02classe.s02bastiao03;
 
-public class App2Objetos
+public class AppBastiao03
 {
     public static void main(String[] args)
     {

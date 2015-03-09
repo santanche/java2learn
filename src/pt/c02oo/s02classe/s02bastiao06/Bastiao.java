@@ -1,19 +1,21 @@
-package pt.c02oo.s02classe.bastiao05;
+package pt.c02oo.s02classe.s02bastiao06;
 
-public class BastiaoEstatico
+public class Bastiao
 {
-    static int idade;
-    static String estado;
-    static String nome;
+    int idade;
+    String estado;
+    String nome;
     
-    public static void inicializa(int idade, String estado, String nome)
+    final static int MAIOR_IDADE = 3;
+    
+    public Bastiao(int idade, String estado, String nome)
     {
-        BastiaoEstatico.idade = idade;
-        BastiaoEstatico.estado = estado;
-        BastiaoEstatico.nome = nome;
+        this.idade = idade;
+        this.estado = estado;
+        this.nome = nome;
     }
     
-    public static void aparece()
+    public void aparece()
     {
         // cabeleira
         if (idade >= 2)
@@ -34,20 +36,20 @@ public class BastiaoEstatico
         System.out.println();
     }
     
-    public static void cresce()
+    public void cresce()
     {
-        if (idade < 3)
+        if (idade < MAIOR_IDADE)
             idade++;
         aparece();
     }
     
-    public static void acorda()
+    public void acorda()
     {
         estado = "acordado";
         aparece();
     }
     
-    public static void dorme()
+    public void dorme()
     {
         estado = "dormindo";
         aparece();

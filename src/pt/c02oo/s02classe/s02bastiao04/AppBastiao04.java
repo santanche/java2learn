@@ -1,6 +1,6 @@
-package pt.c02oo.s02classe.bastiao03;
+package pt.c02oo.s02classe.s02bastiao04;
 
-public class App1Objeto
+public class AppBastiao04
 {
     public static void main(String[] args)
     {
@@ -9,12 +9,12 @@ public class App1Objeto
         primeiroBastiao.aparece();
         
         Bastiao segundoBastiao;
-        segundoBastiao = primeiroBastiao;
+        segundoBastiao = new Bastiao(2, "acordado", "Doriana");
         segundoBastiao.aparece();
         
         segundoBastiao.dorme();
         
         primeiroBastiao.aparece();
-   }
+    }
 
 }
