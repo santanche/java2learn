@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_piBZgFDcEeCvj67MbPtsqg" name="repositorio">
+  <elementImport xmi:id="_piy1kFDcEeCvj67MbPtsqg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_pi144FDcEeCvj67MbPtsqg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_pi144VDcEeCvj67MbPtsqg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_pi2f8FDcEeCvj67MbPtsqg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_x2tMgFDcEeCvj67MbPtsqg" name="Pessoa">
+    <ownedOperation xmi:id="__PLCcFDcEeCvj67MbPtsqg" name="getCPF">
+      <ownedParameter xmi:id="_AZ6-UFDdEeCvj67MbPtsqg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_A3ww4FDdEeCvj67MbPtsqg" name="getNome">
+      <ownedParameter xmi:id="_ByG5QFDdEeCvj67MbPtsqg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DE1FYFDdEeCvj67MbPtsqg" name="Repositorio">
+    <ownedOperation xmi:id="_GY5eMFDdEeCvj67MbPtsqg" name="guarda">
+      <ownedParameter xmi:id="_JKqbMFDdEeCvj67MbPtsqg" direction="return"/>
+      <ownedParameter xmi:id="_JKqbMVDdEeCvj67MbPtsqg" name="nova" type="_x2tMgFDcEeCvj67MbPtsqg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JpyAIFDdEeCvj67MbPtsqg" name="recupera">
+      <ownedParameter xmi:id="_Qw7B8FDdEeCvj67MbPtsqg" type="_x2tMgFDcEeCvj67MbPtsqg" direction="return"/>
+      <ownedParameter xmi:id="_Qw7pAFDdEeCvj67MbPtsqg" name="cpf">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ScBR0FDdEeCvj67MbPtsqg" name="primeiro">
+      <ownedParameter xmi:id="_TfQQcFDdEeCvj67MbPtsqg" type="_x2tMgFDcEeCvj67MbPtsqg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_UFhmQFDdEeCvj67MbPtsqg" name="proximo">
+      <ownedParameter xmi:id="_U1MIoFDdEeCvj67MbPtsqg" type="_x2tMgFDcEeCvj67MbPtsqg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+</uml:Package>

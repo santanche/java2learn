@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_YBChwFpuEeCFWMkY_w_W3Q" name="hierarquia-agregacao">
+  <elementImport xmi:id="_YB-V4FpuEeCFWMkY_w_W3Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_YB-88FpuEeCFWMkY_w_W3Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_YB-88VpuEeCFWMkY_w_W3Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_YB-88lpuEeCFWMkY_w_W3Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_aAOyUFpuEeCFWMkY_w_W3Q" name="Parte" clientDependency="_CcovsFpvEeCFWMkY_w_W3Q">
+    <ownedOperation xmi:id="_bWzjsFpuEeCFWMkY_w_W3Q" name="aparece">
+      <ownedParameter xmi:id="_c5YwwFpuEeCFWMkY_w_W3Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jyeIcFpuEeCFWMkY_w_W3Q" name="Grupo">
+    <ownedOperation xmi:id="_Ip7_cFpvEeCFWMkY_w_W3Q" name="aparece">
+      <ownedParameter xmi:id="_JQ1nYFpvEeCFWMkY_w_W3Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_CcovsFpvEeCFWMkY_w_W3Q" supplier="_jyeIcFpuEeCFWMkY_w_W3Q" client="_aAOyUFpuEeCFWMkY_w_W3Q"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TqOdEFpvEeCFWMkY_w_W3Q" name="partesGrupo" memberEnd="_TqOdEVpvEeCFWMkY_w_W3Q _TqPEIlpvEeCFWMkY_w_W3Q">
+    <ownedEnd xmi:id="_TqOdEVpvEeCFWMkY_w_W3Q" name="src" type="_jyeIcFpuEeCFWMkY_w_W3Q" association="_TqOdEFpvEeCFWMkY_w_W3Q">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TqPEIVpvEeCFWMkY_w_W3Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TqPEIFpvEeCFWMkY_w_W3Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_TqPEIlpvEeCFWMkY_w_W3Q" name="dst" type="_aAOyUFpuEeCFWMkY_w_W3Q" aggregation="composite" association="_TqOdEFpvEeCFWMkY_w_W3Q">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TqPEJFpvEeCFWMkY_w_W3Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TqPEI1pvEeCFWMkY_w_W3Q" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>

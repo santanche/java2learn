@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:uml2tools.notation="http://www.eclipse.org/mdt/uml2tools/gmf/notation/ext/2008" xmi:id="_8clrsEtuEeCVGbEzx0d5lw" type="UMLClass" name="heranca-bastiao.umlclass" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_-CxmYEtuEeCVGbEzx0d5lw" type="2014" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-C1QwEtuEeCVGbEzx0d5lw" type="5020"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-C1QwUtuEeCVGbEzx0d5lw" type="5041"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-C7XYEtuEeCVGbEzx0d5lw" type="7032" collapsed="true">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-C7XYUtuEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-C7XYktuEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_-C7-cEtuEeCVGbEzx0d5lw"/>
+    </children>
+    <element xmi:type="uml:Package" href="heranca-bastiao.uml#_8VwD4UtuEeCVGbEzx0d5lw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-CxmYUtuEeCVGbEzx0d5lw"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Ca-VsEtvEeCVGbEzx0d5lw" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Ca-8wEtvEeCVGbEzx0d5lw" type="5003">
+      <styles xmi:type="notation:FontStyle" xmi:id="_CeTWgEtvEeCVGbEzx0d5lw" bold="true"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Ca-8wUtvEeCVGbEzx0d5lw" type="5019"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Ca_j0EtvEeCVGbEzx0d5lw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_IEAawEtvEeCVGbEzx0d5lw" type="3001">
+        <element xmi:type="uml:Property" href="heranca-bastiao.uml#_IDOXoEtvEeCVGbEzx0d5lw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IEAawUtvEeCVGbEzx0d5lw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_YJqPsEtvEeCVGbEzx0d5lw" type="3001">
+        <element xmi:type="uml:Property" href="heranca-bastiao.uml#_YJTDUEtvEeCVGbEzx0d5lw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YJqPsUtvEeCVGbEzx0d5lw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ZK6RUEtvEeCVGbEzx0d5lw" type="3001">
+        <element xmi:type="uml:Property" href="heranca-bastiao.uml#_ZKokgEtvEeCVGbEzx0d5lw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZK6RUUtvEeCVGbEzx0d5lw"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Ca_j0UtvEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Ca_j0ktvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Ca_j00tvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_CbAK4EtvEeCVGbEzx0d5lw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_CbRQoEtvEeCVGbEzx0d5lw" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_3jbH4EtvEeCVGbEzx0d5lw" type="3002">
+        <element xmi:type="uml:Operation" href="heranca-bastiao.uml#_3jEikEtvEeCVGbEzx0d5lw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3jbu8EtvEeCVGbEzx0d5lw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_5Fk3IEtvEeCVGbEzx0d5lw" type="3002">
+        <element xmi:type="uml:Operation" href="heranca-bastiao.uml#_5FQuEEtvEeCVGbEzx0d5lw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5Fk3IUtvEeCVGbEzx0d5lw"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_CbRQoUtvEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_CbRQoktvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_CbRQo0tvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_CbRQpEtvEeCVGbEzx0d5lw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_CbRQpUtvEeCVGbEzx0d5lw" type="7003">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_CbRQpktvEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_CbRQp0tvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_CbRQqEtvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_CbRQqUtvEeCVGbEzx0d5lw"/>
+    </children>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="_Ca-VsUtvEeCVGbEzx0d5lw"/>
+    <element xmi:type="uml:Class" href="heranca-bastiao.uml#_CWHq4EtvEeCVGbEzx0d5lw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ca-VsktvEeCVGbEzx0d5lw" x="345" y="30"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="__YN54EtvEeCVGbEzx0d5lw" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="__YN540tvEeCVGbEzx0d5lw" type="5003">
+      <styles xmi:type="notation:FontStyle" xmi:id="__YSyYEtvEeCVGbEzx0d5lw" bold="true"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__YN55EtvEeCVGbEzx0d5lw" type="5019"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__YOg8EtvEeCVGbEzx0d5lw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_I0XEMEtwEeCVGbEzx0d5lw" type="3001">
+        <element xmi:type="uml:Property" href="heranca-bastiao.uml#_I0HMkEtwEeCVGbEzx0d5lw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_I0XEMUtwEeCVGbEzx0d5lw"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="__YOg8UtvEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="__YOg8ktvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__YOg80tvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="__YOg9EtvEeCVGbEzx0d5lw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__YOg9UtvEeCVGbEzx0d5lw" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_aJm4wEtwEeCVGbEzx0d5lw" type="3002">
+        <element xmi:type="uml:Operation" href="heranca-bastiao.uml#_aJaEcEtwEeCVGbEzx0d5lw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aJm4wUtwEeCVGbEzx0d5lw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_2kZ6wE9oEeCVtNVSu1K5LA" type="3002">
+        <element xmi:type="uml:Operation" href="heranca-bastiao.uml#_2idaAE9oEeCVtNVSu1K5LA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2kah0E9oEeCVtNVSu1K5LA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="__YOg9ktvEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="__YOg90tvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__YOg-EtvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="__YOg-UtvEeCVGbEzx0d5lw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__YOg-ktvEeCVGbEzx0d5lw" type="7003">
+      <styles xmi:type="notation:TitleStyle" xmi:id="__YOg-0tvEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="__YOg_EtvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__YOg_UtvEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="__YOg_ktvEeCVGbEzx0d5lw"/>
+    </children>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="__YN54UtvEeCVGbEzx0d5lw"/>
+    <element xmi:type="uml:Class" href="heranca-bastiao.uml#__XrHUEtvEeCVGbEzx0d5lw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__YN54ktvEeCVGbEzx0d5lw" x="245" y="220"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_kMTswEtwEeCVGbEzx0d5lw" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_kMUT0EtwEeCVGbEzx0d5lw" type="5003">
+      <styles xmi:type="notation:FontStyle" xmi:id="_kMX-MEtwEeCVGbEzx0d5lw" bold="true"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_kMUT0UtwEeCVGbEzx0d5lw" type="5019"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_kMUT0ktwEeCVGbEzx0d5lw" type="7001">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_kMUT00twEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_kMUT1EtwEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_kMUT1UtwEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_kMUT1ktwEeCVGbEzx0d5lw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_kMUT10twEeCVGbEzx0d5lw" type="7002">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_kMUT2EtwEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_kMUT2UtwEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_kMUT2ktwEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_kMUT20twEeCVGbEzx0d5lw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_kMUT3EtwEeCVGbEzx0d5lw" type="7003">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_kMUT3UtwEeCVGbEzx0d5lw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_kMUT3ktwEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_kMUT30twEeCVGbEzx0d5lw"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_kMUT4EtwEeCVGbEzx0d5lw"/>
+    </children>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="_kMTswUtwEeCVGbEzx0d5lw"/>
+    <element xmi:type="uml:Class" href="heranca-bastiao.uml#_kMEcMEtwEeCVGbEzx0d5lw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kMTswktwEeCVGbEzx0d5lw" x="440" y="220"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_8clrsUtuEeCVGbEzx0d5lw"/>
+  <styles xmi:type="uml2tools.notation:U2TDiagramCanonicalStyle" xmi:id="_8clrsktuEeCVGbEzx0d5lw"/>
+  <styles xmi:type="notation:FilteringStyle" xmi:id="_8clrs0tuEeCVGbEzx0d5lw"/>
+  <element xmi:type="uml:Package" href="heranca-bastiao.uml#_8VwD4UtuEeCVGbEzx0d5lw"/>
+  <edges xmi:type="notation:Connector" xmi:id="_Cd3cMEtwEeCVGbEzx0d5lw" type="4001" source="__YN54EtvEeCVGbEzx0d5lw" target="_Ca-VsEtvEeCVGbEzx0d5lw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Cd4DQktwEeCVGbEzx0d5lw" type="6018">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Cd4qUEtwEeCVGbEzx0d5lw" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Cd4DQEtwEeCVGbEzx0d5lw" fontName="Segoe UI"/>
+    <element xmi:type="uml:Generalization" href="heranca-bastiao.uml#_Cdj6MEtwEeCVGbEzx0d5lw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Cd4DQUtwEeCVGbEzx0d5lw" points="[0, 0, -65, 154]$[54, -133, -11, 21]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CemcAEtwEeCVGbEzx0d5lw" id="(0.6,0.03333333333333333)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CemcAUtwEeCVGbEzx0d5lw" id="(0.23,0.8609271523178808)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_mQej8EtwEeCVGbEzx0d5lw" type="4001" source="_kMTswEtwEeCVGbEzx0d5lw" target="_Ca-VsEtvEeCVGbEzx0d5lw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mQej80twEeCVGbEzx0d5lw" type="6018">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_mQej9EtwEeCVGbEzx0d5lw" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_mQej8UtwEeCVGbEzx0d5lw" fontName="Segoe UI"/>
+    <element xmi:type="uml:Generalization" href="heranca-bastiao.uml#_mQcHsEtwEeCVGbEzx0d5lw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mQej8ktwEeCVGbEzx0d5lw" points="[-39, -60, 98, 151]$[-142, -189, -5, 22]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mQjccEtwEeCVGbEzx0d5lw" id="(0.63,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mQjccUtwEeCVGbEzx0d5lw" id="(0.3867924528301887,0.8543046357615894)"/>
+  </edges>
+</notation:Diagram>

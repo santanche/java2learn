@@ -1,0 +1,20 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+   <persistence-unit name="biblioteca-oo">
+      <provider>org.hibernate.ejb.HibernatePersistence</provider>
+      <class>pt.c07bd.s10oorelacional.Taxonomia</class>
+      <class>pt.c07bd.s10oorelacional.Marcador</class>
+      <class>pt.c07bd.s10oorelacional.Pessoa</class>
+      <class>pt.c07bd.s10oorelacional.Autor</class>
+      <properties>
+         <property name="javax.persistence.jdbc.driver" value="org.gjt.mm.mysql.Driver"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/oo-relacional"/>
+         <property name="javax.persistence.jdbc.user" value="root"/>
+         <property name="javax.persistence.jdbc.password" value="thelab"/>
+         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+         <property name="hibernate.hbm2ddl.auto" value="update"/>
+      </properties>
+   </persistence-unit>
+</persistence>

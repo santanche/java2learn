@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_8VwD4UtuEeCVGbEzx0d5lw" name="heranca-bastiao">
+  <elementImport xmi:id="_8aJbsEtuEeCVGbEzx0d5lw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_8aYFMEtuEeCVGbEzx0d5lw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_8aYFMUtuEeCVGbEzx0d5lw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_8aZTUEtuEeCVGbEzx0d5lw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CWHq4EtvEeCVGbEzx0d5lw" name="Bastiao">
+    <ownedAttribute xmi:id="_IDOXoEtvEeCVGbEzx0d5lw" name="idade" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_YJTDUEtvEeCVGbEzx0d5lw" name="estado" aggregation="composite"/>
+    <ownedAttribute xmi:id="_ZKokgEtvEeCVGbEzx0d5lw" name="nome" aggregation="composite"/>
+    <ownedOperation xmi:id="_3jEikEtvEeCVGbEzx0d5lw" name="aparece">
+      <ownedParameter xmi:id="_43nToEtvEeCVGbEzx0d5lw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_5FQuEEtvEeCVGbEzx0d5lw" name="cresce">
+      <ownedParameter xmi:id="_53us0EtvEeCVGbEzx0d5lw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__XrHUEtvEeCVGbEzx0d5lw" name="Perfeito">
+    <generalization xmi:id="_Cdj6MEtwEeCVGbEzx0d5lw" general="_CWHq4EtvEeCVGbEzx0d5lw"/>
+    <ownedAttribute xmi:id="_I0HMkEtwEeCVGbEzx0d5lw" name="situacao" aggregation="composite"/>
+    <ownedOperation xmi:id="_aJaEcEtwEeCVGbEzx0d5lw" name="aparece">
+      <ownedParameter xmi:id="_a9nIkEtwEeCVGbEzx0d5lw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2idaAE9oEeCVtNVSu1K5LA" name="mudaSituacao">
+      <ownedParameter xmi:id="_3p3uAE9oEeCVtNVSu1K5LA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kMEcMEtwEeCVGbEzx0d5lw" name="Monstro">
+    <generalization xmi:id="_mQcHsEtwEeCVGbEzx0d5lw" general="_CWHq4EtvEeCVGbEzx0d5lw"/>
+  </packagedElement>
+</uml:Package>
