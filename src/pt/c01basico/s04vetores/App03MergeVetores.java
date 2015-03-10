@@ -2,7 +2,7 @@ package pt.c01basico.s04vetores;
 import java.util.Scanner;
 
 
-public class Ap03MergeVetores
+public class App03MergeVetores
 {
 
 	/**

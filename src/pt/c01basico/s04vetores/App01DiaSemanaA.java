@@ -2,15 +2,11 @@ package pt.c01basico.s04vetores;
 import java.util.Scanner;
 
 
-public class Ap02DiaSemanaB
+public class App01DiaSemanaA
 {
 	static int converte(String entrada)
 	{
-        String nomeDia[] = new String[3];
-        
-        nomeDia[0] = "domingo";
-        nomeDia[1] = "segunda";
-        nomeDia[2] = "terca";
+        String nomeDia[] = {"domingo", "segunda", "terca"};
         
 		int resultado = 0;
 		for (int i = 0; i < nomeDia.length; i++)
