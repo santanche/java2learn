@@ -8,10 +8,16 @@ public class AppBastiaoS01
         primeiroBastiao = new Bastiao();
         primeiroBastiao.aparece();
         
-        System.out.println("====================================\n");
-        
         primeiroBastiao.setNome("Alcebiades");
         primeiroBastiao.aparece();
+        
+        System.out.println("====================================\n");
+        
+        Bastiao segundoBastiao = new Bastiao(2, "acordado", "Galadriel");
+        segundoBastiao.aparece();
+        
+        segundoBastiao.setIdade("grande");
+        segundoBastiao.aparece();
     }
 
 }

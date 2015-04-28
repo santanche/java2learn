@@ -14,6 +14,8 @@ public class App03ExcecaoDivisaoZero
         System.out.print("Digite o denominador: ");
         String ys = teclado.nextLine();
         
+        teclado.close();
+
         int x = Integer.parseInt(xs),
             y = Integer.parseInt(ys);
         
@@ -25,17 +27,11 @@ public class App03ExcecaoDivisaoZero
         }
     }
     
-    public static int divide(int x, int y) throws ArithmeticException
+    public static int divide(int x, int y)
     {
         int divisao;
-        try {
-            divisao = x / y;
-        } catch (ArithmeticException erro) {
-            throw new ArithmeticException("Houve uma divisao por zero");
-        } finally {
-            System.out.println("Mesmo assim eu fui no finally");
-        }
-        System.out.println("Esta mensagem nao aparece se houver erro");
+
+        divisao = x / y;
             
         return divisao;
     }

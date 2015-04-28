@@ -14,6 +14,8 @@ public class App02ExcecaoDivisaoZero
         System.out.print("Digite o denominador: ");
         String ys = teclado.nextLine();
         
+        teclado.close();
+
         try {
             int x = Integer.parseInt(xs),
                 y = Integer.parseInt(ys);

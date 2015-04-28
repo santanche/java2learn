@@ -1,6 +1,6 @@
 package pt.c06patterns.factory.s03.fish;
 
-import pt.c06patterns.factory.s03.Aquatic;
+import pt.c06patterns.factory.s03.interfaces.Aquatic;
 
 public class Fish implements Aquatic
 {

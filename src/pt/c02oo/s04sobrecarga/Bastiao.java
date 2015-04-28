@@ -65,9 +65,17 @@ public class Bastiao
         return idade;
     }
     
-    public void setIdade(int idade)
-    {
+    public void setIdade(int idade) {
         this.idade = idade;
+    }
+    
+    public void setIdade(String idade) {
+       if (idade.equalsIgnoreCase("pequeno"))
+         this.idade = 1;
+       else if (idade.equalsIgnoreCase("medio"))
+          this.idade = 2;
+       else if (idade.equalsIgnoreCase("grande"))
+          this.idade = 3;
     }
     
     public String getEstado()

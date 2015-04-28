@@ -1,30 +1,34 @@
 package pt.c06patterns.factory.s03;
 
-import pt.c06patterns.factory.s03.crab.CrabFactory;
-import pt.c06patterns.factory.s03.fish.FishFactory;
+import pt.c06patterns.factory.s03.crab.CrabCreator;
+import pt.c06patterns.factory.s03.fish.FishCreator;
+import pt.c06patterns.factory.s03.interfaces.Aquatic;
+import pt.c06patterns.factory.s03.interfaces.AquaticCreator;
 
 public class FishTank3
 {
-    public static void drawFishTank(AbstractFactory factory)
+    public static void drawFishTank(Aquatic theAquatic)
     {
-        Aquatic theAquatic = factory.createAquatic();
-        Aquarium theAquarium = factory.createAquarium();
-        
-        System.out.println(theAquarium.topAquarium());
-        System.out.println(theAquatic.aquaticImage());
-        System.out.println(theAquarium.bottomAquarium());
+        System.out.println("+-----------------+");
+        System.out.println("|                 |");
+        System.out.println(theAquatic.aquaticImage());       
+        System.out.println("|                 |");
+        System.out.println("+-----------------+");
     }
     
     public static void main(String[] args)
     {
-        AbstractFactory factory = null;
+        AquaticCreator theAquaticCreator = null;
         if (args != null && args.length > 0) {
             if (args[0].equalsIgnoreCase("fish"))
-                factory = new FishFactory();
+                theAquaticCreator = new FishCreator();
             else
-                factory = new CrabFactory();
-            if (factory != null)
-                drawFishTank(factory);
+                theAquaticCreator = new CrabCreator();
+
+            if (theAquaticCreator != null) {
+                Aquatic theAquatic = theAquaticCreator.createAquatic();
+                drawFishTank(theAquatic);
+            }
         }
             
     }

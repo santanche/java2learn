@@ -7,6 +7,7 @@ public class AppBastiaoCA01
     {
         Bastiao primeiroBastiao;
         primeiroBastiao = new Bastiao(1, "acordado", "Asdrubal");
+        
         primeiroBastiao.aparece();
         
         System.out.println("====================================\n");

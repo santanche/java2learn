@@ -1,6 +1,6 @@
 package pt.c06patterns.factory.s03.crab;
 
-import pt.c06patterns.factory.s03.Aquatic;
+import pt.c06patterns.factory.s03.interfaces.Aquatic;
 
 public class Crab implements Aquatic
 {

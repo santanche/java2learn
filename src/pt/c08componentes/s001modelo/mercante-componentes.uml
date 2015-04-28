@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zP9bcNPGEeS9P6FTRQgB8w" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_zP9bcdPGEeS9P6FTRQgB8w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_3RjBkNPGEeS9P6FTRQgB8w" name="PlanetaComercio">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9CIgINPGEeS9P6FTRQgB8w" name="compra"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_A_H6INPHEeS9P6FTRQgB8w" name="vende"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_C3cGoNPHEeS9P6FTRQgB8w" name="PlanetaViagem">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Exh0wNPHEeS9P6FTRQgB8w" name="viaja"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_t_Nc8NfLEeS1Ou0vsjmRfQ" name="Maior">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_XeiP4NfMEeS1Ou0vsjmRfQ" name="Port0" type="_3RjBkNPGEeS9P6FTRQgB8w" aggregation="composite"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_wmAgENfLEeS1Ou0vsjmRfQ" name="A">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_3CZUsNfLEeS1Ou0vsjmRfQ" name="Port0" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_Tw5ggNfMEeS1Ou0vsjmRfQ" name="Port1" type="_3RjBkNPGEeS9P6FTRQgB8w" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_xdPDANfLEeS1Ou0vsjmRfQ" name="B">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_5n8aoNfLEeS1Ou0vsjmRfQ" name="Port0" aggregation="composite"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_EC2EgNfSEeS1Ou0vsjmRfQ" name="Realization0" client="_XeiP4NfMEeS1Ou0vsjmRfQ" supplier="_3RjBkNPGEeS9P6FTRQgB8w" contract="_3RjBkNPGEeS9P6FTRQgB8w"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_VErN0NfSEeS1Ou0vsjmRfQ" name="Realization1" client="_5n8aoNfLEeS1Ou0vsjmRfQ" supplier="_C3cGoNPHEeS9P6FTRQgB8w" contract="_C3cGoNPHEeS9P6FTRQgB8w"/>
+</uml:Model>
