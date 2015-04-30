@@ -1,4 +1,4 @@
-package pt.c03java.s01generics;
+package pt.c09generica.s04Statistics;
 
 public class Statistics {
 

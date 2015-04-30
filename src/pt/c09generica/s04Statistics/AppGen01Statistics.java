@@ -1,8 +1,8 @@
-package pt.c03java.s01generics;
+package pt.c09generica.s04Statistics;
 
 import java.util.Scanner;
 
-public class App03Statistics {
+public class AppGen01Statistics {
 
    public static void main(String args[])
    {

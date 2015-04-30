@@ -1,9 +1,9 @@
-package pt.c03java.s01generics;
+package pt.c09generica.s02usinggenerics;
 
 import java.util.Scanner;
 import java.util.Vector;
 
-public class App01Vector
+public class AppGen01Vector
 {
     public static void main(String args[])
     {
