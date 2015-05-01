@@ -15,6 +15,7 @@ public class AppGen02Vector
         String entrada = teclado.nextLine();
         while (!entrada.equalsIgnoreCase("fim")) {
             Integer numero = new Integer(entrada);
+            // <erro> String numero = entrada;
             lista.add(numero);
             
             System.out.print("Digite outro numero: ");
