@@ -15,7 +15,7 @@ public class App01CriaTabelaCategoria
             Class.forName("com.mysql.jdbc.Driver");
 
             // estabelece conexao com a base de dados
-            Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/biblioteca", "root", "thelab");
+            Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/engsoft2015", "root", "thelab");
 
             // cria um objeto de comandos SQL para a base
             Statement comando = conexao.createStatement();
