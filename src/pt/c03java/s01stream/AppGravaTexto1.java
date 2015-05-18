@@ -6,7 +6,8 @@ import java.io.IOException;
 public class AppGravaTexto1
 {
     // captura o diretorio em que se encontra a classe bastiao
-    public static String DIRETORIO = AppGravaTexto1.class.getResource(".").getPath() + "/";
+    public static String DIRETORIO =
+          AppGravaTexto1.class.getResource(".").getPath() + "/";
    
     public static void main(String argumentos[])
     {

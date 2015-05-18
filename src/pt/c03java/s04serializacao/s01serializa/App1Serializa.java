@@ -1,6 +1,5 @@
 package pt.c03java.s04serializacao.s01serializa;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
@@ -14,7 +13,7 @@ public class App1Serializa
         
         try {
             ObjectOutputStream encoder = new ObjectOutputStream(
-                            new FileOutputStream(Bastiao.DIRETORIO + "thebastian.bin") );
+                    new FileOutputStream(Bastiao.DIRETORIO + "thebastian.bin") );
             encoder.writeObject(theBastian);
             encoder.close();
             

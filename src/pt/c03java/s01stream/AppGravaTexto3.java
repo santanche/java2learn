@@ -20,7 +20,7 @@ public class AppGravaTexto3
 
             formatado = new PrintWriter(arquivo);
 
-            formatado.println("amigo do Horario");
+            formatado.println("amigo do Horacio");
 
             formatado.close();
             

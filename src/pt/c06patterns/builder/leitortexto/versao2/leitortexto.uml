@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_OFGssKQYEd2m1I4dVD6yGQ" name="Model">
+  <elementImport xmi:id="_OXIQ0KQYEd2m1I4dVD6yGQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_OXby0KQYEd2m1I4dVD6yGQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_OXby0aQYEd2m1I4dVD6yGQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_OXby0qQYEd2m1I4dVD6yGQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_Sjp7oKQYEd2m1I4dVD6yGQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U6AH8KQYEd2m1I4dVD6yGQ" name="LeitorArquivo">
+    <ownedAttribute xmi:id="_Geww9KQZEd2m1I4dVD6yGQ" name="dst" type="_Xk62EKQYEd2m1I4dVD6yGQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Geww9qQZEd2m1I4dVD6yGQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Geww9aQZEd2m1I4dVD6yGQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bOJxJKQZEd2m1I4dVD6yGQ" name="dst" type="_Xk62EKQYEd2m1I4dVD6yGQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bOJxJqQZEd2m1I4dVD6yGQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bOJxJaQZEd2m1I4dVD6yGQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Xk62EKQYEd2m1I4dVD6yGQ" name="MontadorTexto" clientDependency="_2px1QKQYEd2m1I4dVD6yGQ">
+    <ownedOperation xmi:id="_scdzEKQgEd2m1I4dVD6yGQ" name="insereLinha">
+      <ownedParameter xmi:id="_uhPHMKQgEd2m1I4dVD6yGQ" direction="return"/>
+      <ownedParameter xmi:id="_uhPHMaQgEd2m1I4dVD6yGQ" name="linha">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s5HzgKQYEd2m1I4dVD6yGQ" name="JFrame"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uW2VwKQYEd2m1I4dVD6yGQ" name="JanelaApresentacao">
+    <generalization xmi:id="_5YuHwKQYEd2m1I4dVD6yGQ" general="_s5HzgKQYEd2m1I4dVD6yGQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_2px1QKQYEd2m1I4dVD6yGQ" supplier="_uW2VwKQYEd2m1I4dVD6yGQ" client="_Xk62EKQYEd2m1I4dVD6yGQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iXBRQKQZEd2m1I4dVD6yGQ" memberEnd="_iXBRQaQZEd2m1I4dVD6yGQ _iXBRRKQZEd2m1I4dVD6yGQ">
+    <ownedEnd xmi:id="_iXBRQaQZEd2m1I4dVD6yGQ" name="src" type="_U6AH8KQYEd2m1I4dVD6yGQ" association="_iXBRQKQZEd2m1I4dVD6yGQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iXBRQ6QZEd2m1I4dVD6yGQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iXBRQqQZEd2m1I4dVD6yGQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_iXBRRKQZEd2m1I4dVD6yGQ" name="dst" type="_Xk62EKQYEd2m1I4dVD6yGQ" association="_iXBRQKQZEd2m1I4dVD6yGQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iXLCQKQZEd2m1I4dVD6yGQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iXBRRaQZEd2m1I4dVD6yGQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
