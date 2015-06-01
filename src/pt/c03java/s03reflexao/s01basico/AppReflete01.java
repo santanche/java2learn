@@ -23,6 +23,11 @@ public class AppReflete01
         
         for (int a = 0; a < atributos.length; a++)
             System.out.println("Atributo: " + atributos[a].getName());
+
+        Field atributosDeclarados[] = classeBastiao.getDeclaredFields();
+        
+        for (int a = 0; a < atributosDeclarados.length; a++)
+            System.out.println("Atributo: " + atributosDeclarados[a].getName());
     }
 
 }
