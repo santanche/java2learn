@@ -4,10 +4,17 @@ SELECT Marca, Modelo FROM Taxi;
 
 SELECT * FROM Taxi WHERE AnoFab > 2000;
 
+-- Placas que comecem com DK
+SELECT * FROM Taxi WHERE placa LIKE 'DK%';
+
+-- Placas com '7' na penultima posicao
+SELECT * FROM Taxi WHERE placa LIKE '%7_';
+
 -- Produto cartesiano Cliente x Corrida
 SELECT Cliente.CliId, Cliente.Nome, Corrida.CliId, Corrida.Placa, Corrida.DataPedido
        FROM Cliente, Corrida;
 
+-- Join (1) Cliente x Corrida
 SELECT Cliente.CliId, Cliente.Nome, Corrida.CliId, Corrida.Placa, Corrida.DataPedido
        FROM Cliente, Corrida
        WHERE Cliente.CliId = Corrida.CliId;
@@ -43,6 +50,11 @@ SELECT Co.DataPedido, Co.Placa, T.Modelo
        WHERE Co.Placa = T.Placa;
        
 -- Modelos de taxi tomados por cada cliente
+-- (estagio 1)
 SELECT Cl.Nome, Co.DataPedido, Co.Placa, T.Modelo
+       FROM Cliente Cl, Corrida Co, Taxi T
+       WHERE Cl.CliId = Co.CliId AND Co.Placa = T.Placa;
+-- (estagio 2)
+SELECT DISTINCT Cl.Nome, T.Modelo
        FROM Cliente Cl, Corrida Co, Taxi T
        WHERE Cl.CliId = Co.CliId AND Co.Placa = T.Placa;

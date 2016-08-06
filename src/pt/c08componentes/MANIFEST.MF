@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+
+Name: pt.c08componentes.s02jcomponent.Bean01CirculoVisual.class
+Java-Bean: True

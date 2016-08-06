@@ -13,7 +13,9 @@ public class AppContador02 extends JFrame
     
     public static void main(String[] args)
     {
-        montaJanela();
+        janela = new JFrame("Teste do Bean");
+        janela.setSize(200, 200);
+        janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // instancia beans
         JButton botao = new JButton("Incrementa");
@@ -27,10 +29,4 @@ public class AppContador02 extends JFrame
         janela.setVisible(true);
     }
 
-    private static void montaJanela()
-    {
-        janela = new JFrame("Teste do Bean");
-        janela.setSize(200, 200);
-        janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
 }

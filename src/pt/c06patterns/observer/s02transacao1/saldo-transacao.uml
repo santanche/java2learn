@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mCsxAEYPEea_W-HGAI59SA" name="SaldoTransacao">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_mIJRsEYPEea_W-HGAI59SA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qIkaMEYPEea_W-HGAI59SA" name="SaldoSubj">
+    <generalization xmi:type="uml:Generalization" xmi:id="_CX5PgEYREea_W-HGAI59SA" general="_AHy1IEYREea_W-HGAI59SA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Mv_hMEYQEea_W-HGAI59SA" name="ConcreteSubject">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lbGJAEYQEea_W-HGAI59SA" general="_gS9KgEYQEea_W-HGAI59SA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_WZRIkEYQEea_W-HGAI59SA" name="Transacao">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_se-mAEYREea_W-HGAI59SA" name="movimento">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_y-hcUEYREea_W-HGAI59SA" name="valor">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_XxnbkEYQEea_W-HGAI59SA" name="Observer">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_quI6gEYREea_W-HGAI59SA" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gS9KgEYQEea_W-HGAI59SA" name="Subject" isAbstract="true">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_s0W1kEYQEea_W-HGAI59SA" name="attach">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_2KnaUEYQEea_W-HGAI59SA" name="observer" type="_XxnbkEYQEea_W-HGAI59SA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_n390EEYQEea_W-HGAI59SA" client="_gS9KgEYQEea_W-HGAI59SA" supplier="_XxnbkEYQEea_W-HGAI59SA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AHy1IEYREea_W-HGAI59SA" name="Subject">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DjXkIEYREea_W-HGAI59SA" name="attach">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_HVB34EYREea_W-HGAI59SA" name="observer" type="_WZRIkEYQEea_W-HGAI59SA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_WtR0QEYREea_W-HGAI59SA" client="_AHy1IEYREea_W-HGAI59SA" supplier="_WZRIkEYQEea_W-HGAI59SA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XjMvoEYREea_W-HGAI59SA" name="MostraSaldo"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_e2rkUEYREea_W-HGAI59SA" client="_XjMvoEYREea_W-HGAI59SA" supplier="_WZRIkEYQEea_W-HGAI59SA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gcgSoEYREea_W-HGAI59SA" name="ConcreteObserver"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_jGd-gEYREea_W-HGAI59SA" client="_gcgSoEYREea_W-HGAI59SA" supplier="_XxnbkEYQEea_W-HGAI59SA"/>
+</uml:Model>

@@ -1,5 +1,5 @@
 -- CNH e Nome dos motoristas que jah estiveram e estao na fila
-SELECT M.CNH, M.Nome
+SELECT DISTINCT M.CNH, M.Nome
        FROM Motorista M, Fila F 
        WHERE M.CNH = F.CNH;
 
@@ -90,7 +90,7 @@ SELECT zona, COUNT(*)
        FROM Fila
        GROUP BY zona;
 
--- Quantos taxis estao/estiveram em cada fila das zonas atendidas
+-- Quantos entradas de taxi tem/tiveram cada fila das zonas atendidas
 -- (coluna COUNT com nome)       
 SELECT Zona, COUNT(*) Quantidade
        FROM Fila
