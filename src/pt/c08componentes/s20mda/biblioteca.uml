@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_Zd0_MLTNEeKEheDgSawsEA/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_Zd0_MLTNEeKEheDgSawsEA/0 entityrelationship.profile.uml#_Zd0_MrTNEeKEheDgSawsEA">
+  <uml:Model xmi:id="_fE7KkLTNEeKEheDgSawsEA" name="Model">
+    <packageImport xmi:id="_fE7KkbTNEeKEheDgSawsEA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_gzflMLTNEeKEheDgSawsEA" name="biblioteca">
+      <packagedElement xmi:type="uml:Class" xmi:id="_jPXKsLTNEeKEheDgSawsEA" name="Livro">
+        <ownedAttribute xmi:id="_n1EKgLTNEeKEheDgSawsEA" name="isbn">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_vzuqMLTNEeKEheDgSawsEA">
+      <eAnnotations xmi:id="_v0BlILTNEeKEheDgSawsEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="entityrelationship.profile.uml#_Zd0_MrTNEeKEheDgSawsEA"/>
+      </eAnnotations>
+      <appliedProfile href="entityrelationship.profile.uml#_JgDT4LTNEeKEheDgSawsEA"/>
+    </profileApplication>
+  </uml:Model>
+  <Profile:Entity xmi:id="_wqHfoLTNEeKEheDgSawsEA" base_Class="_jPXKsLTNEeKEheDgSawsEA"/>
+  <Profile:Pk xmi:id="_xtBuILTNEeKEheDgSawsEA" base_Property="_n1EKgLTNEeKEheDgSawsEA"/>
+</xmi:XMI>
