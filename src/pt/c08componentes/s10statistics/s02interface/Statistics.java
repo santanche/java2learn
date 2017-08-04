@@ -1,23 +1,23 @@
 package pt.c08componentes.s10statistics.s02interface;
 
-import java.util.Vector;
-
 /**
  * Registers a set of numbers and calculates the sum and average of these numbers.
  * 
  * @author Andre Santanche
  */
 public class Statistics implements IStatistics {
-   private Vector<Float> valueSet;
+   private float valueSet[];
+   private int position;
    
    /*
     * Constructor
     **************/
    
-   public Statistics()
+   public Statistics(int size)
    {
        super();
-       valueSet = new Vector<Float>();
+       valueSet = new float[size];
+       position = 0;
    }
 
    /*
@@ -26,15 +26,18 @@ public class Statistics implements IStatistics {
    
    public void insertValue(float value)
    {
-       valueSet.add(value);
+      if (position < valueSet.length) {
+        valueSet[position] = value;
+        position++;
+      }
    }
 
    public float sum()
    {
        float theSum = 0.0f;
        
-       for (float value : valueSet)
-           theSum += value;
+       for (int p = 0; p < position; p++)
+         theSum += valueSet[p];
        
        return theSum;
    }
@@ -43,8 +46,8 @@ public class Statistics implements IStatistics {
    {
        float avg = 0;
        
-       if (valueSet.size() > 0)
-           avg = sum() / valueSet.size();
+       if (position > 0)
+         avg = sum() / position;
        
        return avg;
    }

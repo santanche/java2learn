@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9GsoAFvPEeaiqpEaYKZ9-g" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
-  <children xmi:type="notation:Shape" xmi:id="_B6ZnkFvQEeaiqpEaYKZ9-g" type="Class_Shape" fillColor="8454143">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9GsoAFvPEeaiqpEaYKZ9-g" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_B6ZnkFvQEeaiqpEaYKZ9-g" type="Class_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKghcHRxEeee5LxNU_IwUg" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EKhIgHRxEeee5LxNU_IwUg" key="fillColor" value="true"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_B6ZnklvQEeaiqpEaYKZ9-g" type="Class_NameLabel"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_B6Znk1vQEeaiqpEaYKZ9-g" type="Class_FloatingNameLabel">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_B6ZnlFvQEeaiqpEaYKZ9-g" y="5"/>
@@ -42,9 +45,9 @@
     <element xmi:type="uml:Class" href="statistics-class.uml#_B6XyYFvQEeaiqpEaYKZ9-g"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B6ZnkVvQEeaiqpEaYKZ9-g" x="47" y="59" width="242"/>
   </children>
-  <styles xmi:type="notation:StringValueStyle" xmi:id="_9GsoAVvPEeaiqpEaYKZ9-g" name="diagram_compatibility_version" stringValue="1.2.0"/>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_9GsoAVvPEeaiqpEaYKZ9-g" name="diagram_compatibility_version" stringValue="1.3.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_9GsoAlvPEeaiqpEaYKZ9-g"/>
-  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_9GsoA1vPEeaiqpEaYKZ9-g">
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="__I1-YHRwEeee5LxNU_IwUg" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
     <owner xmi:type="uml:Model" href="statistics-class.uml#_9GcwYFvPEeaiqpEaYKZ9-g"/>
   </styles>
   <element xmi:type="uml:Model" href="statistics-class.uml#_9GcwYFvPEeaiqpEaYKZ9-g"/>

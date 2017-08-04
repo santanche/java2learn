@@ -1,10 +1,10 @@
-package pt.c08componentes.s10statistics.s02interface;
+package pt.c08componentes.s10statistics.s03component.v03;
 
-public class AppStatistics02 {
+public class AppStatistics03c {
    public static void main(String args[])
    {
        try {
-           IStatistics stat = new Statistics(3);
+           Statistics stat = new Statistics();
 
            System.out.println("inserido valor: " + 50.0f);
            stat.insertValue(50.0f);

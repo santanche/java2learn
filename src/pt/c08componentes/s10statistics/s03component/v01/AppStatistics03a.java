@@ -1,6 +1,6 @@
-package pt.c08componentes.s10statistics.s02interface;
+package pt.c08componentes.s10statistics.s03component.v01;
 
-public class AppStatistics02 {
+public class AppStatistics03a {
    public static void main(String args[])
    {
        try {
