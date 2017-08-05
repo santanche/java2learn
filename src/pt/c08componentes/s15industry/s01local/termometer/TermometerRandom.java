@@ -1,4 +1,4 @@
-package pt.c08componentes.s15industry.s01local;
+package pt.c08componentes.s15industry.s01local.termometer;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,13 +6,25 @@ import java.util.ArrayList;
 
 import javax.swing.Timer;
 
-public class TermometerRandom implements ITermometerManager, ISubject, ActionListener {
+import pt.c08componentes.s15industry.s01local.observer.IObserver;
+import pt.c08componentes.s15industry.s01local.observer.ISubject;
+
+public class TermometerRandom implements ITermometer, ISubject, ActionListener {
 	public final static int STANDARD_INTERVAL = 1000;
 	
     private int interval = STANDARD_INTERVAL;
     
     Timer metro;
     private ArrayList<IObserver> observerList = new ArrayList<IObserver>();
+    
+    public int getInterval() {
+    	return interval;
+    }
+    
+    public void setInterval(int interval) {
+    	this.interval = interval;
+    	metro.setDelay(interval);
+    }
     
     public TermometerRandom() {
         metro = new Timer(interval, this);
@@ -26,21 +38,16 @@ public class TermometerRandom implements ITermometerManager, ISubject, ActionLis
         metro.stop();
     }
     
-    public int getInterval() {
-    	return interval;
-    }
-    
-    public void setInterval(int interval) {
-    	this.interval = interval;
-    	metro.setDelay(interval);
-    }
-    
     public void attach(IObserver observer) {
     	observerList.add(observer);
     }
     
     public void actionPerformed(ActionEvent evt) {
     	int temp = (int)(Math.random() * 130);
+    	notifyObservers(temp);
+    }
+    
+    private void notifyObservers(int temp) {
     	for (IObserver o : observerList) {
 			o.update(temp);
 		}

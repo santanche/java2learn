@@ -1,14 +1,20 @@
-package pt.c08componentes.s15industry.s01local;
+package pt.c08componentes.s15industry.s01local.statistics;
 
+import java.util.ArrayList;
 import java.util.Vector;
+
+import pt.c08componentes.s15industry.s01local.observer.IObserver;
+import pt.c08componentes.s15industry.s01local.observer.ISubject;
 
 /**
  * Registers a set of numbers and calculates the sum and average of these numbers.
  * 
  * @author Andre Santanche
  */
-public class Statistics implements IStatistics, IObserver {
+public class Statistics implements IStatistics, ISubject {
    private Vector<Float> valueSet;
+   
+   private ArrayList<IObserver> observerList = new ArrayList<IObserver>();
    
    /*
     * Constructor
@@ -22,6 +28,7 @@ public class Statistics implements IStatistics, IObserver {
 
    public void update(int value) {
 	   insertValue(value);
+	   notifyObservers((int)average());
    }
    
    /*
@@ -51,5 +58,15 @@ public class Statistics implements IStatistics, IObserver {
            avg = sum() / valueSet.size();
        
        return avg;
+   }
+   
+   public void attach(IObserver observer) {
+   	   observerList.add(observer);
+   }
+   
+   private void notifyObservers(int average) {
+   	for (IObserver o : observerList) {
+			o.update(average);
+		}
    }
 }

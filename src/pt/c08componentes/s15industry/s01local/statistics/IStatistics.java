@@ -1,4 +1,6 @@
-package pt.c08componentes.s15industry.s01local;
+package pt.c08componentes.s15industry.s01local.statistics;
+
+import pt.c08componentes.s15industry.s01local.observer.IObserver;
 
 /**
  * Interface for a Statistics Class that registers a set of numbers
@@ -6,7 +8,7 @@ package pt.c08componentes.s15industry.s01local;
  * 
  * @author Andre Santanche
  */
-public interface IStatistics {
+public interface IStatistics extends IObserver {
    /**
     * Inserts a value into the set.
     * @param value the value to be inserted into the set
