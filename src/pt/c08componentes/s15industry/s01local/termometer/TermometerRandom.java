@@ -14,7 +14,7 @@ public class TermometerRandom implements ITermometer, ISubject, ActionListener {
 	
     private int interval = STANDARD_INTERVAL;
     
-    Timer metro;
+    private Timer metro;
     private ArrayList<IObserver> observerList = new ArrayList<IObserver>();
     
     public int getInterval() {
