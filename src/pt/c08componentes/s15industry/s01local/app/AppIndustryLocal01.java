@@ -14,6 +14,7 @@ public class AppIndustryLocal01 {
 		IDisplay display = new Display();
 		
 		display.setLabel("Temperatura");
+		display.setLimit(70);
 
 		((ISubject)termometer).attach(display);
 

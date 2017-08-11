@@ -26,10 +26,11 @@ public class Display implements IDisplay {
 
 	@Override
 	public void update(int value) {
-		System.out.print("             " + label + ": "+value + " C          Cor: ");
+		System.out.print("             " + label + ": "+value + "; Cor: ");
 		if (value < limit)
 			System.out.println("Verde");
-		else System.out.println("Vermelho");
+		else
+			System.out.println("Vermelho");
 		System.out.println("------------------");
 	}
 

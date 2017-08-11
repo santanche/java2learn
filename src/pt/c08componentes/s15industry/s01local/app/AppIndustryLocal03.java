@@ -18,7 +18,9 @@ public class AppIndustryLocal03 {
 				 displayMedia = new Display();
 		
 		displayTemperatura.setLabel("Temperatura");
+		displayTemperatura.setLimit(70);
 		displayMedia.setLabel("Temperatura media");
+		displayTemperatura.setLimit(70);
 
 		((ISubject)termometer).attach(displayTemperatura);
 		((ISubject)termometer).attach(statistics);

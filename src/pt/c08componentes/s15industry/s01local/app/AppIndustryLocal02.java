@@ -17,6 +17,7 @@ public class AppIndustryLocal02 {
 		IDisplay display = new Display();
 		
 		display.setLabel("Temperatura media");
+		display.setLimit(70);
 
 		((ISubject)termometer).attach(statistics);
 		((ISubject)statistics).attach(display);
