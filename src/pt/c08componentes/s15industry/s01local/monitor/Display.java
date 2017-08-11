@@ -26,8 +26,8 @@ public class Display implements IDisplay {
 
 	@Override
 	public void update(int value) {
-		System.out.print("             " + label + ": "+value + " °C          Cor: ");
-		if (value < 80)
+		System.out.print("             " + label + ": "+value + " C          Cor: ");
+		if (value < limit)
 			System.out.println("Verde");
 		else System.out.println("Vermelho");
 		System.out.println("------------------");
