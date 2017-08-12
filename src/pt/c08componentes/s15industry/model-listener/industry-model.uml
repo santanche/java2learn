@@ -14,14 +14,17 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_nO2KgHnuEee6DuGzC1IMPA" name="start"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_otFDEHnuEee6DuGzC1IMPA" name="stop"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_cJpNIHntEee6DuGzC1IMPA" name="ISubject">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_cJpNIHntEee6DuGzC1IMPA" name="TemperatureSubject">
     <nestedClassifier xmi:type="uml:Interface" xmi:id="_6nCBAHoLEeekVv8oyHk7aQ" name="ISubject">
       <ownedOperation xmi:type="uml:Operation" xmi:id="_6nCBAXoLEeekVv8oyHk7aQ" name="attach">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_6nCBAnoLEeekVv8oyHk7aQ" name="observer" type="_mt6dIHntEee6DuGzC1IMPA"/>
       </ownedOperation>
     </nestedClassifier>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_sKVNEHnuEee6DuGzC1IMPA" name="attach">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_weYcMHnuEee6DuGzC1IMPA" name="observer" type="_mt6dIHntEee6DuGzC1IMPA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sKVNEHnuEee6DuGzC1IMPA" name="addTemperatureListener">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_weYcMHnuEee6DuGzC1IMPA" name="listener" type="_mt6dIHntEee6DuGzC1IMPA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Hab3EH9nEeerbrZfNRHhOQ" name="removeTemperatureListener">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Pv5GIH9nEeerbrZfNRHhOQ" name="listener" type="_mt6dIHntEee6DuGzC1IMPA"/>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_fS9ugHntEee6DuGzC1IMPA" name="ITermometer">
@@ -126,6 +129,7 @@
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_3xulMH9YEeer15bxrw7XWw" name="Event"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_mhev8H9ZEeer15bxrw7XWw" client="_mt6dIHntEee6DuGzC1IMPA" supplier="_UW32IH9YEeer15bxrw7XWw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3xulMH9YEeer15bxrw7XWw" name="AWTEvent"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_mhev8H9ZEeer15bxrw7XWw" client="_mt6dIHntEee6DuGzC1IMPA" supplier="_EqR1IHnsEee6DuGzC1IMPA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6pHyoH9kEeerbrZfNRHhOQ" client="_tsh1EHntEee6DuGzC1IMPA" supplier="_mt6dIHntEee6DuGzC1IMPA"/>
 </uml:Model>
