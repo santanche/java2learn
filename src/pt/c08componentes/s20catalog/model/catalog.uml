@@ -14,19 +14,9 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_1Y_38Hv7EeiIiN0sK408yA" name="DataSet">
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_reLgsHwTEeir7PNmI2Fu9g" client="_1Y_38Hv7EeiIiN0sK408yA" supplier="__l8NEHv7EeiIiN0sK408yA" contract="__l8NEHv7EeiIiN0sK408yA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="__l8NEHv7EeiIiN0sK408yA" name="IDataSet">
+  <packagedElement xmi:type="uml:Interface" xmi:id="__l8NEHv7EeiIiN0sK408yA" name="IInstancesProducer">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_bjTP0Hv8EeiIiN0sK408yA" name="requestInstances" visibility="public">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_i9LncHv8EeiIiN0sK408yA" name="instances" type="_SUk2cHv8EeiIiN0sK408yA" direction="return"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_8XjwEHv8EeiIiN0sK408yA" name="getDataSource">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Fiw7YHv9EeiIiN0sK408yA" name="dataSource" direction="return">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedParameter>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_biPocHwTEeir7PNmI2Fu9g" name="setDataSource" visibility="public">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_mCJ84HwTEeir7PNmI2Fu9g" name="dataSource">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedParameter>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SUk2cHv8EeiIiN0sK408yA" name="Instances"/>
@@ -41,4 +31,66 @@
   <packagedElement xmi:type="uml:Interface" xmi:id="_zgeZAHxcEeiLipC-5Aq0AQ" name="Object"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_Y5NKAHxdEeiLipC-5Aq0AQ" name="IConsole"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_h4VoMHxdEeiLipC-5Aq0AQ" client="_Y5NKAHxdEeiLipC-5Aq0AQ" supplier="_zgeZAHxcEeiLipC-5Aq0AQ"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_7PEtUHxlEeiALuK4ap0Avg" name="ProjectionComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_-Y_PIHxmEeiALuK4ap0Avg" name="Port1" type="_Px2N0HxmEeiALuK4ap0Avg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_8WrHMHxoEeiALuK4ap0Avg" name="title" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_Ayr_gHxpEeiALuK4ap0Avg" name="attribute" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eKk8AHxoEeiALuK4ap0Avg" client="_7PEtUHxlEeiALuK4ap0Avg" supplier="_Px2N0HxmEeiALuK4ap0Avg" contract="_Px2N0HxmEeiALuK4ap0Avg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Px2N0HxmEeiALuK4ap0Avg" name="IColumnProducer">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WHwnAHxmEeiALuK4ap0Avg" name="requestValues">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_kG6CcHxmEeiALuK4ap0Avg" name="return" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nSqMwHxmEeiALuK4ap0Avg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nS_j8HxmEeiALuK4ap0Avg" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_p6kDIHxmEeiALuK4ap0Avg" name="requestNominals">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_vvkusHxmEeiALuK4ap0Avg" name="return" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_KRre8HxoEeiALuK4ap0Avg" client="_Px2N0HxmEeiALuK4ap0Avg" supplier="__l8NEHv7EeiIiN0sK408yA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_KN7x8HxpEeiALuK4ap0Avg" name="SelectionComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_ZQZEgHxpEeiALuK4ap0Avg" name="title" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_b7mGgHxpEeiALuK4ap0Avg" name="attributeA" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_ewXUMHxpEeiALuK4ap0Avg" name="attributeB" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_zztLIHxpEeiALuK4ap0Avg" name="nominalComparison" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_DJ4D4HxqEeiALuK4ap0Avg" name="Port5" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOXbMHxqEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="__l8NEHv7EeiIiN0sK408yA" contract="__l8NEHv7EeiIiN0sK408yA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_JEwt8HxqEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="__l8NEHv7EeiIiN0sK408yA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_IwcOUHxrEeiALuK4ap0Avg" name="IRun">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LkJsEHxrEeiALuK4ap0Avg" name="start">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_PqhEgHxrEeiALuK4ap0Avg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QXh7gHxrEeiALuK4ap0Avg" name="stop">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_T9hKwHxrEeiALuK4ap0Avg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_XJWNkHxrEeiALuK4ap0Avg" name="ChartComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_ZbTCEHxrEeiALuK4ap0Avg" name="title" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_d01OIHxrEeiALuK4ap0Avg" name="Port2" type="_XJWNkHxrEeiALuK4ap0Avg" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_0GhHgHxrEeiALuK4ap0Avg" client="_XJWNkHxrEeiALuK4ap0Avg" supplier="_IwcOUHxrEeiALuK4ap0Avg" contract="_IwcOUHxrEeiALuK4ap0Avg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_kP5NEHxrEeiALuK4ap0Avg" client="_XJWNkHxrEeiALuK4ap0Avg" supplier="_Px2N0HxmEeiALuK4ap0Avg"/>
 </uml:Model>
