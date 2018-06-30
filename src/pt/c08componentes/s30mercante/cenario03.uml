@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_rJLeQGOWEeen-u9s-kC9LA" name="cenario03">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_rVElMGOWEeen-u9s-kC9LA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_zrFN4GOWEeen-u9s-kC9LA" name="Planeta">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zrFN4WOWEeen-u9s-kC9LA" name="listaMercadorias" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zrFN4mOWEeen-u9s-kC9LA" name="lista" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrFN42OWEeen-u9s-kC9LA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zrFN5GOWEeen-u9s-kC9LA" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zrFN5WOWEeen-u9s-kC9LA" name="precoCompraMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zrFN5mOWEeen-u9s-kC9LA" name="mercadoria">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zrFN52OWEeen-u9s-kC9LA" name="preco" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zrFN6GOWEeen-u9s-kC9LA" name="precoVendaMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zrFN6WOWEeen-u9s-kC9LA" name="mercadoria">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zrFN6mOWEeen-u9s-kC9LA" name="preco" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4-uRwGOWEeen-u9s-kC9LA" name="PlanetaPindora">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_c4HsEGOZEeen-u9s-kC9LA" name="gerenciadormercadorias" type="_arj_0GOXEeen-u9s-kC9LA" association="_c28nYGOZEeen-u9s-kC9LA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c4HsEWOZEeen-u9s-kC9LA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c4HsEmOZEeen-u9s-kC9LA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4-uRxGOWEeen-u9s-kC9LA" name="listaMercadorias" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4-uRxWOWEeen-u9s-kC9LA" name="lista" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4-uRxmOWEeen-u9s-kC9LA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4-uRx2OWEeen-u9s-kC9LA" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4-uRyGOWEeen-u9s-kC9LA" name="precoCompraMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4-uRyWOWEeen-u9s-kC9LA" name="mercadoria">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4-uRymOWEeen-u9s-kC9LA" name="preco" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4-uRy2OWEeen-u9s-kC9LA" name="precoVendaMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4-uRzGOWEeen-u9s-kC9LA" name="mercadoria">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4-uRzWOWEeen-u9s-kC9LA" name="preco" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6Pt_kGOWEeen-u9s-kC9LA" name="Mercadoria">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Pt_kWOWEeen-u9s-kC9LA" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Pt_kmOWEeen-u9s-kC9LA" name="precoCompra" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Pt_k2OWEeen-u9s-kC9LA" name="precoVenda" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Pt_lGOWEeen-u9s-kC9LA" name="quantidade" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7wo_wGOWEeen-u9s-kC9LA" name="PlanetaZeta">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qQkT42OZEeen-u9s-kC9LA" name="gerenciadormercadorias" type="_arj_0GOXEeen-u9s-kC9LA" association="_qQkT4GOZEeen-u9s-kC9LA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qQkT5GOZEeen-u9s-kC9LA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qQkT5WOZEeen-u9s-kC9LA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7wo_xGOWEeen-u9s-kC9LA" name="todasMercadorias">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7wo_xWOWEeen-u9s-kC9LA" name="mercadorias" direction="return">
+        <type xmi:type="uml:Class" href="cenario01.uml#_T0Eb8FzmEeeMd-0SzaSpMw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7wo_xmOWEeen-u9s-kC9LA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7wo_x2OWEeen-u9s-kC9LA" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7wo_yGOWEeen-u9s-kC9LA" name="listaMercadorias" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7wo_yWOWEeen-u9s-kC9LA" name="lista" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7wo_ymOWEeen-u9s-kC9LA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7wo_y2OWEeen-u9s-kC9LA" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7wo_zGOWEeen-u9s-kC9LA" name="precoCompraMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7wo_zWOWEeen-u9s-kC9LA" name="mercadoria">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7wo_zmOWEeen-u9s-kC9LA" name="preco" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7wo_z2OWEeen-u9s-kC9LA" name="precoVendaMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7wo_0GOWEeen-u9s-kC9LA" name="mercadoria">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7wo_0WOWEeen-u9s-kC9LA" name="preco" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_arj_0GOXEeen-u9s-kC9LA" name="GerenciadorMercadorias">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tihewGOXEeen-u9s-kC9LA" name="primeiraMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-m0GMGOXEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CqrkQGOYEeen-u9s-kC9LA" name="proximaMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IzbEIGOYEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KoSUAGOYEeen-u9s-kC9LA" name="lerMercadoria">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QxGsYGOYEeen-u9s-kC9LA" name="nome">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VRqGcGOYEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_mQL5kGOXEeen-u9s-kC9LA" client="_4-uRwGOWEeen-u9s-kC9LA" supplier="_zrFN4GOWEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_m-6n0GOXEeen-u9s-kC9LA" client="_7wo_wGOWEeen-u9s-kC9LA" supplier="_zrFN4GOWEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_nl7kgGOXEeen-u9s-kC9LA" client="_84_u8GOWEeen-u9s-kC9LA" supplier="_zrFN4GOWEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_BNVAAGOZEeen-u9s-kC9LA" client="_nBiBgGOYEeen-u9s-kC9LA" supplier="_arj_0GOXEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_CEIFIGOZEeen-u9s-kC9LA" client="_9_5soGOWEeen-u9s-kC9LA" supplier="_arj_0GOXEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_c28nYGOZEeen-u9s-kC9LA" name="mercadoriasPlaneta" memberEnd="_c4HsEGOZEeen-u9s-kC9LA _c4HsE2OZEeen-u9s-kC9LA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c28nYWOZEeen-u9s-kC9LA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c3GYYGOZEeen-u9s-kC9LA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_c4HsE2OZEeen-u9s-kC9LA" name="planetapindora" type="_4-uRwGOWEeen-u9s-kC9LA" association="_c28nYGOZEeen-u9s-kC9LA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_63oz0GOZEeen-u9s-kC9LA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_63oz0WOZEeen-u9s-kC9LA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qQkT4GOZEeen-u9s-kC9LA" name="grupoMercadorias" memberEnd="_qQkT42OZEeen-u9s-kC9LA _qQkT5mOZEeen-u9s-kC9LA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qQkT4WOZEeen-u9s-kC9LA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qQkT4mOZEeen-u9s-kC9LA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qQkT5mOZEeen-u9s-kC9LA" name="planetazeta" type="_7wo_wGOWEeen-u9s-kC9LA" association="_qQkT4GOZEeen-u9s-kC9LA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J9rl4GOaEeeXOp0JVSIiKA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J-CyQGOaEeeXOp0JVSIiKA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zQNvcGOZEeen-u9s-kC9LA" name="mercadorias" memberEnd="_zQNvc2OZEeen-u9s-kC9LA _zQNvdmOZEeen-u9s-kC9LA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zQNvcWOZEeen-u9s-kC9LA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zQNvcmOZEeen-u9s-kC9LA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zQNvdmOZEeen-u9s-kC9LA" name="planetabantor" type="_84_u8GOWEeen-u9s-kC9LA" association="_zQNvcGOZEeen-u9s-kC9LA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YkT4EGOaEee4gKdcLv6ujA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YkmL8GOaEee4gKdcLv6ujA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_2mAKEGOaEee4gKdcLv6ujA" name="ComponentePlaneta">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_m50IkGObEee4gKdcLv6ujA" name="Port1" type="_arj_0GOXEeen-u9s-kC9LA" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_nwD0EGObEee4gKdcLv6ujA" name="Port2" type="_zrFN4GOWEeen-u9s-kC9LA" aggregation="composite"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_84_u8GOWEeen-u9s-kC9LA" name="PlanetaBantor">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zQNvc2OZEeen-u9s-kC9LA" name="gerenciadormercadorias" type="_arj_0GOXEeen-u9s-kC9LA" association="_zQNvcGOZEeen-u9s-kC9LA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zQNvdGOZEeen-u9s-kC9LA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zQNvdWOZEeen-u9s-kC9LA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_84_u9GOWEeen-u9s-kC9LA" name="listaMercadorias" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_84_u9WOWEeen-u9s-kC9LA" name="lista" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_84_u9mOWEeen-u9s-kC9LA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_84_u92OWEeen-u9s-kC9LA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_84_u-GOWEeen-u9s-kC9LA" name="precoCompraMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_84_u-WOWEeen-u9s-kC9LA" name="mercadoria">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_84_u-mOWEeen-u9s-kC9LA" name="preco" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_84_u-2OWEeen-u9s-kC9LA" name="precoVendaMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_84_u_GOWEeen-u9s-kC9LA" name="mercadoria">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_84_u_WOWEeen-u9s-kC9LA" name="preco" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_47ezsGOaEee4gKdcLv6ujA" name="ComponenteBanco">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_bEN-IGOcEee4gKdcLv6ujA" name="Port1" type="_arj_0GOXEeen-u9s-kC9LA" aggregation="composite"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_9_5soGOWEeen-u9s-kC9LA" name="BancoDadosMercadorias">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IS4GYGOZEeen-u9s-kC9LA" name="primeiraMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IS4GYWOZEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IS4GYmOZEeen-u9s-kC9LA" name="proximaMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IS4GY2OZEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ISuVYGOZEeen-u9s-kC9LA" name="lerMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ISuVYWOZEeen-u9s-kC9LA" name="nome">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ISuVYmOZEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+      </ownedOperation>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_6Rar4GOaEee4gKdcLv6ujA" name="ComponenteVetor">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_7pEJYGOcEee4gKdcLv6ujA" name="Port1" type="_arj_0GOXEeen-u9s-kC9LA" aggregation="composite"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_nBiBgGOYEeen-u9s-kC9LA" name="VetorMercadorias">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uzuLcGOYEeen-u9s-kC9LA" name="vetor" visibility="private" type="_6Pt_kGOWEeen-u9s-kC9LA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_776JsGOYEeen-u9s-kC9LA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_78DToGOYEeen-u9s-kC9LA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FUdNdWOZEeen-u9s-kC9LA" name="primeiraMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FUdNdmOZEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FUdNc2OZEeen-u9s-kC9LA" name="proximaMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FUdNdGOZEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FUdNcGOZEeen-u9s-kC9LA" name="lerMercadoria">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FUdNcWOZEeen-u9s-kC9LA" name="nome">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FUdNcmOZEeen-u9s-kC9LA" name="return" type="_6Pt_kGOWEeen-u9s-kC9LA" direction="return"/>
+      </ownedOperation>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_EDEWsGOcEee4gKdcLv6ujA" client="_arj_0GOXEeen-u9s-kC9LA" supplier="_arj_0GOXEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_NfJPkGOcEee4gKdcLv6ujA" client="_nwD0EGObEee4gKdcLv6ujA" supplier="_84_u8GOWEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_OUbRwGOcEee4gKdcLv6ujA" client="_m50IkGObEee4gKdcLv6ujA" supplier="_84_u8GOWEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_korW8GOcEee4gKdcLv6ujA" client="_bEN-IGOcEee4gKdcLv6ujA" supplier="_9_5soGOWEeen-u9s-kC9LA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_KGuFwGOdEee4gKdcLv6ujA" client="_7pEJYGOcEee4gKdcLv6ujA" supplier="_nBiBgGOYEeen-u9s-kC9LA"/>
+</uml:Model>

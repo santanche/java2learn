@@ -1,15 +1,15 @@
-package pt.c08componentes.s20ds.s03component;
+package pt.c08componentes.s20catalog.s10ds;
 
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
-public class DataSet {
+public class DataSetComponent implements IDataSet {
 
   private String dataSource = null;
 
   private Instances instances = null;
   
-  public DataSet() {
+  public DataSetComponent() {
     /* nothing */
   }
 
@@ -25,6 +25,10 @@ public class DataSet {
       readDS();
   }
   
+  public Instances requestInstances() {
+    return instances;
+  }
+  
   private void readDS() {
     try {
       DataSource wekads = new DataSource(dataSource);
@@ -36,6 +40,11 @@ public class DataSet {
     } catch (Exception e) {
       e.printStackTrace();
     }
+  }
+  
+  @Override
+  public String toString() {
+    return (instances == null ? "*** empty ***" : instances.toString());
   }
 
 }

@@ -17,7 +17,7 @@ public class ZombieHealthTree {
     BufferedReader readerTrain, readerTest;
     try {
       readerTrain = new BufferedReader(
-                     new FileReader("db/weka/zombie-health-spreadsheet-ml-training.arff"));
+                     new FileReader("db/datasets/zombie/weka/zombie-health-spreadsheet-ml-training.arff"));
       Instances dataTrain = new Instances(readerTrain);
       readerTrain.close();
       // setting class attribute
@@ -34,7 +34,7 @@ public class ZombieHealthTree {
       System.out.println(eval.toSummaryString("\nResults\n======\n", false));
       
       readerTest = new BufferedReader(
-                    new FileReader("db/weka/zombie-health-spreadsheet-ml-test.arff"));
+                    new FileReader("db/datasets/zombie/weka/zombie-health-spreadsheet-ml-test.arff"));
       Instances dataTest = new Instances(readerTest);
       readerTest.close();
       dataTest.setClassIndex(dataTrain.numAttributes() - 1);

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_toeXYHv6EeiIiN0sK408yA" name="catalog" visibility="public">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_tyAG0Hv6EeiIiN0sK408yA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_unztcHv6EeiIiN0sK408yA" name="DataSetComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_6rP14HwVEeir7PNmI2Fu9g" name="dataSource" visibility="public" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ohZfIHwWEeir7PNmI2Fu9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ohiCAHwWEeir7PNmI2Fu9g" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_bJQEMHwUEeir7PNmI2Fu9g" client="_unztcHv6EeiIiN0sK408yA" supplier="__l8NEHv7EeiIiN0sK408yA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1Y_38Hv7EeiIiN0sK408yA" name="DataSet">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_reLgsHwTEeir7PNmI2Fu9g" client="_1Y_38Hv7EeiIiN0sK408yA" supplier="__l8NEHv7EeiIiN0sK408yA" contract="__l8NEHv7EeiIiN0sK408yA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="__l8NEHv7EeiIiN0sK408yA" name="IDataSet">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bjTP0Hv8EeiIiN0sK408yA" name="requestInstances" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_i9LncHv8EeiIiN0sK408yA" name="instances" type="_SUk2cHv8EeiIiN0sK408yA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8XjwEHv8EeiIiN0sK408yA" name="getDataSource">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Fiw7YHv9EeiIiN0sK408yA" name="dataSource" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_biPocHwTEeir7PNmI2Fu9g" name="setDataSource" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_mCJ84HwTEeir7PNmI2Fu9g" name="dataSource">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SUk2cHv8EeiIiN0sK408yA" name="Instances"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_x4oboHwTEeir7PNmI2Fu9g" client="__l8NEHv7EeiIiN0sK408yA" supplier="_SUk2cHv8EeiIiN0sK408yA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_QQkyMHxbEeiLipC-5Aq0AQ" name="IConsoleUpdate">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YnI0gHxbEeiLipC-5Aq0AQ" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_chJL8HxbEeiLipC-5Aq0AQ" name="ConsoleComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_TgKowHxdEeiLipC-5Aq0AQ" name="" type="_Y5NKAHxdEeiLipC-5Aq0AQ" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_K6Mt8HxcEeiLipC-5Aq0AQ" client="_chJL8HxbEeiLipC-5Aq0AQ" supplier="_QQkyMHxbEeiLipC-5Aq0AQ" contract="_QQkyMHxbEeiLipC-5Aq0AQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_zgeZAHxcEeiLipC-5Aq0AQ" name="Object"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Y5NKAHxdEeiLipC-5Aq0AQ" name="IConsole"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_h4VoMHxdEeiLipC-5Aq0AQ" client="_Y5NKAHxdEeiLipC-5Aq0AQ" supplier="_zgeZAHxcEeiLipC-5Aq0AQ"/>
+</uml:Model>
