@@ -24,6 +24,10 @@ public class ChartBubbleComponent implements IChart {
 
   private SwingWrapper<BubbleChart> window = null;
   
+  public void connect(IColumnProducer producer) {
+    connect(producer, ChartParameter.X_AXIS);
+  }
+  
   public void connect(IColumnProducer producer, ChartParameter role) {
     switch (role) {
       case X_AXIS:   xProducer = producer; break;

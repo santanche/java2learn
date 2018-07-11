@@ -71,13 +71,18 @@ public class ProjectionComponent implements IProjection {
     Instances instances = provider.requestInstances();
     
     Attribute attr = findAttribute(instances);
+    
+    boolean isNominal = attr.isNominal();
+    
     if (attr != null) {
       int index = attr.index();
 
       if (index != -1) {
         nominals = new String[instances.size()];
         for (int i = 0; i < nominals.length; i++)
-          nominals[i] = instances.get(i).stringValue(index);
+          nominals[i] = (isNominal)?
+                          instances.get(i).stringValue(index) :
+                          Double.toString(instances.get(i).value(index));
       }
     }
     

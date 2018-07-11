@@ -1,6 +1,6 @@
 package pt.c08componentes.s20catalog.s40selection;
 
-public class FilterComponent implements IFilter {
+public abstract class FilterComponent implements IFilter {
   private double valueParameter;
   private String nominalParameter;
 
