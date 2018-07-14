@@ -2,7 +2,7 @@ package pt.c08componentes.s10statistics.s04required;
 
 import pt.c08componentes.s10statistics.s04dcc.IStatistics;
 
-public class StatisticsClientComponent implements IStatisticsClient, IStatisticsReceptacle {
+public class StatisticsClientComponent implements IStatisticsClient {
     public final static int STANDARD_SIZE = 5;
    
     private int size;

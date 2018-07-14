@@ -10,8 +10,7 @@ public class AppStatistics04
        IStatistics componentStat = new StatisticsComponent();
        IStatisticsClient componentClient = new StatisticsClientComponent();
        
-       IStatisticsReceptacle componentClientReceptacle = (IStatisticsReceptacle)componentClient;
-       componentClientReceptacle.connect(componentStat);
+       componentClient.connect(componentStat);
        
        componentClient.start();
     }

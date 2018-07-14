@@ -43,12 +43,13 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_3ZD5gFwAEeaXS82AWcFiWw" name="PortClientRequired" visibility="package" type="_jjQzwFwAEeaXS82AWcFiWw" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_gZ8AcFwCEeaXS82AWcFiWw" name="PortClientProvided" visibility="package" type="_jjQzwFwAEeaXS82AWcFiWw" aggregation="composite"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uGMaMFy0EeaKKMuCykthLw" client="_jjQzwFwAEeaXS82AWcFiWw" supplier="_12jvgFwBEeaXS82AWcFiWw" contract="_12jvgFwBEeaXS82AWcFiWw"/>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_9p6XEFwBEeaXS82AWcFiWw" name="StatisticsClient"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_9p6XEFwBEeaXS82AWcFiWw" name="StatisticsClient">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rUy8cIeeEeiFq-d7ARn8NQ" client="_9p6XEFwBEeaXS82AWcFiWw" supplier="_gVBcMIeeEeiFq-d7ARn8NQ" contract="_gVBcMIeeEeiFq-d7ARn8NQ"/>
+    </nestedClassifier>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_12jvgFwBEeaXS82AWcFiWw" name="IStatisticsClient">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_12jvgFwBEeaXS82AWcFiWw" name="IStatisticsRun">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OUNxMFwCEeaXS82AWcFiWw" name="start"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Realization" xmi:id="_F0ADoFwCEeaXS82AWcFiWw" client="_9p6XEFwBEeaXS82AWcFiWw" supplier="_12jvgFwBEeaXS82AWcFiWw"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_A0XEIFyiEeaKKMuCykthLw" client="_gZ8AcFwCEeaXS82AWcFiWw" supplier="_9p6XEFwBEeaXS82AWcFiWw"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_BjbJkFyiEeaKKMuCykthLw" client="_3ZD5gFwAEeaXS82AWcFiWw" supplier="_9p6XEFwBEeaXS82AWcFiWw"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_DkFZwFyiEeaKKMuCykthLw" client="_zj9fwFvKEeaiqpEaYKZ9-g" supplier="_zj9fwFvKEeaiqpEaYKZ9-g"/>
@@ -59,4 +60,8 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_6SLS0Id_Eeim19B9YuKmRg" client="_qzLOMId_Eeim19B9YuKmRg" supplier="_zj9fwFvKEeaiqpEaYKZ9-g"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_gVBcMIeeEeiFq-d7ARn8NQ" name="IStatisticsClient">
+    <generalization xmi:type="uml:Generalization" xmi:id="_tRDNwIeeEeiFq-d7ARn8NQ" general="_qzLOMId_Eeim19B9YuKmRg"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_t4eaIIeeEeiFq-d7ARn8NQ" general="_12jvgFwBEeaXS82AWcFiWw"/>
+  </packagedElement>
 </uml:Model>

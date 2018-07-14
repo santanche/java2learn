@@ -13,10 +13,6 @@
         <element xmi:type="uml:Property" href="statistics-class.uml#_Lexg0FvQEeaiqpEaYKZ9-g"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Lez9EVvQEeaiqpEaYKZ9-g"/>
       </children>
-      <children xmi:type="notation:Shape" xmi:id="_AYbuIId6Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
-        <element xmi:type="uml:Property" href="statistics-class.uml#_AYTyUId6Eeim19B9YuKmRg"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_AYbuIYd6Eeim19B9YuKmRg"/>
-      </children>
       <children xmi:type="notation:Shape" xmi:id="_DCaBEId6Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
         <element xmi:type="uml:Property" href="statistics-class.uml#_DCTTYId6Eeim19B9YuKmRg"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_DCaBEYd6Eeim19B9YuKmRg"/>

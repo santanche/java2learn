@@ -54,10 +54,6 @@
         <element xmi:type="uml:Property" href="statistics-interface.uml#_Y7oEUFvMEeaiqpEaYKZ9-g"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Y70RkVvMEeaiqpEaYKZ9-g"/>
       </children>
-      <children xmi:type="notation:Shape" xmi:id="_3d9tgId5Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
-        <element xmi:type="uml:Property" href="statistics-interface.uml#_3dyuYId5Eeim19B9YuKmRg"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_3d9tgYd5Eeim19B9YuKmRg"/>
-      </children>
       <children xmi:type="notation:Shape" xmi:id="_60EGoId5Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
         <element xmi:type="uml:Property" href="statistics-interface.uml#_6z8x4Id5Eeim19B9YuKmRg"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_60EGoYd5Eeim19B9YuKmRg"/>
