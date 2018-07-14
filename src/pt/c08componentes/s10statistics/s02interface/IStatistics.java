@@ -11,19 +11,19 @@ public interface IStatistics {
     * Inserts a value into the set.
     * @param value the value to be inserted into the set
     */
-    public void insertValue(float value);
+    public void insertValue(double value);
 
     
     /**
      * Calculates the sum of the values in the set. Returns zero if the set is empty.
      * @return sum of the values in the set
      */
-    public float sum();
+    public double sum();
   
     
     /**
      * Calculates the average of the values in the set. Returns zero if the set is empty.
      * @return average of the values in the set
      */
-    public float average();
+    public double average();
 }

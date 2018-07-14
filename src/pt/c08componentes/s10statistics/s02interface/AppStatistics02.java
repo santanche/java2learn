@@ -15,6 +15,8 @@ public class AppStatistics02 {
        
            System.out.println("-- somatorio: " + stat.sum());
            System.out.println("-- media: " + stat.average());
+           
+           
        } catch (Exception e) {
            e.printStackTrace();
        }

@@ -20,19 +20,22 @@
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_eUifMFvLEeaiqpEaYKZ9-g" name="Statistics">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Y7oEUFvMEeaiqpEaYKZ9-g" name="valueSet" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fRuqwFvMEeaiqpEaYKZ9-g"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fSF3IFvMEeaiqpEaYKZ9-g" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_3dyuYId5Eeim19B9YuKmRg" name="size" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_6z8x4Id5Eeim19B9YuKmRg" name="last" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_mKRFUFvLEeaiqpEaYKZ9-g" client="_eUifMFvLEeaiqpEaYKZ9-g" supplier="_zj9fwFvKEeaiqpEaYKZ9-g" contract="_zj9fwFvKEeaiqpEaYKZ9-g"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_kDn2AFvYEeaYn-IksUdGhQ" name="StatisticsComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_pFFEEFvgEeaYn-IksUdGhQ" name="Port1" type="_kDn2AFvYEeaYn-IksUdGhQ" aggregation="composite"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_eUifMFvLEeaiqpEaYKZ9-g" name="Statistics">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Y7oEUFvMEeaiqpEaYKZ9-g" name="valueSet" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fRuqwFvMEeaiqpEaYKZ9-g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fSF3IFvMEeaiqpEaYKZ9-g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gHR68Id5Eeim19B9YuKmRg" name="size" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jn1QkId5Eeim19B9YuKmRg" name="last" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_mKRFUFvLEeaiqpEaYKZ9-g" client="_eUifMFvLEeaiqpEaYKZ9-g" supplier="_zj9fwFvKEeaiqpEaYKZ9-g" contract="_zj9fwFvKEeaiqpEaYKZ9-g"/>
+    </nestedClassifier>
   </packagedElement>
-  <packagedElement xmi:type="uml:Component" xmi:id="_kDn2AFvYEeaYn-IksUdGhQ" name="StatisticsComponent"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_-Jif4FvhEeaYn-IksUdGhQ" client="_pFFEEFvgEeaYn-IksUdGhQ" supplier="_eUifMFvLEeaiqpEaYKZ9-g"/>
 </uml:Model>

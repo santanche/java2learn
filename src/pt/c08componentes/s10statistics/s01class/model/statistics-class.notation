@@ -13,6 +13,14 @@
         <element xmi:type="uml:Property" href="statistics-class.uml#_Lexg0FvQEeaiqpEaYKZ9-g"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Lez9EVvQEeaiqpEaYKZ9-g"/>
       </children>
+      <children xmi:type="notation:Shape" xmi:id="_AYbuIId6Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="statistics-class.uml#_AYTyUId6Eeim19B9YuKmRg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AYbuIYd6Eeim19B9YuKmRg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_DCaBEId6Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="statistics-class.uml#_DCTTYId6Eeim19B9YuKmRg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DCaBEYd6Eeim19B9YuKmRg"/>
+      </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_B6aOoVvQEeaiqpEaYKZ9-g"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_B6aOolvQEeaiqpEaYKZ9-g"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_B6aOo1vQEeaiqpEaYKZ9-g"/>
@@ -45,7 +53,7 @@
     <element xmi:type="uml:Class" href="statistics-class.uml#_B6XyYFvQEeaiqpEaYKZ9-g"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B6ZnkVvQEeaiqpEaYKZ9-g" x="47" y="59" width="242"/>
   </children>
-  <styles xmi:type="notation:StringValueStyle" xmi:id="_9GsoAVvPEeaiqpEaYKZ9-g" name="diagram_compatibility_version" stringValue="1.3.0"/>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_9GsoAVvPEeaiqpEaYKZ9-g" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_9GsoAlvPEeaiqpEaYKZ9-g"/>
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="__I1-YHRwEeee5LxNU_IwUg" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
     <owner xmi:type="uml:Model" href="statistics-class.uml#_9GcwYFvPEeaiqpEaYKZ9-g"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jMwn0FvKEeaiqpEaYKZ9-g" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
-  <children xmi:type="notation:Shape" xmi:id="_zj_8AFvKEeaiqpEaYKZ9-g" type="Interface_Shape" fillColor="8454143">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jMwn0FvKEeaiqpEaYKZ9-g" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_zj_8AFvKEeaiqpEaYKZ9-g" type="Interface_Shape">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N3lkkFvLEeaiqpEaYKZ9-g" source="PapyrusCSSForceValue">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N3mLoFvLEeaiqpEaYKZ9-g" key="fillColor" value="true"/>
     </eAnnotations>
@@ -41,7 +41,10 @@
     <element xmi:type="uml:Interface" href="statistics-interface.uml#_zj9fwFvKEeaiqpEaYKZ9-g"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zj_8AVvKEeaiqpEaYKZ9-g" x="95" y="72" width="228" height="115"/>
   </children>
-  <children xmi:type="notation:Shape" xmi:id="_eUmJkFvLEeaiqpEaYKZ9-g" type="Class_Shape" fillColor="8454143">
+  <children xmi:type="notation:Shape" xmi:id="_eUmJkFvLEeaiqpEaYKZ9-g" type="Class_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tqfz4IdvEeim19B9YuKmRg" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tqfz4YdvEeim19B9YuKmRg" key="fillColor" value="true"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_eUmwoFvLEeaiqpEaYKZ9-g" type="Class_NameLabel"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_eUmwoVvLEeaiqpEaYKZ9-g" type="Class_FloatingNameLabel">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_eUmwolvLEeaiqpEaYKZ9-g" y="5"/>
@@ -50,6 +53,14 @@
       <children xmi:type="notation:Shape" xmi:id="_Y70RkFvMEeaiqpEaYKZ9-g" type="Property_ClassAttributeLabel">
         <element xmi:type="uml:Property" href="statistics-interface.uml#_Y7oEUFvMEeaiqpEaYKZ9-g"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Y70RkVvMEeaiqpEaYKZ9-g"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_3d9tgId5Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="statistics-interface.uml#_3dyuYId5Eeim19B9YuKmRg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3d9tgYd5Eeim19B9YuKmRg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_60EGoId5Eeim19B9YuKmRg" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="statistics-interface.uml#_6z8x4Id5Eeim19B9YuKmRg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_60EGoYd5Eeim19B9YuKmRg"/>
       </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_eUmwpFvLEeaiqpEaYKZ9-g"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_eUmwpVvLEeaiqpEaYKZ9-g"/>
@@ -71,9 +82,9 @@
     <element xmi:type="uml:Class" href="statistics-interface.uml#_eUifMFvLEeaiqpEaYKZ9-g"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eUmJkVvLEeaiqpEaYKZ9-g" x="118" y="256" width="165"/>
   </children>
-  <styles xmi:type="notation:StringValueStyle" xmi:id="_jMwn0VvKEeaiqpEaYKZ9-g" name="diagram_compatibility_version" stringValue="1.2.0"/>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_jMwn0VvKEeaiqpEaYKZ9-g" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_jMwn0lvKEeaiqpEaYKZ9-g"/>
-  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_jMwn01vKEeaiqpEaYKZ9-g">
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_sXYmMIdvEeim19B9YuKmRg" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
     <owner xmi:type="uml:Model" href="statistics-interface.uml#_jMnd4FvKEeaiqpEaYKZ9-g"/>
   </styles>
   <element xmi:type="uml:Model" href="statistics-interface.uml#_jMnd4FvKEeaiqpEaYKZ9-g"/>

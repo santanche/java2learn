@@ -15,6 +15,15 @@ public class AppStatistics03b {
        
            System.out.println("-- somatorio: " + stat.sum());
            System.out.println("-- media: " + stat.average());
+           
+           stat.setSize(5);
+           System.out.println("inserido valor: " + 40.0f);
+           stat.insertValue(40.0f);
+           System.out.println("inserido valor: " + 80.0f);
+           stat.insertValue(20.0f);
+           System.out.println("-- somatorio: " + stat.sum());
+           System.out.println("-- media: " + stat.average());
+           
        } catch (Exception e) {
            e.printStackTrace();
        }

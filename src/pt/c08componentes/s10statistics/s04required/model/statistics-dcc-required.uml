@@ -29,6 +29,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fRuqwFvMEeaiqpEaYKZ9-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fSF3IFvMEeaiqpEaYKZ9-g" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZFqDkId_Eeim19B9YuKmRg" name="size" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fssB8Id_Eeim19B9YuKmRg" name="last" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
       <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_mKRFUFvLEeaiqpEaYKZ9-g" client="_eUifMFvLEeaiqpEaYKZ9-g" supplier="_zj9fwFvKEeaiqpEaYKZ9-g" contract="_zj9fwFvKEeaiqpEaYKZ9-g"/>
     </nestedClassifier>
   </packagedElement>
@@ -47,4 +53,10 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_BjbJkFyiEeaKKMuCykthLw" client="_3ZD5gFwAEeaXS82AWcFiWw" supplier="_9p6XEFwBEeaXS82AWcFiWw"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_DkFZwFyiEeaKKMuCykthLw" client="_zj9fwFvKEeaiqpEaYKZ9-g" supplier="_zj9fwFvKEeaiqpEaYKZ9-g"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_nvvOcFy0EeaKKMuCykthLw" client="_jjQzwFwAEeaXS82AWcFiWw" supplier="_zj9fwFvKEeaiqpEaYKZ9-g"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_qzLOMId_Eeim19B9YuKmRg" name="IStatisticsReceptacle">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uCbYcId_Eeim19B9YuKmRg" name="connect">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_2Ml9gId_Eeim19B9YuKmRg" name="statistics" type="_zj9fwFvKEeaiqpEaYKZ9-g"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_6SLS0Id_Eeim19B9YuKmRg" client="_qzLOMId_Eeim19B9YuKmRg" supplier="_zj9fwFvKEeaiqpEaYKZ9-g"/>
 </uml:Model>

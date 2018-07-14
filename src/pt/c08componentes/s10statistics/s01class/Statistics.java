@@ -6,8 +6,8 @@ package pt.c08componentes.s10statistics.s01class;
  * @author Andre Santanche
  */
 public class Statistics {
-   private float valueSet[];
-   private int position;
+   private double valueSet[];
+   private int last;
    
    /*
     * Constructor
@@ -16,38 +16,38 @@ public class Statistics {
    public Statistics(int size)
    {
        super();
-       valueSet = new float[size];
-       position = 0;
+       valueSet = new double[size];
+       last = -1;
    }
 
    /*
     * IStatistics Interface
     ***********************/
    
-   public void insertValue(float value)
+   public void insertValue(double value)
    {
-      if (position < valueSet.length) {
-        valueSet[position] = value;
-        position++;
+      if (last < valueSet.length) {
+        last++;
+        valueSet[last] = value;
       }
    }
 
-   public float sum()
+   public double sum()
    {
-       float theSum = 0.0f;
+       double theSum = 0.0f;
        
-       for (int p = 0; p < position; p++)
+       for (int p = 0; p <= last; p++)
          theSum += valueSet[p];
        
        return theSum;
    }
 
-   public float average()
+   public double average()
    {
-       float avg = 0;
+       double avg = 0;
        
-       if (position > 0)
-         avg = sum() / position;
+       if (last > -1)
+         avg = sum() / (last + 1);
        
        return avg;
    }
