@@ -12,12 +12,21 @@ import weka.core.Instances;
 public class DiagnosticsComponent implements IDiagnostics {
   private IInstancesProducer iProducer;
   IColumnProducer cProducer;
+  IEHR ehrOutput;
   
   public void connect(IInstancesProducer producer) {
     iProducer = producer;
   }
   
-  public void diagnose(double[] symptoms) {
+  public void connect(IEHR ehr) {
+    this.ehrOutput = ehr;
+  }
+	
+  public void diagnose(String name, int age, double[] symptoms) {
+	sendEHR(new EHR(name, age, symptoms, ""));
+  }
+  
+  public void sendEHR(EHR ehrInput) {
     try {
       if (iProducer != null) {
         Instances dataTrain = iProducer.requestInstances();
@@ -36,12 +45,19 @@ public class DiagnosticsComponent implements IDiagnostics {
 	      
 	    System.out.println(eval.toSummaryString("\nResults\n======\n", false));
 
-	    Instance input = dataTrain.instance(0).copy(symptoms);
+	    Instance input = dataTrain.instance(0).copy(ehrInput.getSymptoms());
         double clsLabel = tree.classifyInstance(input);
         input.setClassValue(clsLabel);
+        
+        ehrInput.setDiagnostics(input.toString());
+        if (ehrOutput != null)
+        	ehrOutput.sendEHR(ehrInput);
 	      
+        /*
         System.out.println("===== Classification:");
 	    System.out.println(input);
+	    */
+	    
       }
     } catch (Exception e) {
       e.printStackTrace();
