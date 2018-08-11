@@ -181,4 +181,97 @@
       <end xmi:type="uml:ConnectorEnd" xmi:id="_GQpOMZgOEei1EP3hjU4_rg" partWithPort="_MDtq8JgMEei1EP3hjU4_rg" role="_eXIigJgNEei1EP3hjU4_rg"/>
     </ownedConnector>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_hW0kIJ1aEeiMJ5lEQS2n7A" name="IDiagnose">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OKv7YJ1bEeiMJ5lEQS2n7A" name="diagnose" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_a08WEJ1bEeiMJ5lEQS2n7A" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fnQOgJ1bEeiMJ5lEQS2n7A" name="age">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_mW5WUJ1bEeiMJ5lEQS2n7A" name="symptoms">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qjujIJ1bEeiMJ5lEQS2n7A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qkNEQJ1bEeiMJ5lEQS2n7A" value="*"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fCjJgJ1cEeiMJ5lEQS2n7A" name="diagnostics" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_0JSIIJ1bEeiMJ5lEQS2n7A" name="Diagnostics">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_2rUNwJ1gEeiMJ5lEQS2n7A" name="Port2" type="_Y46U8J1gEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_paU8AJ1kEeiMJ5lEQS2n7A" name="Port4" type="_-AqYwJ1iEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_MYF1gJ1cEeiMJ5lEQS2n7A" client="_0JSIIJ1bEeiMJ5lEQS2n7A" supplier="_hW0kIJ1aEeiMJ5lEQS2n7A" contract="_hW0kIJ1aEeiMJ5lEQS2n7A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_btIosJ1jEeiMJ5lEQS2n7A" client="_0JSIIJ1bEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A" contract="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_nm2s4J1cEeiMJ5lEQS2n7A" name="EHR">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_sbm1UJ1cEeiMJ5lEQS2n7A" name="Port1" type="_hW0kIJ1aEeiMJ5lEQS2n7A" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_2mc4sJ1cEeiMJ5lEQS2n7A" client="_hW0kIJ1aEeiMJ5lEQS2n7A" supplier="_hW0kIJ1aEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_9qBpIJ1cEeiMJ5lEQS2n7A" client="_hW0kIJ1aEeiMJ5lEQS2n7A" supplier="_hW0kIJ1aEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Y46U8J1gEeiMJ5lEQS2n7A" name="IAnamnesis">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Y46U8Z1gEeiMJ5lEQS2n7A" name="sendAnamnesis" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y46U8p1gEeiMJ5lEQS2n7A" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y46U851gEeiMJ5lEQS2n7A" name="age">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y46U9J1gEeiMJ5lEQS2n7A" name="symptoms">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y46U9Z1gEeiMJ5lEQS2n7A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y46U9p1gEeiMJ5lEQS2n7A" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ZDpv4J1hEeiMJ5lEQS2n7A" name="AnaminesisRegister">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_miZM8J1hEeiMJ5lEQS2n7A" client="_ZDpv4J1hEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A" contract="_Y46U8J1gEeiMJ5lEQS2n7A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-nXhgJ1kEeiMJ5lEQS2n7A" client="_ZDpv4J1hEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A" contract="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_zYwbYJ1hEeiMJ5lEQS2n7A" client="_hW0kIJ1aEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_DlXM4J1iEeiMJ5lEQS2n7A" name="EHRConsole">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_miclYJ1jEeiMJ5lEQS2n7A" name="Port1" type="_-AqYwJ1iEeiMJ5lEQS2n7A" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_b11HIJ1iEeiMJ5lEQS2n7A" client="_Y46U8J1gEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ojiv4J1iEeiMJ5lEQS2n7A" client="_Y46U8J1gEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-AqYwJ1iEeiMJ5lEQS2n7A" name="IEHR">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-AqYwZ1iEeiMJ5lEQS2n7A" name="sendEHR" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-AqYwp1iEeiMJ5lEQS2n7A" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-AqYw51iEeiMJ5lEQS2n7A" name="age">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-AqYxJ1iEeiMJ5lEQS2n7A" name="symptoms">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-AqYxZ1iEeiMJ5lEQS2n7A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-AqYxp1iEeiMJ5lEQS2n7A" value="*"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_UMbQUJ1jEeiMJ5lEQS2n7A" name="diagnostics">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NbQsQJ1oEeiMJ5lEQS2n7A" name="sendEHR">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ThwwcJ1oEeiMJ5lEQS2n7A" name="ehrObject" type="_x7PiQJ1mEeiMJ5lEQS2n7A"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_uvvW8J1jEeiMJ5lEQS2n7A" client="_-AqYwJ1iEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_zOQJoJ1jEeiMJ5lEQS2n7A" client="_-AqYwJ1iEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_x7PiQJ1mEeiMJ5lEQS2n7A" name="EHR">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_z2qGEJ1mEeiMJ5lEQS2n7A" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4WP20J1mEeiMJ5lEQS2n7A" name="age" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8m1iQJ1mEeiMJ5lEQS2n7A" name="symptoms" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FAG6UJ1nEeiMJ5lEQS2n7A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FALy0J1nEeiMJ5lEQS2n7A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GhWqoJ1nEeiMJ5lEQS2n7A" name="diagnosis" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
 </uml:Model>

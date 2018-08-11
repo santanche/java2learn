@@ -16,7 +16,7 @@ public class App90aDataSetDiagnostics {
         IDiagnostics diagnostics = new DiagnosticsComponent();
         diagnostics.connect(dataset);
         
-        diagnostics.update(symptoms);
+        diagnostics.diagnose(symptoms);
       } catch (Exception e) {
         e.printStackTrace();
       }

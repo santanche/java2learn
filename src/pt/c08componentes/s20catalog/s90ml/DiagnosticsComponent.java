@@ -17,7 +17,7 @@ public class DiagnosticsComponent implements IDiagnostics {
     iProducer = producer;
   }
   
-  public void update(double[] symptoms) {
+  public void diagnose(double[] symptoms) {
     try {
       if (iProducer != null) {
         Instances dataTrain = iProducer.requestInstances();
