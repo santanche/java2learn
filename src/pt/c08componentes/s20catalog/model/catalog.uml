@@ -71,6 +71,9 @@
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_DJ4D4HxqEeiALuK4ap0Avg" name="Port5" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_9BIDUHxxEeiALuK4ap0Avg" name="Port7" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_kuN10JgMEei1EP3hjU4_rg" name="Port8" visibility="private" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_cYsf4JgNEei1EP3hjU4_rg" name="Port9" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_eXIigJgNEei1EP3hjU4_rg" name="Port10" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOXbMHxqEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="__l8NEHv7EeiIiN0sK408yA" contract="__l8NEHv7EeiIiN0sK408yA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_JEwt8HxqEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="__l8NEHv7EeiIiN0sK408yA"/>
@@ -141,6 +144,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_TAWqsIU5EeixxbQVJmA-tw" name="valueParameter" aggregation="composite">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_lvUGcJgMEei1EP3hjU4_rg" name="Port4" type="_m0SNsHxxEeiALuK4ap0Avg" aggregation="composite"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xCr7YHxxEeiALuK4ap0Avg" client="_m0SNsHxxEeiALuK4ap0Avg" supplier="_0UuwYHxwEeiALuK4ap0Avg" contract="_0UuwYHxwEeiALuK4ap0Avg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_CxQO4HxyEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="_0UuwYHxwEeiALuK4ap0Avg"/>
@@ -163,4 +167,18 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_MU-2IIT9EeiJcP7K_0uOuQ" client="_Y5NKAHxdEeiLipC-5Aq0AQ" supplier="__l8NEHv7EeiIiN0sK408yA"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_MV47cIUFEeiJcP7K_0uOuQ" client="_Y5NKAHxdEeiLipC-5Aq0AQ" supplier="_Px2N0HxmEeiALuK4ap0Avg"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_HIgVMJgMEei1EP3hjU4_rg" name="CompleteSelectionComponent">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MDtq8JgMEei1EP3hjU4_rg" visibility="public" type="_KN7x8HxpEeiALuK4ap0Avg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bW6IMJgMEei1EP3hjU4_rg" type="_m0SNsHxxEeiALuK4ap0Avg"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_IbjcAJgNEei1EP3hjU4_rg" name="Port3" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_axKhYJgNEei1EP3hjU4_rg" name="Port4" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
+    <ownedConnector xmi:type="uml:Connector" xmi:id="_FV1LwJgOEei1EP3hjU4_rg" name="Connector5">
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_FV2Z4JgOEei1EP3hjU4_rg" role="_axKhYJgNEei1EP3hjU4_rg"/>
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_FV2Z4ZgOEei1EP3hjU4_rg" partWithPort="_MDtq8JgMEei1EP3hjU4_rg" role="_cYsf4JgNEei1EP3hjU4_rg"/>
+    </ownedConnector>
+    <ownedConnector xmi:type="uml:Connector" xmi:id="_GQonIJgOEei1EP3hjU4_rg" name="Connector6">
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_GQpOMJgOEei1EP3hjU4_rg" role="_IbjcAJgNEei1EP3hjU4_rg"/>
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_GQpOMZgOEei1EP3hjU4_rg" partWithPort="_MDtq8JgMEei1EP3hjU4_rg" role="_eXIigJgNEei1EP3hjU4_rg"/>
+    </ownedConnector>
+  </packagedElement>
 </uml:Model>
