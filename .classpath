@@ -21,5 +21,6 @@
 	<classpathentry kind="lib" path="lib/fluidweb-build20110523.jar"/>
 	<classpathentry kind="lib" path="lib/weka-3.8.2.jar"/>
 	<classpathentry kind="lib" path="lib/xchart-3.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/mqttv3-1.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
