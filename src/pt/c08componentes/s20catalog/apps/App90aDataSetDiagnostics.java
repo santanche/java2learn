@@ -13,18 +13,17 @@ public class App90aDataSetDiagnostics {
   public static void main(String args[])
   {
       try {
-        IDataSet dataset = new DataSetComponent();
-        dataset.setDataSource("db/datasets/zombie/weka/zombie-health-spreadsheet-ml-training.arff");
-        
         IAnamnesisRegister anamnesis = new AnamnesisRegisterComponent();
 
         IDiagnostics diagnostics = new DiagnosticsComponent();
-        diagnostics.connect(dataset);
-        
         anamnesis.connect(diagnostics);
         
         IEHRConsole console = new EHRConsoleComponent();
         diagnostics.connect(console);
+
+        IDataSet dataset = new DataSetComponent();
+        dataset.setDataSource("db/datasets/zombie/weka/zombie-health-spreadsheet-ml-training.arff");
+        diagnostics.connect(dataset);
         
         anamnesis.start();
       } catch (Exception e) {
