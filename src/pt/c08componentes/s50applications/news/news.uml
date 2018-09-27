@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xcNagKIUEei4EdDGD4_MUw" name="news">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_yIfRsKIUEei4EdDGD4_MUw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_2Ra18KIUEei4EdDGD4_MUw" name="Editor">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_0N-u0KIlEei4EdDGD4_MUw" name="Port1" type="_iRMrEKIjEei4EdDGD4_MUw" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_asAgoKL6Eei1aebQA-3EdA" client="_2Ra18KIUEei4EdDGD4_MUw" supplier="_iRMrEKIjEei4EdDGD4_MUw" contract="_iRMrEKIjEei4EdDGD4_MUw"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_v695EKL3Eei1aebQA-3EdA" name="Publicar pela Web"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Go6BwKIVEei4EdDGD4_MUw" name="Agregador">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_1lxBIKIlEei4EdDGD4_MUw" name="Port1" type="_iRMrEKIjEei4EdDGD4_MUw" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__l3NEKIlEei4EdDGD4_MUw" client="_Go6BwKIVEei4EdDGD4_MUw" supplier="_iRMrEKIjEei4EdDGD4_MUw" contract="_iRMrEKIjEei4EdDGD4_MUw"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_lpyM4KLmEei1aebQA-3EdA" name="Activity9"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_38PdUKL2Eei1aebQA-3EdA" name="Activity3"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ZsjR0KIVEei4EdDGD4_MUw" name="Apresentador">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_A3el8KImEei4EdDGD4_MUw" client="_ZsjR0KIVEei4EdDGD4_MUw" supplier="_iRMrEKIjEei4EdDGD4_MUw" contract="_iRMrEKIjEei4EdDGD4_MUw"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_Lrf2MKL3Eei1aebQA-3EdA" name="Activity4"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dqr6UKIgEei4EdDGD4_MUw" name="Noticia">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lbarsKIgEei4EdDGD4_MUw" name="topico">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wLbRoKIgEei4EdDGD4_MUw" name="titulo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zjbIMKIgEei4EdDGD4_MUw" name="resumo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_K7nEsKIjEei4EdDGD4_MUw" name="corpo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JGDrsKL8Eei1aebQA-3EdA" name="autor">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_iRMrEKIjEei4EdDGD4_MUw" name="INoticia">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mxa4gKIkEei4EdDGD4_MUw" name="send">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3DCF0KIkEei4EdDGD4_MUw" name="noticia" type="_dqr6UKIgEei4EdDGD4_MUw"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QS8Y8KInEei4EdDGD4_MUw" client="_iRMrEKIjEei4EdDGD4_MUw" supplier="_iRMrEKIjEei4EdDGD4_MUw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_YA6KMKInEei4EdDGD4_MUw" client="_iRMrEKIjEei4EdDGD4_MUw" supplier="_iRMrEKIjEei4EdDGD4_MUw"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_6V978KKBEeilCJoHGWRuEw" name="Activity9" node="__Nj9AKKBEeilCJoHGWRuEw _F6JJwKKCEeilCJoHGWRuEw _GLGW4KKCEeilCJoHGWRuEw _dAFKkKKCEeilCJoHGWRuEw _eU9S0KKCEeilCJoHGWRuEw _VtkdQKLlEei1aebQA-3EdA _p3OdsKLmEei1aebQA-3EdA _xZrigKLmEei1aebQA-3EdA _9uPEYKLmEei1aebQA-3EdA _ifNJcKL1Eei1aebQA-3EdA _jP4_gKL1Eei1aebQA-3EdA _mFlk0KL2Eei1aebQA-3EdA _m_dzIKL2Eei1aebQA-3EdA _IayTYKL3Eei1aebQA-3EdA _QVDbQKL3Eei1aebQA-3EdA _oeWWgKL3Eei1aebQA-3EdA _wnR9wKL9Eei1aebQA-3EdA _5q8WoKL9Eei1aebQA-3EdA _FfrI8KL-Eei1aebQA-3EdA _KhUd4KL-Eei1aebQA-3EdA _qUmpUKL-Eei1aebQA-3EdA __ITsUKL_Eei1aebQA-3EdA _Dx2DQKMAEei1aebQA-3EdA _MvU7oKMAEei1aebQA-3EdA _WGrskKMAEei1aebQA-3EdA _a-gXIKMAEei1aebQA-3EdA _nOp6IKMAEei1aebQA-3EdA _qwWfQKMAEei1aebQA-3EdA _vxdBoKMAEei1aebQA-3EdA _xLc6cKMAEei1aebQA-3EdA _9u-scKMAEei1aebQA-3EdA _GDdEEKMBEei1aebQA-3EdA _JoX8UKMBEei1aebQA-3EdA _JoaYkKMBEei1aebQA-3EdA _Joc00KMBEei1aebQA-3EdA _JogfMKMBEei1aebQA-3EdA _nqFccKMBEei1aebQA-3EdA _uBOksKMBEei1aebQA-3EdA _Zsf5MKRfEeio_dK3rurGmw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_RExj0KL-Eei1aebQA-3EdA" target="_FfrI8KL-Eei1aebQA-3EdA" source="_wnR9wKL9Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_RsAi8KL-Eei1aebQA-3EdA" target="_FfrI8KL-Eei1aebQA-3EdA" source="_5q8WoKL9Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SQJKwKL-Eei1aebQA-3EdA" target="_oeWWgKL3Eei1aebQA-3EdA" source="_FfrI8KL-Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_T6M40KL-Eei1aebQA-3EdA" target="_KhUd4KL-Eei1aebQA-3EdA" source="_IayTYKL3Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xOLwQKL-Eei1aebQA-3EdA" target="_qUmpUKL-Eei1aebQA-3EdA" source="__Nj9AKKBEeilCJoHGWRuEw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x0_4oKL-Eei1aebQA-3EdA" target="_wnR9wKL9Eei1aebQA-3EdA" source="_qUmpUKL-Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ydT10KL-Eei1aebQA-3EdA" target="_5q8WoKL9Eei1aebQA-3EdA" source="_qUmpUKL-Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zlJ8wKMAEei1aebQA-3EdA" target="_Dx2DQKMAEei1aebQA-3EdA" source="__ITsUKL_Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_3FP_YKMAEei1aebQA-3EdA" target="_qwWfQKMAEei1aebQA-3EdA" source="_Dx2DQKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6VPJcKMAEei1aebQA-3EdA" target="_WGrskKMAEei1aebQA-3EdA" source="_qwWfQKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6-h-EKMAEei1aebQA-3EdA" target="_a-gXIKMAEei1aebQA-3EdA" source="_qwWfQKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CViA0KMBEei1aebQA-3EdA" target="_nOp6IKMAEei1aebQA-3EdA" source="_WGrskKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_C9D64KMBEei1aebQA-3EdA" target="_nOp6IKMAEei1aebQA-3EdA" source="_a-gXIKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Dj54cKMBEei1aebQA-3EdA" target="_9u-scKMAEei1aebQA-3EdA" source="_nOp6IKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EcgUYKMBEei1aebQA-3EdA" target="_MvU7oKMAEei1aebQA-3EdA" source="_9u-scKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_b_8JgKMBEei1aebQA-3EdA" target="_JoX8UKMBEei1aebQA-3EdA" source="_GDdEEKMBEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_cn1P8KMBEei1aebQA-3EdA" target="_Joc00KMBEei1aebQA-3EdA" source="_JoX8UKMBEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dYuhYKMBEei1aebQA-3EdA" target="_xLc6cKMAEei1aebQA-3EdA" source="_Joc00KMBEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_eOtHIKMBEei1aebQA-3EdA" name="true" target="_JogfMKMBEei1aebQA-3EdA" source="_xLc6cKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_gXc8UKMBEei1aebQA-3EdA" name="false" target="_JoaYkKMBEei1aebQA-3EdA" source="_xLc6cKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lQlOcKMBEei1aebQA-3EdA" target="_vxdBoKMAEei1aebQA-3EdA" source="_JogfMKMBEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_l6_dYKMBEei1aebQA-3EdA" target="_vxdBoKMAEei1aebQA-3EdA" source="_JoaYkKMBEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_saOxsKMBEei1aebQA-3EdA" target="_nqFccKMBEei1aebQA-3EdA" source="_vxdBoKMAEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wfkPYKMBEei1aebQA-3EdA" target="_uBOksKMBEei1aebQA-3EdA" source="_nqFccKMBEei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_er1hAKRfEeio_dK3rurGmw" target="_Zsf5MKRfEeio_dK3rurGmw" source="_oeWWgKL3Eei1aebQA-3EdA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_htoeEKRfEeio_dK3rurGmw" name="[sim]" target="_IayTYKL3Eei1aebQA-3EdA" source="_Zsf5MKRfEeio_dK3rurGmw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xwVFoKRfEeio_dK3rurGmw" name="[não]" target="_KhUd4KL-Eei1aebQA-3EdA" source="_Zsf5MKRfEeio_dK3rurGmw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="__Nj9AKKBEeilCJoHGWRuEw" name="start" outgoing="_xOLwQKL-Eei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_F6JJwKKCEeilCJoHGWRuEw" name="CallBehaviorAction3"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_GLGW4KKCEeilCJoHGWRuEw" name="CallBehaviorAction4"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_dAFKkKKCEeilCJoHGWRuEw" name="CallBehaviorAction5"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_eU9S0KKCEeilCJoHGWRuEw" name="CallBehaviorAction6"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_VtkdQKLlEei1aebQA-3EdA" name="CallBehaviorAction7"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_p3OdsKLmEei1aebQA-3EdA" name="CallBehaviorAction8"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_xZrigKLmEei1aebQA-3EdA" name="CallBehaviorAction9"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_9uPEYKLmEei1aebQA-3EdA" name="CallBehaviorAction11"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_ifNJcKL1Eei1aebQA-3EdA" name="CallBehaviorAction12"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_jP4_gKL1Eei1aebQA-3EdA" name="CallBehaviorAction13"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_mFlk0KL2Eei1aebQA-3EdA" name="CallBehaviorAction14"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_m_dzIKL2Eei1aebQA-3EdA" name="CallBehaviorAction15"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_IayTYKL3Eei1aebQA-3EdA" name="Apresenta Notícia" incoming="_htoeEKRfEeio_dK3rurGmw" outgoing="_T6M40KL-Eei1aebQA-3EdA" behavior="_Lrf2MKL3Eei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_QVDbQKL3Eei1aebQA-3EdA" name="CallBehaviorAction19"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_oeWWgKL3Eei1aebQA-3EdA" name="Seleciona e Refina Notícias" incoming="_SQJKwKL-Eei1aebQA-3EdA" outgoing="_er1hAKRfEeio_dK3rurGmw" behavior="_v695EKL3Eei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_wnR9wKL9Eei1aebQA-3EdA" name="Submete Notícia Web" incoming="_x0_4oKL-Eei1aebQA-3EdA" outgoing="_RExj0KL-Eei1aebQA-3EdA" behavior="_3OmQAKL9Eei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_5q8WoKL9Eei1aebQA-3EdA" name="Submete Notícia e-mail" incoming="_ydT10KL-Eei1aebQA-3EdA" outgoing="_RsAi8KL-Eei1aebQA-3EdA" behavior="_3OmQAKL9Eei1aebQA-3EdA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_FfrI8KL-Eei1aebQA-3EdA" name="MergeNode19" incoming="_RExj0KL-Eei1aebQA-3EdA _RsAi8KL-Eei1aebQA-3EdA" outgoing="_SQJKwKL-Eei1aebQA-3EdA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_KhUd4KL-Eei1aebQA-3EdA" name="ActivityFinalNode20" incoming="_T6M40KL-Eei1aebQA-3EdA _xwVFoKRfEeio_dK3rurGmw"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_qUmpUKL-Eei1aebQA-3EdA" name="ForkNode26" incoming="_xOLwQKL-Eei1aebQA-3EdA" outgoing="_x0_4oKL-Eei1aebQA-3EdA _ydT10KL-Eei1aebQA-3EdA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="__ITsUKL_Eei1aebQA-3EdA" name="início" outgoing="_zlJ8wKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_Dx2DQKMAEei1aebQA-3EdA" name="Ação 1" incoming="_zlJ8wKMAEei1aebQA-3EdA" outgoing="_3FP_YKMAEei1aebQA-3EdA" behavior="_InRhIKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_MvU7oKMAEei1aebQA-3EdA" name="final" incoming="_EcgUYKMBEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_WGrskKMAEei1aebQA-3EdA" name="Ação 2" incoming="_6VPJcKMAEei1aebQA-3EdA" outgoing="_CViA0KMBEei1aebQA-3EdA" behavior="_XLMdkKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_a-gXIKMAEei1aebQA-3EdA" name="Ação 3 " incoming="_6-h-EKMAEei1aebQA-3EdA" outgoing="_C9D64KMBEei1aebQA-3EdA" behavior="_cqJZkKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_nOp6IKMAEei1aebQA-3EdA" name="join" incoming="_CViA0KMBEei1aebQA-3EdA _C9D64KMBEei1aebQA-3EdA" outgoing="_Dj54cKMBEei1aebQA-3EdA"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_qwWfQKMAEei1aebQA-3EdA" name="fork" incoming="_3FP_YKMAEei1aebQA-3EdA" outgoing="_6VPJcKMAEei1aebQA-3EdA _6-h-EKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_vxdBoKMAEei1aebQA-3EdA" name="merge" incoming="_lQlOcKMBEei1aebQA-3EdA _l6_dYKMBEei1aebQA-3EdA" outgoing="_saOxsKMBEei1aebQA-3EdA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_xLc6cKMAEei1aebQA-3EdA" name="decisão" incoming="_dYuhYKMBEei1aebQA-3EdA" outgoing="_eOtHIKMBEei1aebQA-3EdA _gXc8UKMBEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_9u-scKMAEei1aebQA-3EdA" name="Ação 4" incoming="_Dj54cKMBEei1aebQA-3EdA" outgoing="_EcgUYKMBEei1aebQA-3EdA" behavior="_-tdt8KMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_GDdEEKMBEei1aebQA-3EdA" name="início" outgoing="_b_8JgKMBEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_JoX8UKMBEei1aebQA-3EdA" name="Ação 1" incoming="_b_8JgKMBEei1aebQA-3EdA" outgoing="_cn1P8KMBEei1aebQA-3EdA" behavior="_XLMdkKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_JoaYkKMBEei1aebQA-3EdA" name="Ação 4" incoming="_gXc8UKMBEei1aebQA-3EdA" outgoing="_l6_dYKMBEei1aebQA-3EdA" behavior="_cqJZkKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_Joc00KMBEei1aebQA-3EdA" name="Ação 2" incoming="_cn1P8KMBEei1aebQA-3EdA" outgoing="_dYuhYKMBEei1aebQA-3EdA" behavior="_-tdt8KMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_JogfMKMBEei1aebQA-3EdA" name="Ação 3" incoming="_eOtHIKMBEei1aebQA-3EdA" outgoing="_lQlOcKMBEei1aebQA-3EdA" behavior="_InRhIKMAEei1aebQA-3EdA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_nqFccKMBEei1aebQA-3EdA" name="Ação 5" incoming="_saOxsKMBEei1aebQA-3EdA" outgoing="_wfkPYKMBEei1aebQA-3EdA" behavior="_pSIYUKMBEei1aebQA-3EdA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_uBOksKMBEei1aebQA-3EdA" name="final" incoming="_wfkPYKMBEei1aebQA-3EdA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_Zsf5MKRfEeio_dK3rurGmw" name="noticia selecionada?" incoming="_er1hAKRfEeio_dK3rurGmw" outgoing="_htoeEKRfEeio_dK3rurGmw _xwVFoKRfEeio_dK3rurGmw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_PFM1kKL6Eei1aebQA-3EdA" name="Author">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_bbk8YKL6Eei1aebQA-3EdA" name="Port1" type="_iRMrEKIjEei4EdDGD4_MUw" aggregation="composite"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_3OmQAKL9Eei1aebQA-3EdA" name="Submissão Notícia"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_InRhIKMAEei1aebQA-3EdA" name="Ação"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_XLMdkKMAEei1aebQA-3EdA" name="Ação 2"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_cqJZkKMAEei1aebQA-3EdA" name="Ação 3"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_-tdt8KMAEei1aebQA-3EdA" name="Ação 4"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_pSIYUKMBEei1aebQA-3EdA" name="Ação 5"/>
+  </packagedElement>
+</uml:Model>

@@ -11,6 +11,7 @@
     </ownedAttribute>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_bJQEMHwUEeir7PNmI2Fu9g" client="_unztcHv6EeiIiN0sK408yA" supplier="__l8NEHv7EeiIiN0sK408yA"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cs3U8Hx1EeiALuK4ap0Avg" client="_unztcHv6EeiIiN0sK408yA" supplier="_mxB-AHx0EeiALuK4ap0Avg" contract="_mxB-AHx0EeiALuK4ap0Avg"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_XlGHMKclEeie9cH3wd_yfg" name="Recupera Dados"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_1Y_38Hv7EeiIiN0sK408yA" name="DataSet">
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_QGU1wHx2EeiALuK4ap0Avg" client="_1Y_38Hv7EeiIiN0sK408yA" supplier="_Gzv3IHx2EeiALuK4ap0Avg" contract="_Gzv3IHx2EeiALuK4ap0Avg"/>
@@ -40,6 +41,9 @@
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eKk8AHxoEeiALuK4ap0Avg" client="_7PEtUHxlEeiALuK4ap0Avg" supplier="_Px2N0HxmEeiALuK4ap0Avg" contract="_Px2N0HxmEeiALuK4ap0Avg"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_wFTtoKclEeie9cH3wd_yfg" name="Projeta Idade"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_1gwCoKclEeie9cH3wd_yfg" name="Projeta Tempo"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_A-U5MKcmEeie9cH3wd_yfg" name="Gráfico Idade-Tempo"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_Px2N0HxmEeiALuK4ap0Avg" name="IColumnProducer">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_WHwnAHxmEeiALuK4ap0Avg" name="requestValues">
@@ -75,6 +79,7 @@
     <ownedAttribute xmi:type="uml:Port" xmi:id="_cYsf4JgNEei1EP3hjU4_rg" name="Port9" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_eXIigJgNEei1EP3hjU4_rg" name="Port10" type="_KN7x8HxpEeiALuK4ap0Avg" aggregation="composite"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOXbMHxqEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="__l8NEHv7EeiIiN0sK408yA" contract="__l8NEHv7EeiIiN0sK408yA"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_h9zAYKclEeie9cH3wd_yfg" name="Seleciona Doença"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_JEwt8HxqEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="__l8NEHv7EeiIiN0sK408yA"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_IwcOUHxrEeiALuK4ap0Avg" name="IRun">
@@ -200,13 +205,16 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_0JSIIJ1bEeiMJ5lEQS2n7A" name="Diagnostics">
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_2rUNwJ1gEeiMJ5lEQS2n7A" name="Port2" type="_Y46U8J1gEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_2rUNwJ1gEeiMJ5lEQS2n7A" name="Port2" type="_-AqYwJ1iEeiMJ5lEQS2n7A" aggregation="composite"/>
     <ownedAttribute xmi:type="uml:Port" xmi:id="_paU8AJ1kEeiMJ5lEQS2n7A" name="Port4" type="_-AqYwJ1iEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_IKWbAKJEEeil383RR6uv6w" name="Port6" type="__l8NEHv7EeiIiN0sK408yA" aggregation="composite"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_MYF1gJ1cEeiMJ5lEQS2n7A" client="_0JSIIJ1bEeiMJ5lEQS2n7A" supplier="_hW0kIJ1aEeiMJ5lEQS2n7A" contract="_hW0kIJ1aEeiMJ5lEQS2n7A"/>
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_btIosJ1jEeiMJ5lEQS2n7A" client="_0JSIIJ1bEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A" contract="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_dvB0gKIwEeil383RR6uv6w" client="_0JSIIJ1bEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A" contract="_Y46U8J1gEeiMJ5lEQS2n7A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_RuL30KI7Eeil383RR6uv6w" client="_0JSIIJ1bEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A" contract="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_nm2s4J1cEeiMJ5lEQS2n7A" name="EHR">
     <ownedAttribute xmi:type="uml:Port" xmi:id="_sbm1UJ1cEeiMJ5lEQS2n7A" name="Port1" type="_hW0kIJ1aEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xrqZsKI-Eeil383RR6uv6w" client="_nm2s4J1cEeiMJ5lEQS2n7A" supplier="_IwcOUHxrEeiALuK4ap0Avg" contract="_IwcOUHxrEeiALuK4ap0Avg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_2mc4sJ1cEeiMJ5lEQS2n7A" client="_hW0kIJ1aEeiMJ5lEQS2n7A" supplier="_hW0kIJ1aEeiMJ5lEQS2n7A"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_9qBpIJ1cEeiMJ5lEQS2n7A" client="_hW0kIJ1aEeiMJ5lEQS2n7A" supplier="_hW0kIJ1aEeiMJ5lEQS2n7A"/>
@@ -226,12 +234,13 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_ZDpv4J1hEeiMJ5lEQS2n7A" name="AnaminesisRegister">
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_miZM8J1hEeiMJ5lEQS2n7A" client="_ZDpv4J1hEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A" contract="_Y46U8J1gEeiMJ5lEQS2n7A"/>
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-nXhgJ1kEeiMJ5lEQS2n7A" client="_ZDpv4J1hEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A" contract="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_FAeskKIvEeil383RR6uv6w" name="Port2" type="_-AqYwJ1iEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_ztUT8KI0Eeil383RR6uv6w" name="Port2" type="_Y46U8J1gEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_WN9ucKI-Eeil383RR6uv6w" client="_ZDpv4J1hEeiMJ5lEQS2n7A" supplier="_IwcOUHxrEeiALuK4ap0Avg" contract="_IwcOUHxrEeiALuK4ap0Avg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_zYwbYJ1hEeiMJ5lEQS2n7A" client="_hW0kIJ1aEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A"/>
   <packagedElement xmi:type="uml:Component" xmi:id="_DlXM4J1iEeiMJ5lEQS2n7A" name="EHRConsole">
-    <ownedAttribute xmi:type="uml:Port" xmi:id="_miclYJ1jEeiMJ5lEQS2n7A" name="Port1" type="_-AqYwJ1iEeiMJ5lEQS2n7A" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_vihWMKIuEeil383RR6uv6w" client="_DlXM4J1iEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A" contract="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_b11HIJ1iEeiMJ5lEQS2n7A" client="_Y46U8J1gEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_ojiv4J1iEeiMJ5lEQS2n7A" client="_Y46U8J1gEeiMJ5lEQS2n7A" supplier="_Y46U8J1gEeiMJ5lEQS2n7A"/>
@@ -257,7 +266,6 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_uvvW8J1jEeiMJ5lEQS2n7A" client="_-AqYwJ1iEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_zOQJoJ1jEeiMJ5lEQS2n7A" client="_-AqYwJ1iEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_x7PiQJ1mEeiMJ5lEQS2n7A" name="EHR">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_z2qGEJ1mEeiMJ5lEQS2n7A" name="name" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -273,5 +281,40 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_GhWqoJ1nEeiMJ5lEQS2n7A" name="diagnosis" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_WQ8HwKIvEeil383RR6uv6w" client="_-AqYwJ1iEeiMJ5lEQS2n7A" supplier="_-AqYwJ1iEeiMJ5lEQS2n7A"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_aixj0KJEEeil383RR6uv6w" client="__l8NEHv7EeiIiN0sK408yA" supplier="__l8NEHv7EeiIiN0sK408yA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_2ex7sKJEEeil383RR6uv6w" client="__l8NEHv7EeiIiN0sK408yA" supplier="__l8NEHv7EeiIiN0sK408yA"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_5S8-YKckEeie9cH3wd_yfg" name="Activity45" node="_KKaDsKclEeie9cH3wd_yfg _bblQkKclEeie9cH3wd_yfg _m6jOQKclEeie9cH3wd_yfg _yKDMkKclEeie9cH3wd_yfg _9jDsMKclEeie9cH3wd_yfg _NUxRcKcmEeie9cH3wd_yfg _SJXB0KcmEeie9cH3wd_yfg _W2rFgKcmEeie9cH3wd_yfg _Aa3KUKcnEeie9cH3wd_yfg">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wEFJIKcmEeie9cH3wd_yfg" target="_KKaDsKclEeie9cH3wd_yfg" source="_NUxRcKcmEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x2x10KcmEeie9cH3wd_yfg" target="_bblQkKclEeie9cH3wd_yfg" source="_KKaDsKclEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2CwHAKcmEeie9cH3wd_yfg" target="_SJXB0KcmEeie9cH3wd_yfg" source="_bblQkKclEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6KlfEKcmEeie9cH3wd_yfg" target="_m6jOQKclEeie9cH3wd_yfg" source="_SJXB0KcmEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_7iUHAKcmEeie9cH3wd_yfg" target="_yKDMkKclEeie9cH3wd_yfg" source="_SJXB0KcmEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_D-C9MKcnEeie9cH3wd_yfg" name="y_axis" target="_Aa3KUKcnEeie9cH3wd_yfg" source="_m6jOQKclEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_E6FHoKcnEeie9cH3wd_yfg" name="x_axis" target="_Aa3KUKcnEeie9cH3wd_yfg" source="_yKDMkKclEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_F18S8KcnEeie9cH3wd_yfg" target="_9jDsMKclEeie9cH3wd_yfg" source="_Aa3KUKcnEeie9cH3wd_yfg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_d85E0KcnEeie9cH3wd_yfg" target="_W2rFgKcmEeie9cH3wd_yfg" source="_9jDsMKclEeie9cH3wd_yfg"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_KKaDsKclEeie9cH3wd_yfg" name="Recupera Dados" incoming="_wEFJIKcmEeie9cH3wd_yfg" outgoing="_x2x10KcmEeie9cH3wd_yfg" behavior="_XlGHMKclEeie9cH3wd_yfg"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_bblQkKclEeie9cH3wd_yfg" name="Seleciona Doença" incoming="_x2x10KcmEeie9cH3wd_yfg" outgoing="_2CwHAKcmEeie9cH3wd_yfg" behavior="_h9zAYKclEeie9cH3wd_yfg">
+      <argument xmi:type="uml:ValuePin" xmi:id="_V_VYYKcnEeie9cH3wd_yfg" name="nominalParameter [bacterial_infection]">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_V_V_cKcnEeie9cH3wd_yfg" value="1"/>
+      </argument>
+    </node>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_m6jOQKclEeie9cH3wd_yfg" name="Projeta Idade" incoming="_6KlfEKcmEeie9cH3wd_yfg" outgoing="_D-C9MKcnEeie9cH3wd_yfg" behavior="_wFTtoKclEeie9cH3wd_yfg">
+      <argument xmi:type="uml:ValuePin" xmi:id="_fqlLIKcmEeie9cH3wd_yfg" name="attribute [age]">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_fqnAUKcmEeie9cH3wd_yfg" value="1"/>
+      </argument>
+    </node>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_yKDMkKclEeie9cH3wd_yfg" name="Projeta Tempo" incoming="_7iUHAKcmEeie9cH3wd_yfg" outgoing="_E6FHoKcnEeie9cH3wd_yfg" behavior="_1gwCoKclEeie9cH3wd_yfg">
+      <argument xmi:type="uml:ValuePin" xmi:id="_puk_oKcmEeie9cH3wd_yfg" name="attribute [days_recovery]">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_pumNwKcmEeie9cH3wd_yfg" value="1"/>
+      </argument>
+    </node>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_9jDsMKclEeie9cH3wd_yfg" name="Gráfico Idade-Tempo" incoming="_F18S8KcnEeie9cH3wd_yfg" outgoing="_d85E0KcnEeie9cH3wd_yfg" behavior="_A-U5MKcmEeie9cH3wd_yfg"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_NUxRcKcmEeie9cH3wd_yfg" name="início" outgoing="_wEFJIKcmEeie9cH3wd_yfg"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_SJXB0KcmEeie9cH3wd_yfg" name="ForkNode7" incoming="_2CwHAKcmEeie9cH3wd_yfg" outgoing="_6KlfEKcmEeie9cH3wd_yfg _7iUHAKcmEeie9cH3wd_yfg"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_W2rFgKcmEeie9cH3wd_yfg" name="fim" incoming="_d85E0KcnEeie9cH3wd_yfg"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_Aa3KUKcnEeie9cH3wd_yfg" name="MergeNode14" incoming="_D-C9MKcnEeie9cH3wd_yfg _E6FHoKcnEeie9cH3wd_yfg" outgoing="_F18S8KcnEeie9cH3wd_yfg"/>
   </packagedElement>
 </uml:Model>

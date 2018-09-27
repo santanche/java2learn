@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mson4KTREei63I29oWNKPA" name="twitter">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_m73WsKTREei63I29oWNKPA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_mtY10KTREei63I29oWNKPA" name="Activity1" node="_-wTC8KTWEei63I29oWNKPA __1BPUKTWEei63I29oWNKPA _FTwI4KTXEei63I29oWNKPA _NGxZQKTXEei63I29oWNKPA _U8weEKTXEei63I29oWNKPA _iLCdQKTXEei63I29oWNKPA _U8DeAKTYEei63I29oWNKPA _ZSf50KTYEei63I29oWNKPA _6M3-QKTaEei63I29oWNKPA _BF65sKTbEei63I29oWNKPA _IbPhcKTbEei63I29oWNKPA _JYJ1oKTbEei63I29oWNKPA _ykQxoKTbEei63I29oWNKPA _6jbAkKTbEei63I29oWNKPA _8BgvMKTbEei63I29oWNKPA _9mfI8KTbEei63I29oWNKPA _EWF_EKTdEei63I29oWNKPA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qSlPUKTbEei63I29oWNKPA" target="_FTwI4KTXEei63I29oWNKPA" source="_-wTC8KTWEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_t3C0kKTbEei63I29oWNKPA" target="_U8weEKTXEei63I29oWNKPA" source="_FTwI4KTXEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_DoqGwKTcEei63I29oWNKPA" target="_ykQxoKTbEei63I29oWNKPA" source="_U8weEKTXEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FIm2kKTcEei63I29oWNKPA" name="[sim]" target="_U8DeAKTYEei63I29oWNKPA" source="_ykQxoKTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IdzQwKTcEei63I29oWNKPA" name="[não]" target="_IbPhcKTbEei63I29oWNKPA" source="_ykQxoKTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_TEydkKTcEei63I29oWNKPA" target="_6jbAkKTbEei63I29oWNKPA" source="_U8DeAKTYEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VnXvEKTcEei63I29oWNKPA" name="[sim]" target="_6M3-QKTaEei63I29oWNKPA" source="_6jbAkKTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XKiyAKTcEei63I29oWNKPA" target="_IbPhcKTbEei63I29oWNKPA" source="_6M3-QKTaEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lU4JwKTcEei63I29oWNKPA" name="[não]" target="_IbPhcKTbEei63I29oWNKPA" source="_6jbAkKTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1_4ugKTcEei63I29oWNKPA" target="_NGxZQKTXEei63I29oWNKPA" source="__1BPUKTWEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dU17oKTdEei63I29oWNKPA" target="_EWF_EKTdEei63I29oWNKPA" source="_NGxZQKTXEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nO6YEKTdEei63I29oWNKPA" target="_ZSf50KTYEei63I29oWNKPA" source="_EWF_EKTdEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ohyVMKTdEei63I29oWNKPA" target="_iLCdQKTXEei63I29oWNKPA" source="_EWF_EKTdEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tx8nQKTdEei63I29oWNKPA" target="_8BgvMKTbEei63I29oWNKPA" source="_iLCdQKTXEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vTZL4KTdEei63I29oWNKPA" target="_9mfI8KTbEei63I29oWNKPA" source="_ZSf50KTYEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4Wx38KTdEei63I29oWNKPA" name="[sim]" target="_BF65sKTbEei63I29oWNKPA" source="_8BgvMKTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_69s24KTdEei63I29oWNKPA" name="[sim]" target="_BF65sKTbEei63I29oWNKPA" source="_9mfI8KTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_K5PGgKTeEei63I29oWNKPA" target="_JYJ1oKTbEei63I29oWNKPA" source="_BF65sKTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MyP2kKTeEei63I29oWNKPA" name="[não]" target="_JYJ1oKTbEei63I29oWNKPA" source="_8BgvMKTbEei63I29oWNKPA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PjnyAKTeEei63I29oWNKPA" name="[não]" target="_JYJ1oKTbEei63I29oWNKPA" source="_9mfI8KTbEei63I29oWNKPA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_-wTC8KTWEei63I29oWNKPA" name="início" outgoing="_qSlPUKTbEei63I29oWNKPA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="__1BPUKTWEei63I29oWNKPA" name="início" outgoing="_1_4ugKTcEei63I29oWNKPA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_FTwI4KTXEei63I29oWNKPA" name="Envia Tweet" incoming="_qSlPUKTbEei63I29oWNKPA" outgoing="_t3C0kKTbEei63I29oWNKPA" behavior="_KjTW8KTXEei63I29oWNKPA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_NGxZQKTXEei63I29oWNKPA" name="Envia Tweet" incoming="_1_4ugKTcEei63I29oWNKPA" outgoing="_dU17oKTdEei63I29oWNKPA" behavior="_PlgFgKTXEei63I29oWNKPA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_U8weEKTXEei63I29oWNKPA" name="Filtra Tweet" incoming="_t3C0kKTbEei63I29oWNKPA" outgoing="_DoqGwKTcEei63I29oWNKPA" behavior="_aENgEKTXEei63I29oWNKPA">
+      <argument xmi:type="uml:ValuePin" xmi:id="_SR3dwKTaEei63I29oWNKPA" name="hashtag [#TICO]">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_SR5S8KTaEei63I29oWNKPA" value="1"/>
+      </argument>
+    </node>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_iLCdQKTXEei63I29oWNKPA" name="Filtra Tweet" incoming="_ohyVMKTdEei63I29oWNKPA" outgoing="_tx8nQKTdEei63I29oWNKPA" behavior="_jkPE0KTXEei63I29oWNKPA">
+      <argument xmi:type="uml:ValuePin" xmi:id="_ihypAKTaEei63I29oWNKPA" name="hashtag [#TICO]">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_ihzQEKTaEei63I29oWNKPA" value="1"/>
+      </argument>
+    </node>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_U8DeAKTYEei63I29oWNKPA" name="Filtra Tweet" incoming="_FIm2kKTcEei63I29oWNKPA" outgoing="_TEydkKTcEei63I29oWNKPA" behavior="_WUhFwKTYEei63I29oWNKPA">
+      <argument xmi:type="uml:ValuePin" xmi:id="_csfpkKTaEei63I29oWNKPA" name="hashtag [#TECO]">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_csg3sKTaEei63I29oWNKPA" value="1"/>
+      </argument>
+    </node>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_ZSf50KTYEei63I29oWNKPA" name="Filtra Tweet" incoming="_nO6YEKTdEei63I29oWNKPA" outgoing="_vTZL4KTdEei63I29oWNKPA" behavior="_aq-IoKTYEei63I29oWNKPA">
+      <argument xmi:type="uml:ValuePin" xmi:id="_mamtoKTaEei63I29oWNKPA" name="hashtag [#TECO]">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_maoi0KTaEei63I29oWNKPA" value="1"/>
+      </argument>
+    </node>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_6M3-QKTaEei63I29oWNKPA" name="Conta Tweet" incoming="_VnXvEKTcEei63I29oWNKPA" outgoing="_XKiyAKTcEei63I29oWNKPA" behavior="_-ptV8KTaEei63I29oWNKPA"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_BF65sKTbEei63I29oWNKPA" name="Conta Tweet" incoming="_4Wx38KTdEei63I29oWNKPA _69s24KTdEei63I29oWNKPA" outgoing="_K5PGgKTeEei63I29oWNKPA" behavior="_CMb10KTbEei63I29oWNKPA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_IbPhcKTbEei63I29oWNKPA" name="final" incoming="_IdzQwKTcEei63I29oWNKPA _XKiyAKTcEei63I29oWNKPA _lU4JwKTcEei63I29oWNKPA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_JYJ1oKTbEei63I29oWNKPA" name="final" incoming="_K5PGgKTeEei63I29oWNKPA _MyP2kKTeEei63I29oWNKPA _PjnyAKTeEei63I29oWNKPA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_ykQxoKTbEei63I29oWNKPA" name="hashtag encontrado?" incoming="_DoqGwKTcEei63I29oWNKPA" outgoing="_FIm2kKTcEei63I29oWNKPA _IdzQwKTcEei63I29oWNKPA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_6jbAkKTbEei63I29oWNKPA" name="hashtag encontrado?" incoming="_TEydkKTcEei63I29oWNKPA" outgoing="_VnXvEKTcEei63I29oWNKPA _lU4JwKTcEei63I29oWNKPA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_8BgvMKTbEei63I29oWNKPA" name="hashtag encontrado?" incoming="_tx8nQKTdEei63I29oWNKPA" outgoing="_4Wx38KTdEei63I29oWNKPA _MyP2kKTeEei63I29oWNKPA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_9mfI8KTbEei63I29oWNKPA" name="hashtag encontrado?" incoming="_vTZL4KTdEei63I29oWNKPA" outgoing="_69s24KTdEei63I29oWNKPA _PjnyAKTeEei63I29oWNKPA"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_EWF_EKTdEei63I29oWNKPA" name="ForkNode27" incoming="_dU17oKTdEei63I29oWNKPA" outgoing="_nO6YEKTdEei63I29oWNKPA _ohyVMKTdEei63I29oWNKPA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ar-c8KTSEei63I29oWNKPA" name="Twitter">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_EM2vEKTTEei63I29oWNKPA" name="Port1" type="_in9cEKTSEei63I29oWNKPA" aggregation="composite"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_KjTW8KTXEei63I29oWNKPA" name="Envia Tweet"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_PlgFgKTXEei63I29oWNKPA" name="Envia Tweet"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_dlV2wKTSEei63I29oWNKPA" name="Filtro">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_GBMagKTTEei63I29oWNKPA" name="Port2" type="_in9cEKTSEei63I29oWNKPA" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_TulssKTVEei63I29oWNKPA" name="hashtag" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_CZ48oKTTEei63I29oWNKPA" client="_dlV2wKTSEei63I29oWNKPA" supplier="_in9cEKTSEei63I29oWNKPA" contract="_in9cEKTSEei63I29oWNKPA"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_aENgEKTXEei63I29oWNKPA" name="Filtra Tweet"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_jkPE0KTXEei63I29oWNKPA" name="Filtra Tweet"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_WUhFwKTYEei63I29oWNKPA" name="Filtra Tweet"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_aq-IoKTYEei63I29oWNKPA" name="Filtra Tweet"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_fy1CAKTSEei63I29oWNKPA" name="Conta">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_DAbYMKTTEei63I29oWNKPA" client="_fy1CAKTSEei63I29oWNKPA" supplier="_in9cEKTSEei63I29oWNKPA" contract="_in9cEKTSEei63I29oWNKPA"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_-ptV8KTaEei63I29oWNKPA" name="Conta Tweet"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_CMb10KTbEei63I29oWNKPA" name="Conta Tweet"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_in9cEKTSEei63I29oWNKPA" name="ITweet">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pKDQEKTSEei63I29oWNKPA" name="send">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_wwDYIKTSEei63I29oWNKPA" name="tweet" type="_2lz_sKTUEei63I29oWNKPA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Teno8KTTEei63I29oWNKPA" client="_in9cEKTSEei63I29oWNKPA" supplier="_in9cEKTSEei63I29oWNKPA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oJNosKTTEei63I29oWNKPA" client="_in9cEKTSEei63I29oWNKPA" supplier="_in9cEKTSEei63I29oWNKPA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2lz_sKTUEei63I29oWNKPA" name="Tweet" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BnwDIKTVEei63I29oWNKPA" name="conteudo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FrgMcKTVEei63I29oWNKPA" name="autor">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>

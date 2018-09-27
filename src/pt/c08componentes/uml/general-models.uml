@@ -11,10 +11,10 @@
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Component" xmi:id="_XX_lsJ1pEeiMJ5lEQS2n7A" name="Component A">
+  <packagedElement xmi:type="uml:Component" xmi:id="_XX_lsJ1pEeiMJ5lEQS2n7A" name="Component B">
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_s0qioJ1pEeiMJ5lEQS2n7A" client="_XX_lsJ1pEeiMJ5lEQS2n7A" supplier="_f0OyMJ1pEeiMJ5lEQS2n7A" contract="_f0OyMJ1pEeiMJ5lEQS2n7A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Component" xmi:id="_dInggJ1pEeiMJ5lEQS2n7A" name="Component B">
+  <packagedElement xmi:type="uml:Component" xmi:id="_dInggJ1pEeiMJ5lEQS2n7A" name="Component A">
     <ownedAttribute xmi:type="uml:Port" xmi:id="_1gnmIJ1pEeiMJ5lEQS2n7A" name="Port1" type="_f0OyMJ1pEeiMJ5lEQS2n7A" aggregation="composite"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_f0OyMJ1pEeiMJ5lEQS2n7A" name="IDTO">
