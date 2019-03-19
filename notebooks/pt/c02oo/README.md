@@ -2,6 +2,8 @@ Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org
 
 # Roteiro 02
 
+*Executado no laboratório da disciplina em 12/03/2019*
+
 ## Parte B - Transformando classe C++ em classe Java
 
 Este roteiro tem início no projeto C++ em: [Parte A](https://github.com/santanche/c2learn/new/master/notebook/pt/c51oo/s01emprestimo)
@@ -16,6 +18,7 @@ Entre no diretório `s02zombie/s01exercicios` e resolva todos os exercícios que
   * Notebook E: `zombie-health-02-garoto.ipynb`
  
 # Roteiro 03
+*Executado no laboratório da disciplina em 19/03/2019*
 
 ## Parte A - Auto-referência, Encapsulamento e Sobrecarga de métodos
 
@@ -28,6 +31,7 @@ Entre no diretório: `s03zombies/s01exercicios` e resolva todos o exercícios qu
 * Notebook B: `zombie-health-04-heranca.ipynb`
 
 # Roteiro 04
+*Exercício para casa em 19/03/2019*
 ## Conectando objetos - preparação para o projeto Zombie Health
 
 Entre no diretório: `s04zombie-conversation/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório:
