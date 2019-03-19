@@ -22,12 +22,13 @@ Entre no diretório `s02zombie/s01exercicios` e resolva todos os exercícios que
 Entre no diretório: `s02zombie/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório:
 * Notebook A: `zombie-health-03-garoto-plus.ipynb`
 
-## Parte B -  Parte 2 - Herança
+## Parte B - Herança
 
 Entre no diretório: `s03zombies/s01exercicios` e resolva todos o exercícios que estão no notebook desse diretório:
 * Notebook B: `zombie-health-04-heranca.ipynb`
 
-# Roteiro 04 - Conectando objetos - preparação para o projeto Zombie Health
+# Roteiro 04
+## Conectando objetos - preparação para o projeto Zombie Health
 
 Entre no diretório: `s04zombie-conversation/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório:
 * Notebook: `zombie-health-05-conversa.ipynb`
