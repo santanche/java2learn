@@ -14,7 +14,7 @@ RUN curl -L https://github.com/SpencerPark/IJava/releases/download/v1.2.0/ijava-
 # Unpack and install the kernel
 RUN unzip ijava-kernel.zip -d ijava-kernel \
   && cd ijava-kernel \
-  && python3 install.py --sys-prefix
+  && python3 install.py --sys-prefix --param classpath:./notebooks/lib/* 
 
 #Set up nbextensions
 RUN jupyter-nbextension install rise --py --system
