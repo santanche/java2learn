@@ -29,10 +29,3 @@ Entre no diretório: `s02zombie/s01exercicios` e resolva todos os exercícios qu
 
 Entre no diretório: `s03zombies/s01exercicios` e resolva todos o exercícios que estão no notebook desse diretório:
 * Notebook B: `zombie-health-04-heranca.ipynb`
-
-# Roteiro 04
-*Exercício para casa em 19/03/2019*
-## Conectando objetos - preparação para o projeto Zombie Health
-
-Entre no diretório: `s04zombie-conversation/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório:
-* Notebook: `zombie-health-05-conversa.ipynb`
