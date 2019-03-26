@@ -1,6 +1,6 @@
 package pt.c08componentes.s20catalog.apps;
 
-import pt.c08componentes.s20catalog.s10ds.DataSetComponent;
+import pt.c08componentes.s20catalog.s10ds.DataSetComponentWeka;
 import pt.c08componentes.s20catalog.s10ds.IDataSet;
 import pt.c08componentes.s20catalog.s90ml.AnamnesisRegisterComponent;
 import pt.c08componentes.s20catalog.s90ml.DiagnosticsComponent;
@@ -21,7 +21,7 @@ public class App90aDataSetDiagnostics {
         IEHRConsole console = new EHRConsoleComponent();
         diagnostics.connect(console);
 
-        IDataSet dataset = new DataSetComponent();
+        IDataSet dataset = new DataSetComponentWeka();
         dataset.setDataSource("db/datasets/zombie/weka/zombie-health-spreadsheet-ml-training.arff");
         diagnostics.connect(dataset);
         

@@ -1,13 +1,16 @@
 package pt.c08componentes.s20catalog.apps;
 
-import pt.c08componentes.s20catalog.s10ds.DataSetComponent;
+import pt.c08componentes.s20catalog.s10ds.DataSetComponentWeka;
+import pt.c08componentes.s20catalog.s10ds.IDataSet;
 
-public class App10aDataSet {
+public class App10aDataSetWeka {
   public static void main(String args[])
   {
       try {
-        DataSetComponent ds = new DataSetComponent();
+        IDataSet ds = new DataSetComponentWeka();
         ds.setDataSource("eclipse/db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+        
+        System.out.println(ds.requestInstancesWeka());
         
         System.out.println("=== Attributes ===");
         String attributes[] = ds.requestAttributes();

@@ -1,6 +1,6 @@
 package pt.c08componentes.s20catalog.apps;
 
-import pt.c08componentes.s20catalog.s10ds.DataSetComponent;
+import pt.c08componentes.s20catalog.s10ds.DataSetComponentWeka;
 import pt.c08componentes.s20catalog.s10ds.IDataSet;
 import pt.c08componentes.s20catalog.s20console.ConsoleComponent;
 import pt.c08componentes.s20catalog.s20console.IConsole;
@@ -13,7 +13,7 @@ public class App30bDataSetSelection {
   public static void main(String args[])
   {
       try {
-        IDataSet dataset = new DataSetComponent();
+        IDataSet dataset = new DataSetComponentWeka();
         dataset.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
         
         ISelection selection = new SelectionComponent();
