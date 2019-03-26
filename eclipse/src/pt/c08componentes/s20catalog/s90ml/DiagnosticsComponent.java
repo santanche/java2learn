@@ -29,7 +29,7 @@ public class DiagnosticsComponent implements IDiagnostics {
   public void sendEHR(EHR ehrInput) {
     try {
       if (iProducer != null) {
-        Instances dataTrain = iProducer.requestInstances();
+        Instances dataTrain = iProducer.requestInstancesWeka();
         // setting class attribute
 	    dataTrain.setClassIndex(dataTrain.numAttributes() - 1);
 	    

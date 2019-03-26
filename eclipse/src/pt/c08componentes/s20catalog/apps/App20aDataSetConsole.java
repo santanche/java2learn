@@ -10,7 +10,7 @@ public class App20aDataSetConsole {
   {
       try {
         IDataSet dataset = new DataSetComponent();
-        dataset.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+        dataset.setDataSource("eclipse/db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
         
         IConsole console = new ConsoleComponent();
         console.connect(dataset);

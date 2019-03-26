@@ -22,7 +22,7 @@ public class ConsoleComponent implements IConsole {
   
   public void update() {
     if (iProducer != null)
-      System.out.println(iProducer.requestInstances());
+      System.out.println(iProducer.requestInstancesWeka());
     if (cProducer != null) {
       System.out.println("=====" + cProducer.getTitle() + "=====");
       String[] columns = cProducer.requestNominals();

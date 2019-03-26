@@ -63,11 +63,11 @@ public class SelectionComponent implements ISelection {
   }
   
   @Override
-  public Instances requestInstances() {
+  public Instances requestInstancesWeka() {
     Instances filtered = null;
     
     if (attributeA != null) {
-      Instances instances = provider.requestInstances();
+      Instances instances = provider.requestInstancesWeka();
       if (instances != null) {
         filtered = new Instances(instances);
       
@@ -122,7 +122,7 @@ public class SelectionComponent implements ISelection {
   
   @Override
   public String toString() {
-    Instances filtered = requestInstances();
+    Instances filtered = requestInstancesWeka();
     
     return (filtered == null ? "*** empty ***" : filtered.toString());
   }

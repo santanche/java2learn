@@ -12,7 +12,7 @@ public class App30aDataSetProjection {
   {
       try {
         IDataSet dataset = new DataSetComponent();
-        dataset.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+        dataset.setDataSource("eclipse/db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
         
         IProjection projection = new ProjectionComponent();
         projection.connect(dataset);

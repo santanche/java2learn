@@ -49,7 +49,7 @@ public class ProjectionComponent implements IProjection {
     double[] attributeValues = null;
     
     if (provider != null) {
-      Instances instances = provider.requestInstances();
+      Instances instances = provider.requestInstancesWeka();
       
       Attribute attr = findAttribute(instances);
       if (attr != null) {
@@ -68,7 +68,7 @@ public class ProjectionComponent implements IProjection {
   @Override
   public String[] requestNominals() {
     String[] nominals = null;
-    Instances instances = provider.requestInstances();
+    Instances instances = provider.requestInstancesWeka();
     
     Attribute attr = findAttribute(instances);
     
@@ -109,7 +109,7 @@ public class ProjectionComponent implements IProjection {
   public String toString() {
     String output = "***** empty *****";
     
-    Instances instances = provider.requestInstances();
+    Instances instances = provider.requestInstancesWeka();
     Attribute attr = findAttribute(instances);
     
     if (attr != null) {
