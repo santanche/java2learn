@@ -30,4 +30,4 @@ Agora veja a mesma matriz em inglês que será usada no programa a ser feito. Vo
 
 ## Componentes Médico e Paciente
 
-Usando o Binder, entre no diretório `s02datasource/s02exercicios/` e resolva o notebook `zombie-health-02-ds.ipynb`.
+Usando o [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/master?urlpath=lab), entre no diretório `s02datasource/s02exercicios/` e resolva o notebook `zombie-health-02-ds.ipynb`.
