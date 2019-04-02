@@ -29,3 +29,12 @@ Entre no diretório: `s02zombie/s01exercicios` e resolva todos os exercícios qu
 
 Entre no diretório: `s03zombies/s01exercicios` e resolva todos o exercícios que estão no notebook desse diretório:
 * Notebook B: `zombie-health-04-heranca.ipynb`
+
+# Roteiro 04
+*Laboratório em 02/04/2019*
+
+Este roteiro tem início no projeto C++ em: [Roteiro 03 / Parte A](https://github.com/santanche/c2learn/tree/master/notebook/pt/c51oo)
+
+## Parte B - Polimorfismo em Java
+
+Entre no diretório: `s04polimorfismo/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório: `polimorfismo-java.ipynb`

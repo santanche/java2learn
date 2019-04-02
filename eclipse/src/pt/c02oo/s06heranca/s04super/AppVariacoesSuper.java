@@ -2,10 +2,11 @@ package pt.c02oo.s06heranca.s04super;
 
 public class AppVariacoesSuper {
   public static void main(String args[]) {
-    ClasseA a = new ClasseA();
+    // ClasseA a = new ClasseA();
     // ClasseB b = new ClasseB();
     // ClasseC c = new ClasseC();
-    // ClasseD d = new ClasseD("Bonerges");
-    // ClasseE e = new ClasseD("Doriana");
+    // ClasseD2 d1 = new ClasseD2();
+    // ClasseD2 d2 = new ClasseD2("Bonerges");
+    ClasseE e = new ClasseE();
   }
 }
