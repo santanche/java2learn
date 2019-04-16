@@ -1,14 +1,14 @@
 package pt.c08componentes.s20catalog.s20console;
 
 import pt.c08componentes.s20catalog.s00shared.IColumnProducer;
-import pt.c08componentes.s20catalog.s00shared.IInstancesProducer;
+import pt.c08componentes.s20catalog.s00shared.ITableProducer;
 import pt.c08componentes.s20catalog.s50chart.ChartParameter;
 
 public class ConsoleComponent implements IConsole {
-  private IInstancesProducer iProducer;
+  private ITableProducer iProducer;
   IColumnProducer cProducer;
   
-  public void connect(IInstancesProducer producer) {
+  public void connect(ITableProducer producer) {
     iProducer = producer;
   }
   

@@ -2,12 +2,12 @@ package pt.c08componentes.s20catalog.s30projection;
 
 import java.util.Enumeration;
 
-import pt.c08componentes.s20catalog.s00shared.IInstancesProducer;
+import pt.c08componentes.s20catalog.s00shared.ITableProducer;
 import weka.core.Attribute;
 import weka.core.Instances;
 
 public class ProjectionComponent implements IProjection {
-  private IInstancesProducer provider;
+  private ITableProducer provider;
   
   private String attribute = null,
                  title = null;
@@ -37,7 +37,7 @@ public class ProjectionComponent implements IProjection {
     this.title = title;
   }
   
-  public void connect(IInstancesProducer provider) {
+  public void connect(ITableProducer provider) {
     this.provider = provider;
   }
   
