@@ -38,3 +38,16 @@ Este roteiro tem início no projeto C++ em: [Roteiro 03 / Parte A](https://githu
 ## Parte B - Polimorfismo em Java
 
 Entre no diretório: `s04polimorfismo/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório: `polimorfismo-java.ipynb`
+
+# Roteiro 05
+*Laboratório em 16/04/2019*
+
+## Parte A - Classes Abstratas e Interfaces
+
+Entre no diretório `s05abstrata/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório: `abstrata-java.ipynb`.
+
+Entre no diretório `s06interface/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório: `interface-java.ipynb`.
+
+## Parte B - Múltplas Interfaces
+
+Continue o roteiro no caso Zombie Health, que está no diretório [Roteiro 05 / Parte B](https://github.com/santanche/java2learn/edit/master/notebooks/pt/c03oo-zombie/).
