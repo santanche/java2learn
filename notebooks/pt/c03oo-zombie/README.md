@@ -39,4 +39,9 @@ Este roteiro em: [Roteiro 05 / Parte A](https://github.com/santanche/java2learn/
 
 ## Parte B - Múltiplas Interfaces no Zombie Health
 
-Entre no diretório `c03oo-zombie/s03interfaces` e leia o que está explicado no notebook desse diretório: `multiplas-interfaces.ipynb`
+Entre no diretório `s03interfaces` e leia o que está explicado no notebook desse diretório: `multiplas-interfaces.ipynb`
+
+# Roteiro 06
+*Lançado em 16/04/2019 para ser feito em casa*
+
+Entre no diretório `s04components` e leia o que está explicado no notebook desse diretório: `components-interfaces.ipynb`.
