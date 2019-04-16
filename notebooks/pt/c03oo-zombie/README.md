@@ -31,3 +31,12 @@ Agora veja a mesma matriz em inglês que será usada no programa a ser feito. Vo
 ## Componentes Médico e Paciente
 
 Usando o [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/master?urlpath=lab), entre no diretório `s02datasource/s02exercicios/` e resolva o notebook `zombie-health-02-ds.ipynb`.
+
+# Roteiro 05
+*Laboratório em 16/04/2019*
+
+Este roteiro em: [Roteiro 05 / Parte A](https://github.com/santanche/java2learn/edit/master/notebooks/pt/c02oo/)
+
+## Parte B - Múltiplas Interfaces no Zombie Health
+
+Entre no diretório `c03oo-zombie/s03interfaces` e leia o que está explicado no notebook desse diretório: `multiplas-interfaces.ipynb`
