@@ -3,18 +3,18 @@ package pt.c08componentes.s20catalog.s90ml;
 import java.util.Random;
 
 import pt.c08componentes.s20catalog.s00shared.IColumnProducer;
-import pt.c08componentes.s20catalog.s00shared.IInstancesProducer;
+import pt.c08componentes.s20catalog.s00shared.ITableProducer;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.J48;
 import weka.core.Instance;
 import weka.core.Instances;
 
 public class DiagnosticsComponent implements IDiagnostics {
-  private IInstancesProducer iProducer;
+  private ITableProducer iProducer;
   IColumnProducer cProducer;
   IEHR ehrOutput;
   
-  public void connect(IInstancesProducer producer) {
+  public void connect(ITableProducer producer) {
     iProducer = producer;
   }
   

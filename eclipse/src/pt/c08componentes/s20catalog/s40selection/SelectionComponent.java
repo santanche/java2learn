@@ -2,12 +2,12 @@ package pt.c08componentes.s20catalog.s40selection;
 
 import java.util.Enumeration;
 
-import pt.c08componentes.s20catalog.s00shared.IInstancesProducer;
+import pt.c08componentes.s20catalog.s00shared.ITableProducer;
 import weka.core.Attribute;
 import weka.core.Instances;
 
 public class SelectionComponent implements ISelection {
-  private IInstancesProducer provider;
+  private ITableProducer provider;
   private IFilter filter;
   
   private String attributeA = null,
@@ -54,7 +54,7 @@ public class SelectionComponent implements ISelection {
     this.title = title;
   }
   
-  public void connect(IInstancesProducer provider) {
+  public void connect(ITableProducer provider) {
     this.provider = provider;
   }
   
