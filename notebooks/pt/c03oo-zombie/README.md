@@ -55,3 +55,6 @@ Entre no diretório `/notebooks/db/zombie`. Lá há três novos arquivos para vo
 * `zombie-health-cases500.csv` - mesmo layout do arquivo preexistente (`zombie-health-spreadsheet-ml-training.csv`) mas com novos 500 casos;
 * `zombie-health-new-cases20.csv` - arquivo no mesmo formato (sintomas/doenças) do preexistente (`zombie-health-spreadsheet-ml-training.csv`), mas com alguns sintomas e doenças diferentes (20 casos);
 * `zombie-health-new-cases500.csv` - mesmo layout do `zombie-health-new-cases20.csv` com 500 casos.
+
+# Perguntas Frequentes
+Veja em [FAQ](FAQ.md).
