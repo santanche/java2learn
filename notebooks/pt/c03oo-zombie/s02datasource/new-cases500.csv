@@ -1,0 +1,501 @@
+Paralisia,Língua Amarela,Dedo Tremendo,Perda de Membro,Dor no Peito,Raiva Severa,Olho vermelho,Pele azul,Diagnóstico
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,0,0,1,0,1,T-Virus
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+1,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,1,0,1,0,0,Briga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,0,Gripe Aviaria
+0,0,0,0,1,0,0,0,Infecção Viral
+1,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,1,1,Gripe Aviaria
+1,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,1,0,1,0,0,Briga
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,0,1,1,1,0,1,Briga
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,1,0,1,T-Virus
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,1,T-Virus
+0,1,1,1,0,0,0,0,Zulombriga
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,1,0,1,0,0,Briga
+0,0,1,0,0,1,0,1,T-Virus
+1,0,0,0,0,0,0,1,Infecção Bacteriana
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+1,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,1,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,0,0,Infecção Viral
+0,0,0,1,1,1,0,0,Briga
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,0,1,1,0,0,Briga
+0,0,0,0,1,1,0,1,Briga
+0,0,0,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,0,Gripe Aviaria
+0,0,0,1,1,1,0,0,Briga
+0,1,0,0,0,0,1,1,Infecção Bacteriana
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,1,0,1,0,0,Briga
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,0,1,T-Virus
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,0,T-Virus
+0,0,1,0,0,1,0,1,T-Virus
+1,0,0,1,0,0,0,1,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+1,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,1,0,0,Briga
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,1,0,0,0,0,1,T-Virus
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,1,1,0,0,0,Infecção Viral
+1,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,1,0,1,0,0,Briga
+1,1,0,1,0,0,0,0,Infecção Bacteriana
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,1,0,0,1,0,1,T-Virus
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,1,1,0,0,0,0,Zulombriga
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+1,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,1,0,0,0,Infecção Viral
+1,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,0,1,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,0,Gripe Aviaria
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+0,1,0,1,0,0,0,0,Zulombriga
+0,0,0,1,1,1,0,0,Briga
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,0,1,Gripe Aviaria
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,1,1,0,0,0,0,Zulombriga
+0,1,0,1,0,0,1,0,Infecção Bacteriana
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,1,1,1,0,1,Briga
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,1,T-Virus
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,1,T-Virus
+1,0,0,0,0,0,1,0,Gripe Aviaria
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+1,1,0,0,0,0,1,0,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,0,1,0,1,0,1,Briga
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,1,0,0,Briga
+0,0,1,0,0,1,0,1,T-Virus
+1,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,1,1,1,0,1,Briga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,1,0,0,Briga
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,0,0,0,0,1,1,Gripe Aviaria
+1,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,1,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,0,Briga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,1,0,0,0,0,0,Zulombriga
+0,1,0,0,0,0,1,1,Infecção Bacteriana
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,0,1,0,1,0,0,Briga
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,1,0,0,1,0,1,T-Virus
+0,1,1,1,0,0,0,0,Zulombriga
+1,0,0,1,0,0,0,0,Infecção Bacteriana
+1,1,0,1,0,0,1,1,Infecção Bacteriana
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,1,Briga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,1,1,0,0,0,0,Zulombriga
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,0,0,0,Infecção Viral
+0,0,1,0,0,0,0,1,T-Virus
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+1,0,0,0,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+1,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,0,0,0,0,Infecção Viral
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,1,1,1,0,0,Briga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,1,0,0,Briga
+0,0,1,0,0,1,0,0,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,1,1,0,1,Briga
+1,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,0,T-Virus
+0,0,0,0,0,0,0,1,Gripe Aviaria
+0,0,0,0,0,0,1,0,Gripe Aviaria
+0,0,0,0,1,1,0,0,Briga
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,0,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,0,1,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,1,T-Virus
+1,1,0,1,0,0,0,1,Infecção Bacteriana
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,0,0,0,Briga
+0,0,0,1,1,1,0,0,Briga
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,0,Briga
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,0,0,0,0,0,Infecção Viral
+1,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,0,1,0,1,Briga
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,1,T-Virus
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,1,T-Virus
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+1,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,0,1,0,0,Briga
+0,0,0,0,0,1,0,0,Briga
+0,0,0,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,1,T-Virus
+0,0,1,0,0,1,0,1,T-Virus
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,0,Briga
+0,0,0,0,0,0,1,0,Gripe Aviaria
+0,0,0,1,1,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,1,1,0,0,0,Briga
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,1,0,0,0,0,Infecção Viral
+1,1,0,1,0,0,1,1,Infecção Bacteriana
+0,0,0,0,1,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,1,1,0,0,Briga
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,1,0,1,T-Virus
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,0,0,1,T-Virus
+0,0,0,0,0,0,0,1,Gripe Aviaria
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,1,1,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,1,0,1,0,0,Briga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,1,1,1,0,0,Briga
+1,0,0,0,0,0,1,1,Gripe Aviaria
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,1,1,Gripe Aviaria
+1,1,0,1,0,0,0,1,Infecção Bacteriana
+1,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,0,1,1,1,0,0,Briga
+1,1,0,0,0,0,1,0,Infecção Bacteriana
+1,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,1,0,0,0,0,Infecção Viral
+0,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+1,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,1,1,0,0,Briga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,1,T-Virus
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,1,0,0,0,0,Zulombriga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,1,0,1,T-Virus
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,0,1,0,0,Briga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,0,1,1,0,0,Briga
+0,0,0,0,0,0,1,0,Gripe Aviaria
+0,1,0,0,0,0,1,0,Infecção Bacteriana
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,0,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,1,T-Virus
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,0,0,Infecção Viral
+0,0,0,0,1,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,1,T-Virus
+1,0,0,1,0,0,0,1,Infecção Bacteriana
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,0,0,0,0,0,0,Infecção Bacteriana
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,0,1,Gripe Aviaria
+0,0,0,1,0,0,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,1,1,0,0,0,Infecção Viral
+1,0,0,0,0,0,1,1,Gripe Aviaria
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,0,1,0,1,T-Virus
+0,1,1,1,0,0,0,0,Zulombriga
+1,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,1,0,0,Briga
+0,0,0,0,1,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,0,1,T-Virus
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,0,0,0,Zulombriga
+1,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,1,1,0,1,Briga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,1,0,0,T-Virus
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,0,0,0,0,1,T-Virus
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,0,1,0,1,0,0,Briga
+0,0,1,0,0,0,0,1,T-Virus
+0,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,0,1,0,0,0,1,Infecção Bacteriana
+0,0,0,0,0,0,1,0,Gripe Aviaria
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,1,0,1,0,0,Briga
+0,0,1,1,0,0,0,0,Zulombriga
+1,0,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,1,1,1,0,0,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+1,1,0,0,0,0,1,1,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,0,Briga
+0,0,1,0,0,0,0,1,T-Virus
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,1,0,0,1,0,1,T-Virus
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,1,0,1,T-Virus
+0,0,0,1,1,1,0,0,Briga
+0,1,0,0,0,0,1,1,Gripe Aviaria
+0,0,1,0,0,1,0,1,T-Virus
+0,0,0,0,0,1,0,1,T-Virus
+1,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,1,1,0,0,0,0,Zulombriga
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,0,0,0,1,Gripe Aviaria
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,1,1,0,0,0,0,Zulombriga
+0,1,1,0,0,0,0,0,Zulombriga
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,0,1,0,0,Briga
+0,1,1,1,0,0,0,0,Zulombriga
+1,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,1,0,1,0,0,Briga
+0,0,0,1,0,1,0,1,Briga
+0,0,0,0,0,0,1,1,Gripe Aviaria
+0,0,0,0,1,0,0,0,Infecção Viral
+0,0,0,0,0,1,0,0,Briga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,1,0,0,0,0,0,1,Infecção Bacteriana
+1,1,0,0,0,0,0,1,Infecção Bacteriana
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,1,0,0,0,0,0,Zulombriga
+0,1,1,1,0,0,0,0,Zulombriga
+0,0,0,1,1,0,0,0,Infecção Viral
+0,0,0,0,1,0,0,0,Infecção Viral
+0,1,1,0,0,0,0,0,Zulombriga
+0,1,0,1,0,0,0,0,Infecção Bacteriana
+0,0,1,0,0,0,0,0,Zulombriga
+0,0,1,0,0,1,0,1,T-Virus
+1,1,0,1,0,0,1,1,Infecção Bacteriana
+0,1,0,0,0,0,1,0,Gripe Aviaria
