@@ -22,7 +22,7 @@ public class App90aDataSetDiagnostics {
         diagnostics.connect(console);
 
         IDataSet dataset = new DataSetComponentWeka();
-        dataset.setDataSource("db/datasets/zombie/weka/zombie-health-spreadsheet-ml-training.arff");
+        dataset.setDataSource("eclipse/db/datasets/zombie/weka/zombie-health-spreadsheet-ml-training.arff");
         diagnostics.connect(dataset);
         
         anamnesis.start();

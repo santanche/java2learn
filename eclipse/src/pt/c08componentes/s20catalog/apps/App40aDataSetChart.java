@@ -13,7 +13,7 @@ public class App40aDataSetChart {
   {
       try {
         IDataSet dataset = new DataSetComponentWeka();
-        dataset.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+        dataset.setDataSource("eclipse/db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
         
         IProjection projectionDays = new ProjectionComponent();
         projectionDays.connect(dataset);

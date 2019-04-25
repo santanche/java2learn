@@ -14,7 +14,7 @@ public class App30bDataSetSelection {
   {
       try {
         IDataSet dataset = new DataSetComponentWeka();
-        dataset.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+        dataset.setDataSource("eclipse/db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
         
         ISelection selection = new SelectionComponent();
         selection.connect(dataset);
