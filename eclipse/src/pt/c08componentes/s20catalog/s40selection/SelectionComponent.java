@@ -62,6 +62,15 @@ public class SelectionComponent implements ISelection {
     this.filter = filter;
   }
   
+  public String[] requestAttributes() {
+    return null;
+  }
+  
+  @Override
+  public String[][] requestInstances() {
+    return null;
+  }
+  
   @Override
   public Instances requestInstancesWeka() {
     Instances filtered = null;

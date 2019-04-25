@@ -1,21 +1,21 @@
-Paralisia,Língua Amarela,Dedo Tremendo,Perda de Membro,Dor no Peito,Raiva Severa,Olho vermelho,Pele azul,Diagnóstico
-0,1,0,1,0,0,0,1,Infecção Bacteriana
-0,0,0,1,1,0,0,0,Infecção Viral
-0,0,0,1,1,0,0,0,Infecção Viral
-0,0,0,1,0,1,0,0,Briga
-0,0,0,0,0,0,0,0,Briga
-0,0,1,0,0,1,0,1,T-Virus
-0,1,1,1,0,0,0,0,Zulombriga
-0,1,0,0,0,0,0,0,Zulombriga
-1,1,0,0,0,0,0,0,Infecção Bacteriana
-0,0,0,1,1,0,0,0,Infecção Viral
-0,0,0,1,1,1,0,0,Briga
-0,1,1,1,0,0,0,0,Zulombriga
-0,0,1,0,0,0,0,1,T-Virus
-1,0,0,1,0,0,0,1,Infecção Bacteriana
-0,0,1,0,0,1,0,1,T-Virus
-1,1,0,1,0,0,0,0,Infecção Bacteriana
-0,0,1,0,0,1,0,1,T-Virus
-0,1,1,1,0,0,0,0,Zulombriga
-1,1,0,1,0,0,0,1,Infecção Bacteriana
-0,0,1,0,0,0,0,0,Zulombriga
+paralysis,yellow_tongue,member_loss,chest_pain,trembiling_finger,severe_anger,red_eye,blue_skin,diagnostic
+f,t,t,f,f,f,f,t,bacterial_infection
+f,f,t,t,f,f,f,f,Infecção Viral
+f,f,t,t,f,f,f,f,Infecção Viral
+f,f,t,f,f,t,f,f,fight
+f,f,f,f,f,f,f,f,fight
+f,f,f,f,t,t,f,t,t_virus
+f,t,t,f,t,f,f,f,zulombriga
+f,t,f,f,f,f,f,f,zulombriga
+t,t,f,f,f,f,f,f,bacterial_infection
+f,f,t,t,f,f,f,f,Infecção Viral
+f,f,t,t,f,t,f,f,fight
+f,t,t,f,t,f,f,f,zulombriga
+f,f,f,f,t,f,f,t,t_virus
+t,f,t,f,f,f,f,t,bacterial_infection
+f,f,f,f,t,t,f,t,t_virus
+t,t,t,f,f,f,f,f,bacterial_infection
+f,f,f,f,t,t,f,t,t_virus
+f,t,t,f,t,f,f,f,zulombriga
+t,t,t,f,f,f,f,t,bacterial_infection
+f,f,f,f,t,f,f,f,zulombriga
