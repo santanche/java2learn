@@ -5,6 +5,8 @@ Examples and exercises in Java.
 
 Todos os exemplos no diretório `notebook` são preparados para sereme executados no Jupyter, que podem ser executados em: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/master?urlpath=lab)
 
+## Git tutorial
+
 Não sabe git? Esse [guia interativo](https://learngitbranching.js.org/) vai te ajudar! Demora meia hora para fazer, mas é divertido e no final você vai saber os essenciais do git!
 
 ## Conjunto de Roteiros A - Objetos, Classes e Herança
