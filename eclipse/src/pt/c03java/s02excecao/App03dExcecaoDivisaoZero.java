@@ -19,11 +19,11 @@ public class App03dExcecaoDivisaoZero
         int x = Integer.parseInt(xs),
             y = Integer.parseInt(ys);
         
-		int divisao = divide(x, y);
-		System.out.println("Resultado da divisao: " + divisao);
+    		int divisao = divide(x, y);
+    		System.out.println("Resultado da divisao: " + divisao);
     }
     
-    public static int divide(int x, int y)  throws ArithmeticException
+    public static int divide(int x, int y) throws ArithmeticException
     {
         int divisao;
 

@@ -1,6 +1,7 @@
 package pt.c08componentes.s02jcomponent;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 
 import javax.swing.JFrame;
 
@@ -14,9 +15,9 @@ public class App01CirculoVisual {
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         // instanciacao do bean
-        Bean01CirculoVisual b01 = new Bean01CirculoVisual();
+        IBean01CirculoVisual b01 = new Bean01CirculoVisual();
         b01.setRaio(70);
-        janela.getContentPane().add(b01, BorderLayout.CENTER);
+        janela.getContentPane().add((Component)b01, BorderLayout.CENTER);
 
         janela.setVisible(true);
     }
