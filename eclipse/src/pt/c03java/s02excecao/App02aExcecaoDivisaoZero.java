@@ -2,7 +2,7 @@ package pt.c03java.s02excecao;
 
 import java.util.Scanner;
 
-public class App03ExcecaoDivisaoZero
+public class App02aExcecaoDivisaoZero
 {
     public static void main(String args[])
     {
@@ -16,23 +16,17 @@ public class App03ExcecaoDivisaoZero
         
         teclado.close();
 
-        int x = Integer.parseInt(xs),
-            y = Integer.parseInt(ys);
-        
         try {
-            int divisao = divide(x, y);
+            int x = Integer.parseInt(xs),
+                y = Integer.parseInt(ys);
+        
+            int divisao = x / y;
             System.out.println("Resultado da divisao: " + divisao);
+        } catch (NumberFormatException erro) {
+            System.err.println("Erro na conversao: " + erro.getMessage());
         } catch (ArithmeticException erro) {
-            System.err.println("Erro: " + erro.getMessage());
+            System.err.println("Erro na conta: " + erro.getMessage());
         }
-    }
-    
-    public static int divide(int x, int y)
-    {
-        int divisao;
 
-        divisao = x / y;
-            
-        return divisao;
-    }
+}
 }

@@ -24,8 +24,9 @@ public class App03cExcecaoDivisaoZero
             System.out.println("Resultado da divisao: " + divisao);
         } catch (ArithmeticException erro) {
             System.err.println("Erro: " + erro.getMessage());
-			erro.printStackTrace();
+            erro.printStackTrace();
         }
+        System.out.println("Continuacao do programa...");
     }
     
     public static int divide(int x, int y)

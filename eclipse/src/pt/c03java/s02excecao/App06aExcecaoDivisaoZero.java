@@ -19,20 +19,20 @@ public class App06aExcecaoDivisaoZero
         int x = Integer.parseInt(xs),
             y = Integer.parseInt(ys);
         
-		try {
-			int divisao = divide(x, y);
-			System.out.println("Resultado da divisao: " + divisao);
-		} catch (Exception erro) {
-			erro.printStackTrace();
-		}
+    		try {
+    			int divisao = divide(x, y);
+    			System.out.println("Resultado da divisao: " + divisao);
+    		} catch (Exception erro) {
+    			erro.printStackTrace();
+    		}
     }
     
     public static int divide(int x, int y)  throws ArithmeticException, DivisaoInutil
     {
         int divisao;
 		
-		if (y == 1)
-			throw new DivisaoInutil("Esta divisao eh inutil");
+    		if (y == 1)
+    			throw new DivisaoInutil("Esta divisao eh inutil");
 
         divisao = x / y;
             

@@ -19,13 +19,13 @@ public class App05aExcecaoDivisaoZero
         int x = Integer.parseInt(xs),
             y = Integer.parseInt(ys);
         
-		imprime(x, y);
+        imprime(x, y);
     }
     
-	public static void imprime(int x, int y) {
-		int divisao = divide(x, y);
-		System.out.println("Resultado da divisao: " + divisao);
-	}
+  	public static void imprime(int x, int y) {
+  		  int divisao = divide(x, y);
+  		  System.out.println("Resultado da divisao: " + divisao);
+  	}
 	
     public static int divide(int x, int y)
     {

@@ -16,7 +16,7 @@ public class App05bExcecaoDivisaoZero
         
         teclado.close();
 
-		imprime(xs, ys);
+        imprime(xs, ys);
     }
     
 	public static void imprime(String xs, String ys) {

@@ -23,7 +23,7 @@ public class App02cExcecaoDivisaoZero
             int divisao = x / y;
             System.out.println("Resultado da divisao: " + divisao);
         } catch (Exception erro) {
-			if (erro instanceof NumberFormatException)
+            if (erro instanceof NumberFormatException)
                 System.err.println("Erro na conversao: " + erro.getMessage());
             else if (erro instanceof ArithmeticException)
                 System.err.println("Erro na conta: " + erro.getMessage());

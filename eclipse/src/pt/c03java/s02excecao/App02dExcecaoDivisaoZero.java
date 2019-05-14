@@ -2,7 +2,7 @@ package pt.c03java.s02excecao;
 
 import java.util.Scanner;
 
-public class App02ExcecaoDivisaoZero
+public class App02dExcecaoDivisaoZero
 {
     public static void main(String args[])
     {
@@ -24,8 +24,8 @@ public class App02ExcecaoDivisaoZero
             System.out.println("Resultado da divisao: " + divisao);
         } catch (NumberFormatException erro) {
             System.err.println("Erro na conversao: " + erro.getMessage());
-        } catch (ArithmeticException erro) {
-            System.err.println("Erro na conta: " + erro.getMessage());
+        } catch (Exception erro) {
+            System.err.println("Outro erro: " + erro.getMessage());
         }
 
 }
