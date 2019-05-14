@@ -1,0 +1,5 @@
+# Design Pattern Abstract Factory
+
+O `Abstract Factory` é uma generalização do conceito de forma a isolar completamente o cliente do processo de construção. A ideia básica é que este pattern é uma fábrica de fábricas. Vamos entendê-lo por etapas.
+
+Primeiro vamos transferir a criação das fábricas 
