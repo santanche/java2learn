@@ -11,7 +11,7 @@ public class AppGravaBastiaoDAO
     public static void main(String argumentos[])
     {
         PrintWriter arquivo;
-        BastiaoDAO theBastian = new BastiaoDAO(1, "acordado", "Asdrubal");
+        BastiaoDAO theBastian = new BastiaoDAO(3, "acordado", "Asdrubal");
         
         try {
             arquivo = new PrintWriter(new FileWriter(DIRETORIO + "bastiao.txt"));
@@ -22,7 +22,7 @@ public class AppGravaBastiaoDAO
             
             System.out.println("Gravacao realizada com sucesso!");
         } catch (IOException erro) {
-            System.out.println("Não consegui criar o arquivo =(");
+            System.out.println("Nï¿½o consegui criar o arquivo =(");
         }
     }
 }
