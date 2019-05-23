@@ -98,6 +98,7 @@ public class BastiaoDAO implements Serializable
     }
     
     public void write(PrintWriter saida) {
+       saida.println("@BastiaoDAO");
        saida.println(idade);
        saida.println(estado);
        saida.println(nome);
@@ -105,9 +106,12 @@ public class BastiaoDAO implements Serializable
     
     public void read(BufferedReader entrada) {
        try {
-          idade = new Integer(entrada.readLine());
-          estado = entrada.readLine();
-          nome = entrada.readLine();
+          String classe = entrada.readLine();
+          if (classe.equalsIgnoreCase("@BastiaoDAO")) {
+            idade = Integer.parseInt(entrada.readLine());
+            estado = entrada.readLine();
+            nome = entrada.readLine();
+          }
        } catch (IOException erro) {
           erro.printStackTrace();
        }
