@@ -9,7 +9,8 @@ public class App1Serializa
 {
    public static void main(String args[])
     {
-        Bastiao theBastian = new Bastiao(1, "acordado", "Asdrubal");
+        Bastiao theBastian = new Bastiao(3, "acordado", "Asdrubal");
+        theBastian.aparece();
         
         try {
             ObjectOutputStream encoder = new ObjectOutputStream(

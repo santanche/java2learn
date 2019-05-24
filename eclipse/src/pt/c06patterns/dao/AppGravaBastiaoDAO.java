@@ -12,6 +12,7 @@ public class AppGravaBastiaoDAO
     {
         PrintWriter arquivo;
         BastiaoDAO theBastian = new BastiaoDAO(3, "acordado", "Asdrubal");
+        theBastian.aparece();
         
         try {
             arquivo = new PrintWriter(new FileWriter(DIRETORIO + "bastiao.txt"));
