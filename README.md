@@ -18,3 +18,13 @@ Não sabe git? Esse [guia interativo](https://learngitbranching.js.org/) vai te 
 Trabalha com conceitos de objetos, classes e herança do Conjunto de Roteiros A.
 
 [Conjunto de Roteiros B](notebooks/pt/c03oo-zombie/)
+
+## Conjunto de Roteiros C - Exercícios
+
+[Conjunto de Roteiros C](notebooks/pt/c04oo-exercicios/)
+
+## Conjunto de Roteiros D - Design Patterns
+
+Conjunto selecionado de design patterns e sua relação com orientação a objetos.
+
+[Conjunto de Roteiros D](notebooks/pt/c05patterns/)
