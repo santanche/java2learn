@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: pt.c03java.s00package.s02principal.AppAnuncia
+
