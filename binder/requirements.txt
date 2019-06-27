@@ -3,7 +3,7 @@
 beakerx
 py4j
 
-#jupyter/jupyterlab plugins/extensions
+# jupyter/jupyterlab plugins/extensions
 jupyterlab
 jupyter_contrib_nbextensions
 jupyterlab_launcher
