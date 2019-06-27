@@ -1,9 +1,12 @@
-
-# beakerx and deps
+# beakerx (kernels: java, clojure, groovy, scala, kotlin, sql) and dependencies
 beakerx
 py4j
 
-# jupyter/jupyterlab plugins/extensions
+# sos - script of scripts (multiple kernels)
+sos
+sos-notebook
+
+#jupyter/jupyterlab extensions
 jupyterlab
 jupyter_contrib_nbextensions
 jupyterlab_launcher
