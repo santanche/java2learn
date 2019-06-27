@@ -8,26 +8,5 @@ jupyterlab
 jupyter_contrib_nbextensions
 jupyterlab_launcher
 jupyterlab-git
-#jupyterlab_iframe
 ipywidgets
 RISE
-
-# data structures and data analysis 
-pandas
-numpy
-
-# data management/versioning
-quilt
-
-# http tools
-requests
-
-# data viz
-matplotlib
-plotly
-seaborn
-bs4
-
-# machine learning
-scikit-learn
-scipy
