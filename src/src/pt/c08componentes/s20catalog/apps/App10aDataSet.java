@@ -7,7 +7,7 @@ public class App10aDataSet {
   {
       try {
         DataSetComponent ds = new DataSetComponent();
-        ds.setDataSource("eclipse/db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+        ds.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
         
         System.out.println("=== Attributes ===");
         String attributes[] = ds.requestAttributes();

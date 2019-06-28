@@ -8,7 +8,7 @@ import org.knowm.xchart.BubbleChart;
 import org.knowm.xchart.BubbleChartBuilder;
 import org.knowm.xchart.SwingWrapper;
 
-import pt.c08componentes.s20catalog.s00shared.IColumnProducer;
+import pt.c08componentes.s20catalog.s00shared.ITableProducer;
 
 public class ChartBubbleComponent implements IChart {
   private BubbleChart chart = null;
@@ -17,24 +17,12 @@ public class ChartBubbleComponent implements IChart {
   private String xTitle = "X",
                  yTitle = "Y";
 
-  private IColumnProducer xProducer = null,
-                          yProducer = null,
-                          bubbleProducer = null,
-                          categoryProducer = null;
+  private ITableProducer producer = null;
 
   private SwingWrapper<BubbleChart> window = null;
   
-  public void connect(IColumnProducer producer) {
-    connect(producer, ChartParameter.X_AXIS);
-  }
-  
-  public void connect(IColumnProducer producer, ChartParameter role) {
-    switch (role) {
-      case X_AXIS:   xProducer = producer; break;
-      case Y_AXIS:   yProducer = producer; break;
-      case BUBBLE:   bubbleProducer = producer; break;
-      case CATEGORY: categoryProducer = producer; break;
-    }
+  public void connect(ITableProducer producer) {
+    this.producer = producer;
   }
   
   public ChartBubbleComponent() {
@@ -48,12 +36,26 @@ public class ChartBubbleComponent implements IChart {
     this.title = title;
   }
 
+  public String getXTitle() {
+    return xTitle;
+  }
+  
+  public void setXTitle(String title) {
+    xTitle = title;
+  }
+
+  public String getYTitle() {
+    return title;
+  }
+  
+  public void setYTitle(String title) {
+    yTitle = title;
+  }
+
   public boolean start() {
     boolean status = true;
     
     if (window == null) {
-      xTitle = (xProducer != null) ? xProducer.getTitle() : xTitle;
-      yTitle = (yProducer != null) ? yProducer.getTitle() : yTitle;
       chart = new BubbleChartBuilder().width(800).height(600).title(title).xAxisTitle(xTitle).yAxisTitle(yTitle).build();;
       window = new SwingWrapper<BubbleChart>(chart);
       if (window != null) {
@@ -69,50 +71,70 @@ public class ChartBubbleComponent implements IChart {
   public boolean stop() {
     return true;
   }
+  
+  public double[] toDouble(String[][] instances, int column ) {
+    double[] numbers = new double[instances.length];
+    for (int i = 0; i < instances.length; i++)
+      numbers[i] = Double.parseDouble(instances[i][column]);
+    return numbers;
+  }
 
   private void buildChart() {
-    if (chart != null && xProducer != null && yProducer != null) {
-      double[] xData = xProducer.requestValues(),
-               yData = yProducer.requestValues();
-      double[] bubbleData = null;
-      String[] categoryData = (categoryProducer == null)?null:categoryProducer.requestNominals();
-      
-      if (bubbleProducer == null) {
-        bubbleData = new double[xData.length];
-        for (int i = 0; i < xData.length; i++)
-          bubbleData[i] = 10;
-      } else {
-        bubbleData = bubbleProducer.requestValues();
-      }
-      
-      if (categoryData == null ||
-          xData.length != yData.length || yData.length != bubbleData.length ||
-          bubbleData.length != categoryData.length) {
-        chart.addSeries(" ", xData, yData, bubbleData);
-      } else {
-        Hashtable<String,String> hash = new Hashtable<String,String>();
-        int outer = 0;
-        int size = categoryData.length;
-        while (outer < size) {
-          if (hash.containsKey(categoryData[outer]))
-            outer++;
-          else {
-            hash.put(categoryData[outer],categoryData[outer]);
-            List<Double> xSub = new ArrayList<Double>(),
-                         ySub = new ArrayList<Double>(),
-                         bubbleSub = new ArrayList<Double>();
-            for (int inner = outer; inner < size; inner++)
-              if (categoryData[inner].equalsIgnoreCase(categoryData[outer])) {
-                xSub.add(xData[inner]);
-                ySub.add(yData[inner]);
-                bubbleSub.add(bubbleData[inner]);
-              }
-            chart.addSeries(categoryData[outer], xSub, ySub, bubbleSub);
-            outer++;
+    if (chart != null && producer != null) {
+      String[][] instances = producer.requestInstances();
+
+      if (instances != null) {
+        double[] xData = toDouble(instances, 0),
+                 yData = toDouble(instances, 1);
+        
+        String[] categoryData = null;
+        if (instances[0].length > 2) {
+          categoryData = new String[instances.length];
+          for (int c = 0; c < instances.length; c++)
+            categoryData[c] = instances[c][2];
+        }
+        
+        double[] bubbleData = null;
+        if (instances[0].length > 3)
+          bubbleData = toDouble(producer.requestInstances(), 3);
+        else {
+          bubbleData = new double[instances.length];
+          for (int i = 0; i < xData.length; i++)
+            bubbleData[i] = 10;
+        }
+          
+        
+        if (categoryData == null ||
+            xData.length != yData.length || yData.length != bubbleData.length ||
+            bubbleData.length != categoryData.length) {
+          chart.addSeries(" ", xData, yData, bubbleData);
+        } else {
+          Hashtable<String,String> hash = new Hashtable<String,String>();
+          int outer = 0;
+          int size = categoryData.length;
+          while (outer < size) {
+            if (hash.containsKey(categoryData[outer]))
+              outer++;
+            else {
+              hash.put(categoryData[outer],categoryData[outer]);
+              List<Double> xSub = new ArrayList<Double>(),
+                           ySub = new ArrayList<Double>(),
+                           bubbleSub = new ArrayList<Double>();
+              for (int inner = outer; inner < size; inner++)
+                if (categoryData[inner].equalsIgnoreCase(categoryData[outer])) {
+                  xSub.add(xData[inner]);
+                  ySub.add(yData[inner]);
+                  bubbleSub.add(bubbleData[inner]);
+                }
+              chart.addSeries(categoryData[outer], xSub, ySub, bubbleSub);
+              outer++;
+            }
           }
         }
       }
+      
     }
+    
   }
   
 }

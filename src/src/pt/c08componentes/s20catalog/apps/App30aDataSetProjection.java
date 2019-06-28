@@ -1,6 +1,6 @@
 package pt.c08componentes.s20catalog.apps;
 
-import pt.c08componentes.s20catalog.s10ds.DataSetComponentWeka;
+import pt.c08componentes.s20catalog.s10ds.DataSetComponent;
 import pt.c08componentes.s20catalog.s10ds.IDataSet;
 import pt.c08componentes.s20catalog.s20console.ConsoleComponent;
 import pt.c08componentes.s20catalog.s20console.IConsole;
@@ -11,8 +11,8 @@ public class App30aDataSetProjection {
   public static void main(String args[])
   {
       try {
-        IDataSet dataset = new DataSetComponentWeka();
-        dataset.setDataSource("eclipse/db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+        IDataSet dataset = new DataSetComponent();
+        dataset.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
         
         IProjection projection = new ProjectionComponent();
         projection.connect(dataset);
@@ -20,12 +20,8 @@ public class App30aDataSetProjection {
         IConsole console = new ConsoleComponent();
         console.connect(projection);
 
-        projection.setAttribute("name");
-        projection.setTitle("Name");
-        console.update();
-        
-        projection.setAttribute("age");
-        projection.setTitle("Age");
+        String[] attributes = {"name", "age"};
+        projection.setAttributes(attributes);
         console.update();
       } catch (Exception e) {
         e.printStackTrace();

@@ -1,8 +1,7 @@
 package pt.c08componentes.s20catalog.s40selection;
 
 import pt.c08componentes.s20catalog.s00shared.ITableProducerReceptacle;
-import pt.c08componentes.s20catalog.s00shared.ITitle;
 
-public interface ISelection extends ISelectionServices, ITitle, ITableProducerReceptacle, IFilterReceptacle {
+public interface ISelection extends ISelectionServices, ITableProducerReceptacle {
   /* Component Interfaces Set */
 }

@@ -1,131 +1,76 @@
 package pt.c08componentes.s20catalog.s30projection;
 
-import java.util.Enumeration;
-
 import pt.c08componentes.s20catalog.s00shared.ITableProducer;
-import weka.core.Attribute;
-import weka.core.Instances;
 
 public class ProjectionComponent implements IProjection {
   private ITableProducer provider;
   
-  private String attribute = null,
-                 title = null;
+  private String attributes[] = null;
   
-  /* (non-Javadoc)
-   * @see pt.c08componentes.s20catalog.s20projection.IProjectionSimple#getAttribute()
-   */
-  @Override
-  public String getAttribute() {
-    return attribute;
+  public String[] getAttributes() {
+    return attributes;
   }
 
-  /* (non-Javadoc)
-   * @see pt.c08componentes.s20catalog.s20projection.IProjectionSimple#setAttribute(java.lang.String)
-   */
-  @Override
-  public void setAttribute(String attribute) {
-    this.attribute = attribute;
-  }
-  
-  public String getTitle() {
-    String title = (this.title != null) ? this.title : attribute;
-    return title;
-  }
-  
-  public void setTitle(String title) {
-    this.title = title;
+  public void setAttributes(String attributes[]) {
+    this.attributes = attributes;
   }
   
   public void connect(ITableProducer provider) {
     this.provider = provider;
   }
   
-  /* (non-Javadoc)
-   * @see pt.c08componentes.s20catalog.s20projection.IProjectionSimple#projectAttributeValues()
-   */
-  @Override
-  public double[] requestValues() {
-    double[] attributeValues = null;
+  public String[] requestAttributes() {
+    return attributes;
+  }
+  
+  public String[][] requestInstances() {
+    String[][] instances = null;
     
     if (provider != null) {
-      Instances instances = provider.requestInstancesWeka();
-      
-      Attribute attr = findAttribute(instances);
-      if (attr != null) {
-        int index = attr.index();
-        if (index != -1)
-          attributeValues = instances.attributeToDoubleArray(index);
+      String[][] allInstances = provider.requestInstances();
+      if (allInstances != null  && attributes != null) {
+        instances = new String[allInstances.length][];
+        
+        // busca a posicao dos atributos selecionados na tabela original
+        String[] allAttributes = provider.requestAttributes();
+        int attrPos[] = new int[attributes.length];
+        for (int as = 0; as < attributes.length; as++) {
+          int aa;
+          for (aa = 0; aa < allAttributes.length &&
+               !attributes[as].equalsIgnoreCase(allAttributes[aa]); aa++)
+            /* nothing */;
+          if (aa < allAttributes.length)
+            attrPos[as] = aa;
+          else
+            attrPos[as] = -1;
+        }
+        
+        // filtra atributos selecionados
+        for (int i = 0; i < allInstances.length; i++) {
+          instances[i] = new String[attributes.length];
+          for (int as = 0; as < attributes.length; as++)
+            if (attrPos[as] > -1)
+              instances[i][as] = allInstances[i][attrPos[as]];
+        }
       }
     }
     
-    return attributeValues;
+    return instances;
   }
   
-  /* (non-Javadoc)
-   * @see pt.c08componentes.s20catalog.s20projection.IProjectionSimple#projectAttributeNominals()
-   */
-  @Override
-  public String[] requestNominals() {
-    String[] nominals = null;
-    Instances instances = provider.requestInstancesWeka();
-    
-    Attribute attr = findAttribute(instances);
-    
-    boolean isNominal = attr.isNominal();
-    
-    if (attr != null) {
-      int index = attr.index();
-
-      if (index != -1) {
-        nominals = new String[instances.size()];
-        for (int i = 0; i < nominals.length; i++)
-          nominals[i] = (isNominal)?
-                          instances.get(i).stringValue(index) :
-                          Double.toString(instances.get(i).value(index));
-      }
-    }
-    
-    return nominals;
-  }
-  
-  private Attribute findAttribute(Instances instances) {
-    Attribute attrFinal = null;
-    
-    if (attribute != null) {
-      Enumeration<Attribute> attrEnum = instances.enumerateAttributes();
-
-      while (attrFinal == null && attrEnum.hasMoreElements()) {
-        Attribute attr = attrEnum.nextElement();
-        if (attribute.equalsIgnoreCase(attr.name()))
-          attrFinal = attr;
-      }
-    }
-    
-    return attrFinal;
-  }
-  
-  @Override
   public String toString() {
     String output = "***** empty *****";
     
-    Instances instances = provider.requestInstancesWeka();
-    Attribute attr = findAttribute(instances);
-    
-    if (attr != null) {
-      output = "===== " + getTitle() + " =====\n";
-      if (attr.isNominal()) {
-        String[] values = requestNominals();
-        if (values != null) {
-          for (String val: values)
-            output += val + "\n";
-        }
-      } else {
-        double[] values = requestValues();
-        if (values != null) {
-          for (double val: values)
-            output += val + "\n";
-        }
+    String instances[][] = requestInstances();
+    if (attributes != null && instances != null) {
+      for (int as = 0; as < attributes.length; as++)
+        output += attributes[as] + ", ";
+      output += "\n";
+      
+      for (String[] inst: instances) {
+        for (String ic: inst)
+          output += ic + ", ";
+        output += "\n";
       }
     }
     
