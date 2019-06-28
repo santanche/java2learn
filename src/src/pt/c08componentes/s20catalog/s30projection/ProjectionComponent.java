@@ -57,23 +57,4 @@ public class ProjectionComponent implements IProjection {
     
     return instances;
   }
-  
-  public String toString() {
-    String output = "***** empty *****";
-    
-    String instances[][] = requestInstances();
-    if (attributes != null && instances != null) {
-      for (int as = 0; as < attributes.length; as++)
-        output += attributes[as] + ", ";
-      output += "\n";
-      
-      for (String[] inst: instances) {
-        for (String ic: inst)
-          output += ic + ", ";
-        output += "\n";
-      }
-    }
-    
-    return output;
-  }
 }

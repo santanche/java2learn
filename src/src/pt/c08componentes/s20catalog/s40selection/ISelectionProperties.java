@@ -1,8 +1,6 @@
 package pt.c08componentes.s20catalog.s40selection;
 
-import pt.c08componentes.s20catalog.s00shared.ITableProducer;
-
-public interface ISelectionServices extends ITableProducer {
+public interface ISelectionProperties {
   String getAttribute();
   void setAttribute(String attributeA);
   public String getOperator();
