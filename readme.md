@@ -3,7 +3,7 @@ Examples and exercises in Java.
 
 # Portuguese Version (Versão em Português)
 
-Todos os exemplos no diretório `notebook` são preparados para sereme executados no Jupyter, que podem ser executados em: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/master?urlpath=lab)
+Todos os exemplos no diretório `notebook` são preparados para sereme executados no Jupyter, que podem ser executados em: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/feature/beakerx?urlpath=lab)
 
 ## Git tutorial
 
