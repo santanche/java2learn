@@ -3,14 +3,14 @@ Examples and exercises in Java.
 
 # Portuguese Version (Versão em Português)
 
-Todos os exemplos no diretório `notebook` são preparados para sereme executados no Jupyter, que podem ser executados em: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/feature/beakerx?urlpath=lab)
+Todos os exemplos no diretório `notebook` são preparados para o ambiente Jupyter.
 
-## Launching specific branches on a [binderhub](https://github.com/jupyterhub/binderhub) instance
+## Abrir branch específico em uma instância do [binderhub](https://github.com/jupyterhub/binderhub)
 
-* **master** <br/> [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/santanche/java2learn/master?urlpath=lab)
+* **Branch *master*** <br/> [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/santanche/java2learn/master?urlpath=lab)
 
 
-* **feature/beakerx** <br/> [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/santanche/java2learn/feature/beakerx?urlpath=lab)
+* **Branch *feature/beakerx*** <br/> [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/santanche/java2learn/feature/beakerx?urlpath=lab)
 
 ## Git tutorial
 
