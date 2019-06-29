@@ -13,12 +13,21 @@
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cs3U8Hx1EeiALuK4ap0Avg" client="_unztcHv6EeiIiN0sK408yA" supplier="_mxB-AHx0EeiALuK4ap0Avg" contract="_mxB-AHx0EeiALuK4ap0Avg"/>
     <ownedBehavior xmi:type="uml:Activity" xmi:id="_XlGHMKclEeie9cH3wd_yfg" name="Recupera Dados"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_1Y_38Hv7EeiIiN0sK408yA" name="DataSet">
+  <packagedElement xmi:type="uml:Class" xmi:id="_1Y_38Hv7EeiIiN0sK408yA" name="DataSetComponent">
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_QGU1wHx2EeiALuK4ap0Avg" client="_1Y_38Hv7EeiIiN0sK408yA" supplier="_Gzv3IHx2EeiALuK4ap0Avg" contract="_Gzv3IHx2EeiALuK4ap0Avg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="__l8NEHv7EeiIiN0sK408yA" name="IInstancesProducer">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_bjTP0Hv8EeiIiN0sK408yA" name="requestInstances" visibility="public">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_i9LncHv8EeiIiN0sK408yA" name="instances" type="_SUk2cHv8EeiIiN0sK408yA" direction="return"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="__l8NEHv7EeiIiN0sK408yA" name="ITableProducer" visibility="package">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_v_4qsJpPEemcj7QWVCbjHw" name="requestAttributes">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_v_4qsZpPEemcj7QWVCbjHw" name="attributes" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3AuQMJpPEemcj7QWVCbjHw" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bjTP0Hv8EeiIiN0sK408yA" name="requestInstances" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_i9LncHv8EeiIiN0sK408yA" name="instances" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hBNr8JpPEemcj7QWVCbjHw" value="*"/>
+      </ownedParameter>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SUk2cHv8EeiIiN0sK408yA" name="Instances"/>
@@ -154,7 +163,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_CxQO4HxyEeiALuK4ap0Avg" client="_KN7x8HxpEeiALuK4ap0Avg" supplier="_0UuwYHxwEeiALuK4ap0Avg"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_QyYnUHxyEeiALuK4ap0Avg" client="_0UuwYHxwEeiALuK4ap0Avg" supplier="_0UuwYHxwEeiALuK4ap0Avg"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_mxB-AHx0EeiALuK4ap0Avg" name="IDataSource">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_mxB-AHx0EeiALuK4ap0Avg" name="IDataSetProperties">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_pKNb4Hx0EeiALuK4ap0Avg" name="getDataSource">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_xtBKcHx0EeiALuK4ap0Avg" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>

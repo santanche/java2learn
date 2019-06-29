@@ -1,3 +1,5 @@
+# Seção de Fundamentos de Orientação a Objetos
+
 Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/master?urlpath=lab) e realize o que for solicitado.
 
 # Roteiro 02
@@ -39,8 +41,9 @@ Este roteiro tem início no projeto C++ em: [Roteiro 03 / Parte A](https://githu
 
 Entre no diretório: `s04polimorfismo/s01exercicios` e resolva todos os exercícios que estão no notebook desse diretório: `polimorfismo-java.ipynb`
 
-# Roteiro 05
-*Laboratório em 16/04/2019*
+# Roteiro Classes Abstratas e Interfaces
+*Laboratório POO em 16/04/2019*
+*Laboratório RCS (revisão) em 29/06/2019*
 
 ## Parte A - Classes Abstratas e Interfaces
 
@@ -50,4 +53,4 @@ Entre no diretório `s06interface/s01exercicios` e resolva todos os exercícios 
 
 ## Parte B - Múltplas Interfaces
 
-Continue o roteiro no caso Zombie Health, que está no diretório [Roteiro 05 / Parte B](https://github.com/santanche/java2learn/edit/master/notebooks/pt/c03oo-zombie/).
+Continue no roteiro de mesmo título na *Seção de Componentes de Software*, pois as múltiplas interfaces serão importantes para esse conceito [Roteiro Classes Abstratas e Interfaces / Parte B](../c04components/).

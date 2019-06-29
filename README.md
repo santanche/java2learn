@@ -9,15 +9,21 @@ Todos os exemplos no diretório `notebook` são preparados para sereme executado
 
 Não sabe git? Esse [guia interativo](https://learngitbranching.js.org/) vai te ajudar! Demora meia hora para fazer, mas é divertido e no final você vai saber os essenciais do git!
 
-## Conjunto de Roteiros A - Objetos, Classes e Herança
+## Seção de Fundamentos de Orientação a Objetos
 
-[Conjunto de Roteiros A](notebooks/pt/c02oo/)
+[Fundamentos de Orientação a Objetos](notebooks/pt/c02oo/)
 
-## Conjunto de Roteiros B - Zombie Health 1
+## Seção Zombie Health 1
 
 Trabalha com conceitos de objetos, classes e herança do Conjunto de Roteiros A.
 
-[Conjunto de Roteiros B](notebooks/pt/c03oo-zombie/)
+[Zombie Health 1](notebooks/pt/c03zombie/)
+
+## Seção de Componentes de Software
+
+Fundamentos de componentes de software e conceitos relacionados.
+
+[Componentes de Software](notebooks/pt/c04components/)
 
 ## Conjunto de Roteiros C - Exercícios
 
