@@ -4,7 +4,7 @@ public class AppStatistics02 {
    public static void main(String args[])
    {
        try {
-           IStatistics stat = new Statistics(3);
+           IStatisticsServices stat = new Statistics(3);
 
            System.out.println("inserido valor: " + 50.0f);
            stat.insertValue(50.0f);

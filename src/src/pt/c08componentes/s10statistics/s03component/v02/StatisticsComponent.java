@@ -1,90 +1,84 @@
 package pt.c08componentes.s10statistics.s03component.v02;
 
+import java.util.Vector;
+
 /**
  * Registers a set of numbers and calculates the sum and average of these numbers.
  * 
  * @author Andre Santanche
  */
 public class StatisticsComponent implements IStatistics {
-   public final static int STANDARD_CAPACITY = 50;
-   
-   private double valueSet[];
-   private int size;
+   private Vector<Double> valueSet;
    
    /*
     * Constructor
     **************/
 
-   public StatisticsComponent()
-   {
-      this(STANDARD_CAPACITY);
+   public StatisticsComponent() {
+      super();
+      valueSet = new Vector<Double>();
    }
    
    public StatisticsComponent(int capacity) {
       super();
-      valueSet = new double[capacity];
-      size = 0;
+      valueSet = new Vector<Double>(capacity);
    }
 
-   /* Property
-    **********/
+   /* Properties
+    ************/
    
    public int getSize() {
-       return size;
+       return valueSet.size();
    }
    
    public double[] getValueSet() {
-	   return valueSet;
+      int size = valueSet.size();
+      double result[] = new double[size];
+      for (int d = 0; d < size; d++)
+         result[d] = valueSet.get(d);
+	   return result;
    }
 
    public void setValueSet(double[] valueSet) {
-	   this.valueSet = valueSet;
-	   size = valueSet.length;
+      for (int d = 0; d < valueSet.length; d++)
+         this.valueSet.add(valueSet[d]);
    }
    
    public double getValueSet(int index) {
-	   return (index < size) ? valueSet[index] : 0;
+	   return (index < getSize()) ? valueSet.get(index) : 0;
    }
    
    public void setValueSet(int index, double value) {
-	   int position = (index < size) ? index : size;
-	   if (position < size) {
-		   valueSet[position] = value;
-	       if (position == size)
-		       size++;
-	   }
+	   int position = (index < getSize()) ? index : getSize();
+	   if (position < getSize())
+		   valueSet.set(index, value);
+	   else
+	      valueSet.add(value);
    }
 
    /*
-    * IStatistics Interface
-    ***********************/
-   
-   /*
-    * IStatistics Interface
-    ***********************/
+    * IStatisticsServices Interface
+    *******************************/
    
    public void insertValue(double value) {
-      if (size < valueSet.length) {
-         valueSet[size] = value;
-         size++;
-      }
+      valueSet.add(value);
    }
 
    public double sum() {
       double theSum = 0.0f;
-       
-      for (int p = 0; p < size; p++)
-         theSum += valueSet[p];
-       
+      
+      for (double value : valueSet)
+         theSum += value;
+      
       return theSum;
    }
 
    public double average() {
       double avg = 0;
-       
-      if (size > 0)
-         avg = sum() / size;
-       
+      
+      if (valueSet.size() > 0)
+         avg = sum() / valueSet.size();
+      
       return avg;
    }
 }

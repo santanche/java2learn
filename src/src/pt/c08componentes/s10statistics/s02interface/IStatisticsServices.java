@@ -1,4 +1,4 @@
-package pt.c08componentes.s10statistics.s03component.v01;
+package pt.c08componentes.s10statistics.s02interface;
 
 /**
  * Interface for a Statistics Class that registers a set of numbers
@@ -6,7 +6,7 @@ package pt.c08componentes.s10statistics.s03component.v01;
  * 
  * @author Andre Santanche
  */
-public interface IStatistics {
+public interface IStatisticsServices {
    /**
     * Inserts a value into the set.
     * @param value the value to be inserted into the set

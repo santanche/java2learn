@@ -1,57 +1,52 @@
 package pt.c08componentes.s10statistics.s03component.v01;
 
+import java.util.Vector;
+
 /**
  * Registers a set of numbers and calculates the sum and average of these numbers.
  * 
  * @author Andre Santanche
  */
-public class StatisticsComponent implements IStatistics {
-   public final static int STANDARD_CAPACITY = 50;
-   
-   private double valueSet[];
-   private int size;
+public class StatisticsComponent implements IStatisticsServices {
+   private Vector<Double> valueSet;
    
    /*
     * Constructor
     **************/
 
-   public StatisticsComponent()
-   {
-      this(STANDARD_CAPACITY);
+   public StatisticsComponent() {
+      super();
+      valueSet = new Vector<Double>();
    }
    
    public StatisticsComponent(int capacity) {
       super();
-      valueSet = new double[capacity];
-      size = 0;
+      valueSet = new Vector<Double>(capacity);
    }
 
    /*
-    * IStatistics Interface
-    ***********************/
+    * IStatisticsServices Interface
+    *******************************/
    
    public void insertValue(double value) {
-      if (size < valueSet.length) {
-         valueSet[size] = value;
-         size++;
-      }
+      valueSet.add(value);
    }
 
    public double sum() {
       double theSum = 0.0f;
-       
-      for (int p = 0; p < size; p++)
-         theSum += valueSet[p];
-       
+      
+      for (double value : valueSet)
+         theSum += value;
+      
       return theSum;
    }
 
    public double average() {
       double avg = 0;
-       
-      if (size > 0)
-         avg = sum() / size;
-       
+      
+      if (valueSet.size() > 0)
+         avg = sum() / valueSet.size();
+      
       return avg;
    }
 }
