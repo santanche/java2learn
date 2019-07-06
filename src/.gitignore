@@ -1,1 +1,18 @@
-/bin/
+### JupyterNotebook ###
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+__pycache__
+*/__pycache__/*
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
+
+.local
+.jupyter
+.bashrc
+.bash_rc
+.ipython
+.iconda
+.*
+!/.gitignore
+.bash_logout
+.profile
