@@ -4,10 +4,6 @@ public interface IStatisticsProperties {
 
 	int getSize();
 
-	void setSize(int size);
-
-	int getLast();
-
 	double[] getValueSet();
 
 	void setValueSet(double[] valueSet);

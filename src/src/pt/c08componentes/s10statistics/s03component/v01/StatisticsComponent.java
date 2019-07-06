@@ -1,19 +1,26 @@
-package pt.c08componentes.s10statistics.s01class;
+package pt.c08componentes.s10statistics.s03component.v01;
 
 /**
  * Registers a set of numbers and calculates the sum and average of these numbers.
  * 
  * @author Andre Santanche
  */
-public class Statistics {
+public class StatisticsComponent implements IStatistics {
+   public final static int STANDARD_CAPACITY = 50;
+   
    private double valueSet[];
    private int size;
    
    /*
     * Constructor
     **************/
+
+   public StatisticsComponent()
+   {
+      this(STANDARD_CAPACITY);
+   }
    
-   public Statistics(int capacity) {
+   public StatisticsComponent(int capacity) {
       super();
       valueSet = new double[capacity];
       size = 0;

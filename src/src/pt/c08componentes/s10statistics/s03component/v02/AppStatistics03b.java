@@ -4,7 +4,7 @@ public class AppStatistics03b {
    public static void main(String args[])
    {
        try {
-           IStatistics stat = new Statistics(3);
+           IStatistics stat = new StatisticsComponent(3);
 
            System.out.println("inserido valor: " + 50.0f);
            stat.insertValue(50.0f);
@@ -15,15 +15,7 @@ public class AppStatistics03b {
        
            System.out.println("-- somatorio: " + stat.sum());
            System.out.println("-- media: " + stat.average());
-           
-           stat.setSize(5);
-           System.out.println("inserido valor: " + 40.0f);
-           stat.insertValue(40.0f);
-           System.out.println("inserido valor: " + 80.0f);
-           stat.insertValue(20.0f);
-           System.out.println("-- somatorio: " + stat.sum());
-           System.out.println("-- media: " + stat.average());
-           
+           System.out.println("-- tamanho: " + stat.getSize());
        } catch (Exception e) {
            e.printStackTrace();
        }
