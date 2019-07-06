@@ -1,14 +1,14 @@
 package pt.c08componentes.s10statistics.s04required;
 
-import pt.c08componentes.s10statistics.s04dcc.IStatistics;
-import pt.c08componentes.s10statistics.s04dcc.StatisticsComponent;
+import pt.c08componentes.s10statistics.s03component.v02.IStatistics;
+import pt.c08componentes.s10statistics.s03component.v02.StatisticsComponent;
 
 public class AppStatistics04
 {
     public static void main(String args[])
     {
        IStatistics componentStat = new StatisticsComponent();
-       IStatisticsClient componentClient = new StatisticsClientComponent();
+       IClient componentClient = new ClientComponent();
        
        componentClient.connect(componentStat);
        
