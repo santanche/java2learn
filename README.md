@@ -14,12 +14,6 @@ Todos os exemplos no diretório `notebook` são preparados para o ambiente Jupyt
   [![launch @ gke.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/santanche/java2learn/master?urlpath=lab)
 
 
-* **Branch *feature/beakerx*** 
-
-  [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/santanche/java2learn/feature/beakerx?urlpath=lab)
-
-  [![launch @ gke.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/santanche/java2learn/feature/beakerx?urlpath=lab)
-
 ## Git tutorial
 
 Não sabe git? Esse [guia interativo](https://learngitbranching.js.org/) vai te ajudar! Demora meia hora para fazer, mas é divertido e no final você vai saber os essenciais do git!
