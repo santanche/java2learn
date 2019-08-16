@@ -1,9 +1,23 @@
 #!/bin/bash
 
-# Beaker installation and extension
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
+
+# sparql kernel
+jupyter sparqlkernel install --user
+
+# Beaker installation and extension setup
 beakerx install
 jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build 
 jupyter labextension install beakerx-jupyterlab --no-build 
+
+# Table of contents Jupyter Lab Extension
+jupyter labextension install @jupyterlab/toc --no-build 
+
+# Jupyter/Jupyterlab extension for proxying internal applications
+jupyter serverextension enable --sys-prefix jupyter_server_proxy
+jupyter labextension install jupyterlab-server-proxy --no-build 
 
 # Git Jupyter/Lab extension 
 jupyter labextension install @jupyterlab/git --no-build 
@@ -22,12 +36,6 @@ jupyter-nbextension enable  rise --py --sys-prefix
 # Plotly Jupyter Lab extension
 jupyter labextension install @jupyterlab/plotly-extension --no-build 
 
-# Table of contents Jupyter Lab Extension
-jupyter labextension install @jupyterlab/toc --no-build 
 
-# Building everything
+# Building everything up for jupyterlab extensions
 jupyter lab build --dev
-
-
-
-
