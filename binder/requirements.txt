@@ -29,7 +29,6 @@ requests
 # data viz
 matplotlib
 plotly
-jupyterlab-plotly-extension
 chart-studio
 seaborn
 
