@@ -41,7 +41,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/genson-1.6.jar">
+	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/lib/genson-1.6.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

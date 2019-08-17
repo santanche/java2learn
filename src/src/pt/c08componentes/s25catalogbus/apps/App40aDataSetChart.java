@@ -1,7 +1,7 @@
 package pt.c08componentes.s25catalogbus.apps;
 
-import pt.c08componentes.s25catalogbus.s10ds.DataSetComponent;
-import pt.c08componentes.s25catalogbus.s10ds.IDataSet;
+import pt.c08componentes.s25catalogbus.s15consumer.BusConsumerComponent;
+import pt.c08componentes.s25catalogbus.s15consumer.IBusConsumer;
 import pt.c08componentes.s25catalogbus.s30projection.IProjection;
 import pt.c08componentes.s25catalogbus.s30projection.ProjectionComponent;
 import pt.c08componentes.s25catalogbus.s50chart.ChartBubbleComponent;
@@ -11,19 +11,24 @@ public class App40aDataSetChart {
   public static void main(String args[])
   {
       try {
-        IDataSet dataset = new DataSetComponent();
-        dataset.setDataSource("db/datasets/zombie/complete/zombie-health-spreadsheet-ml-training.csv");
+         IBusConsumer bc = new BusConsumerComponent();
+         bc.setBusURI("tcp://localhost:1883");
+         bc.setTopic("sensor/+/+");
+         bc.setBlockSize(10);
+         bc.setVerbose(1);
         
         IProjection projection = new ProjectionComponent();
-        projection.connect(dataset);
-        String attributes[] = {"days_recovery", "age"};
+        projection.connect(bc);
+        String attributes[] = {"message", "value"};
         projection.setAttributes(attributes);
         
         IChart chart = new ChartBubbleComponent();
-        chart.setTitle("Zombie Health");
-        chart.setXTitle("Days Recovery");
-        chart.setYTitle("Age");
+        chart.setTitle("Temperature Reading");
+        chart.setXTitle("Reading");
+        chart.setYTitle("Temperature");
         chart.connect(projection);
+        
+        bc.connect(chart);
         
         boolean status = chart.start();
         if (!status)

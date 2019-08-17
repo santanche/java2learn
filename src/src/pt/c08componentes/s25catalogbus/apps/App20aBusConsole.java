@@ -5,18 +5,20 @@ import pt.c08componentes.s25catalogbus.s15consumer.IBusConsumer;
 import pt.c08componentes.s25catalogbus.s20console.ConsoleComponent;
 import pt.c08componentes.s25catalogbus.s20console.IConsole;
 
-public class App20aDataSetConsole {
+public class App20aBusConsole {
   public static void main(String args[])
   {
       try {
-         IBusConsumer ds = new BusConsumerComponent();
-         ds.setBusURI("tcp://localhost:1883");
-         ds.setTopic("sensor/+/+");
+         IBusConsumer bc = new BusConsumerComponent();
+         bc.setBusURI("tcp://localhost:1883");
+         bc.setTopic("sensor/+/+");
+         bc.setBlockSize(10);
+         bc.setVerbose(2);  // mostra todas as mensagens
         
-        IConsole console = new ConsoleComponent();
-        console.connect(ds);
+         IConsole console = new ConsoleComponent();
+         console.connect(bc);
         
-        console.update();
+         bc.connect(console);
       } catch (Exception e) {
         e.printStackTrace();
       }

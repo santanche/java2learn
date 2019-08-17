@@ -26,4 +26,5 @@ public class ConsoleComponent implements IConsole {
           System.out.println(instances[i][attributes.length-1]);
         }
     }
-  }}
+  }
+}

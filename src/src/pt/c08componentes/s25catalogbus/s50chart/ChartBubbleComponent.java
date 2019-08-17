@@ -58,10 +58,9 @@ public class ChartBubbleComponent implements IChart {
     if (window == null) {
       chart = new BubbleChartBuilder().width(800).height(600).title(title).xAxisTitle(xTitle).yAxisTitle(yTitle).build();;
       window = new SwingWrapper<BubbleChart>(chart);
-      if (window != null) {
+      if (window != null)
         window.displayChart();
-        buildChart();
-      } else
+      else
         status = false;
     }
     
@@ -70,6 +69,10 @@ public class ChartBubbleComponent implements IChart {
   
   public boolean stop() {
     return true;
+  }
+  
+  public void update() {
+     buildChart();
   }
   
   public double[] toDouble(String[][] instances, int column ) {

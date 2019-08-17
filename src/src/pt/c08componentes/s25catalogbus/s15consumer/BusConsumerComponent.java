@@ -1,6 +1,7 @@
 package pt.c08componentes.s25catalogbus.s15consumer;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.UUID;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
@@ -13,14 +14,20 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import com.owlike.genson.Genson;
 import com.owlike.genson.GensonBuilder;
 
+import pt.c08componentes.s25catalogbus.s00shared.IUpdate;
 import pt.c08componentes.s25catalogbus.s00shared.Message;
+import pt.c08componentes.s25catalogbus.s00shared.SensorReading;
 
 public class BusConsumerComponent implements IBusConsumer, MqttCallback {
   private String busURI = null;
   private String topic = null;
   private int blockSize = 10;
-  private String[] attributes = null;
-  private String[][] instances = null;
+  private int verbose = 2;
+  
+  private String[] attributes = {"message", "timestamp", "dimension", "value", "unit"};
+  private ArrayList<String[]> instArray = new ArrayList<String[]>();
+  private IUpdate notify = null;
+  private int count = 0;
   
   private Genson genson;
 
@@ -38,10 +45,6 @@ public class BusConsumerComponent implements IBusConsumer, MqttCallback {
 
   public void setBusURI(String busURI) {
     this.busURI = busURI;
-    if (busURI == null) {
-      attributes = null;
-      instances = null;
-    }
   }
   
   public String getTopic() {
@@ -61,11 +64,25 @@ public class BusConsumerComponent implements IBusConsumer, MqttCallback {
      this.blockSize = blockSize;
   }
   
+  public int getVerbose() {
+     return verbose;
+  }
+  
+  public void setVerbose(int verbose) {
+     this.verbose = verbose;
+  }
+  
+  public void connect(IUpdate notify) {
+     this.notify = notify;
+  }
+  
   public String[] requestAttributes() {
     return attributes;
   }
   
   public String[][] requestInstances() {
+    String instances[][] = instArray.toArray(new String[0][]);
+    instArray = new ArrayList<String[]>();
     return instances;
   }
   
@@ -91,29 +108,6 @@ public class BusConsumerComponent implements IBusConsumer, MqttCallback {
     } catch (MqttException e) {
       e.printStackTrace();
     }
-     
-    /*
-    ArrayList<String[]> instArray = new ArrayList<String[]>();
-    try {
-      BufferedReader file = new BufferedReader(new FileReader(busURI));
-        
-      String line = file.readLine();
-      if (line != null) {
-        attributes = line.split(",");
-        line = file.readLine();
-        while (line != null) {
-          String[] instLine = line.split(",");
-          instArray.add(instLine);
-          line = file.readLine();
-        }
-        instances = instArray.toArray(new String[0][]);
-      }
-        
-      file.close();
-    } catch (IOException erro) {
-      erro.printStackTrace();
-    }
-    */
   }
   
   @Override
@@ -126,9 +120,27 @@ public class BusConsumerComponent implements IBusConsumer, MqttCallback {
   public void messageArrived(String topic, MqttMessage message) throws MqttException {
     Message mess = genson.deserialize(new String(message.getPayload()), Message.class);
     
-    String json = genson.serialize(mess);
+    SensorReading body = mess.getBody();
+    
+    count++;
+    String reading[] = {Integer.toString(count),
+                        Long.toString(body.getTimestamp().getTime()), body.getDimension(),
+                        Double.toString(body.getValue()), body.getUnity()}; 
+    instArray.add(reading);
+    
+    switch (verbose) {
+       case 1: System.out.println("message: " + count); break;
+       case 2: System.out.println("message: " + count);
+               System.out.println("topic: " + topic);
+               String json = genson.serialize(mess);
+               System.out.println(json);
+               break;
+    }
 
-    System.out.println(json);
+    if (count == blockSize && notify != null) {
+       count = 0;
+       notify.update();
+    }
   }
 
 

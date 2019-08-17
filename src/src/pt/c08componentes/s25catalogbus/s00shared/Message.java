@@ -6,6 +6,18 @@ public class Message {
    private String type;
    private SensorReading body;
    
+   public Message() {
+      /* nothing */
+   }
+   
+   public Message(String source, String name, String type, SensorReading body) {
+      super();
+      this.source = source;
+      this.name = name;
+      this.type = type;
+      this.body = body;
+   }
+
    public String getSource() {
       return source;
    }

@@ -1,10 +1,10 @@
 package pt.c08componentes.s25catalogbus.s15consumer;
 
-public interface IBusConsumerProperties {
-  public String getBusURI();
-  public void setBusURI(String dataSource);
-  public String getTopic();
-  public void setTopic(String topic);
+import pt.c08componentes.s25catalogbus.s00shared.IBusProperties;
+
+public interface IBusConsumerProperties extends IBusProperties {
   public int getBlockSize();
   public void setBlockSize(int blockSize);
+  public int getVerbose();
+  public void setVerbose(int verbose);
 }

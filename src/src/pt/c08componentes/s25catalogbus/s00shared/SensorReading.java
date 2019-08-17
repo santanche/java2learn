@@ -8,6 +8,17 @@ public class SensorReading {
    private double value;
    private String unity;
    
+   public SensorReading() {
+      /* nothing */
+   }
+   
+   public SensorReading(Date timestamp, String dimension, double value, String unity) {
+      this.timestamp = timestamp;
+      this.dimension = dimension;
+      this.value = value;
+      this.unity = unity;
+   }
+
    public Date getTimestamp() {
       return timestamp;
    }
