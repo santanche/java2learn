@@ -5,8 +5,51 @@ import json
 import datetime
 import time
 from threading import Thread
+import sys
+import ipywidgets as widgets
+import time
+import random 
+# import arrow 
+import paho.mqtt.client as paho
+from IPython.display import clear_output
+from IPython.core.display import display, HTML
+import json
+import pandas
+import json
+import importlib
+from datetime import date, timedelta, datetime
+from dateutil import tz                                    # Powerful extensions to datetime
+from threading import Thread
 
+class IoT_sensor_consumer(Thread):
+    
+    def __init__(self, broker, port, topic):
+        Thread.__init__(self)        
+        self.topic = topic
+        self.broker = broker
+        self.port = port
 
+        self.client = paho.Client()                    # create client object
+        self.client.connect(self.broker, self.port)    # establishing the connection
+        self.client.subscribe((topic))            # subscribing to a topic        
+        self.client.on_message = self.on_message
+        self.flag = True
+
+    def on_message(self, client, userdata, payload):
+        payload = str(payload.payload.decode("utf-8"))
+        payload = json.loads(payload)
+        self.widget.value = payload['body']['value']
+        self.widget.description = "{} {}".format(payload['source'], payload['name'])
+        self.widget_label.value = "{0}: {1:.2f}{2}".format(payload['body']['dimension'], payload['body']['value'], payload['body']['unity'])
+        
+
+    def connect(self, widget, widget_label):
+        self.widget = widget
+        self.widget_label = widget_label
+        self.start()
+
+    def run(self):
+        self.client.loop_start()
 
 class IoT_mqtt_publisher:
 
