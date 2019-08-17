@@ -10,6 +10,7 @@ public class App10aBusConsumer {
         IBusConsumer bc = new BusConsumerComponent();
         bc.setBusURI("tcp://localhost:1883");
         bc.setTopic("sensor/+/+");
+        bc.setNumber(10);
         bc.setVerbose(2);  // mostra todas as mensagens
       } catch (Exception e) {
         e.printStackTrace();
