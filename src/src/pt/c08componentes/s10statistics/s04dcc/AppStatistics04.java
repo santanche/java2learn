@@ -1,7 +1,7 @@
 package pt.c08componentes.s10statistics.s04dcc;
 
-import anima.factory.context.componentContext.ComponentContextFactory;
 import anima.factory.IGlobalFactory;
+import anima.factory.context.componentContext.ComponentContextFactory;
 
 public class AppStatistics04
 {

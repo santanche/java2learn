@@ -1,7 +1,5 @@
 package pt.c08componentes.s01javabeans;
 
-import pt.c08componentes.s01javabeans.Bean01Nome;
-
 public class App01BeanNome {
 
     public static void main(String[] args) {

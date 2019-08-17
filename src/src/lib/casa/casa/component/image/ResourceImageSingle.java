@@ -1,7 +1,6 @@
 package lib.casa.casa.component.image;
 
 import java.awt.Image;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 // import Nucleo.Excecao.NomeArquivoInvalido; <GAMES> temporary
@@ -9,7 +8,6 @@ import java.net.URL;
 // import anima.dcc.Companion; <GAMES> temporary
 
 import lib.casa.anima.message.Message;
-import lib.casa.anima.message.MessageSingle;
 import lib.casa.anima.message.MessageWrite;
 import lib.casa.anima.util.IOUtil;
 
