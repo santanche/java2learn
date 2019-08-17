@@ -9,18 +9,23 @@ public class App45aBusProducerConsumer {
   public static void main(String args[])
   {
       try {
-         IBusConsumer bc = new BusConsumerComponent();
-         bc.setBusURI("tcp://localhost:1883");
-         bc.setTopic("sensor/+/+");
-         bc.setBlockSize(10);
-         bc.setVerbose(2);  // mostra todas as mensagens
+         IBusConsumer bc1 = new BusConsumerComponent();
+         bc1.setBusURI("tcp://localhost:1883");
+         bc1.setTopic("sensor/+/temperature");
+         bc1.setBlockSize(10);
+         bc1.setVerbose(2);  // mostra todas as mensagens
         
          IBusProducer bp = new BusProducerComponent();
          bp.setBusURI("tcp://localhost:1883");
-         bp.setTopic("sensor/avg/temperature_avg");
-         bp.connect(bc);
+         bp.setTopic("sensor/*/temperature/avg");
+         bp.connect(bc1);
          
-         bc.connect(bp);
+         bc1.connect(bp);
+
+         IBusConsumer bc2 = new BusConsumerComponent();
+         bc2.setBusURI("tcp://localhost:1883");
+         bc2.setTopic("sensor/*/temperature/avg");
+         bc2.setVerbose(2);  // mostra todas as mensagens
       } catch (Exception e) {
         e.printStackTrace();
       }

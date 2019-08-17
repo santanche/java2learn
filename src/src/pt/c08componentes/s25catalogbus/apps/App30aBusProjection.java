@@ -18,7 +18,7 @@ public class App30aBusProjection {
         bc.setVerbose(2);  // mostra todas as mensagens
         
         IProjection projection = new ProjectionComponent();
-        String[] attributes = {"dimension", "value"};
+        String[] attributes = {"message", "value"};
         projection.setAttributes(attributes);
         projection.connect(bc);
 

@@ -87,6 +87,7 @@ public class ChartBubbleComponent implements IChart {
       String[][] instances = producer.requestInstances();
 
       if (instances != null) {
+        System.out.println("Plotando...");
         double[] xData = toDouble(instances, 0),
                  yData = toDouble(instances, 1);
         
