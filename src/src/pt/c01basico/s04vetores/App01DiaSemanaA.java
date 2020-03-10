@@ -6,7 +6,7 @@ public class App01DiaSemanaA
 {
 	static int converte(String entrada)
 	{
-        String nomeDia[] = {"domingo", "segunda", "terca"};
+      String nomeDia[] = {"domingo", "segunda", "terca"};
         
 		int resultado = 0;
 		for (int i = 0; i < nomeDia.length; i++)
