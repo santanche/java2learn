@@ -13,7 +13,6 @@ jupyterlab_launcher
 jupyterlab-git
 ipywidgets
 jupyter-server-proxy
-RISE
 
 # data structures and data analysis 
 pandas
@@ -24,7 +23,6 @@ quilt
 
 # http tools
 requests
-
 
 # data viz
 matplotlib
