@@ -12,36 +12,13 @@ jupyter_contrib_nbextensions
 jupyterlab_launcher
 jupyterlab-git
 ipywidgets
-jupyter-server-proxy
 
 # data structures and data analysis 
 pandas
 numpy
-
-# data management/versioning
-quilt
-
-# http tools
-requests
 
 # data viz
 matplotlib
 plotly
 chart-studio
 seaborn
-
-# machine learning
-scikit-learn
-scipy
-
-# information retrieval
-pysolr
-
-# misc
-tornado
-sparqlkernel
-paho-mqtt
-feedparser
-traitlets
-numpy
-matplotlib
