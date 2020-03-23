@@ -1,6 +1,6 @@
 # Seção de Fundamentos de Orientação a Objetos
 
-Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/master?urlpath=lab) e realize o que for solicitado.
+Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/v1.0.0?urlpath=lab) e realize o que for solicitado.
 
 # Roteiro Fundamentos de Classes e Objetos
 
@@ -26,7 +26,22 @@ Assista este vídeo com resolução de mais uma parte dos exercícios do Emprés
 
 [![História da POO](http://img.youtube.com/vi/xw6RitSC3CA/0.jpg)](https://youtu.be/xw6RitSC3CA)
 
-(ainda hoje serão lançados os vídeos complementares)
+Assista a sequência de três vídeos a seguir que introduzem conceitos de orientação a objetos (classe, objetos, atributos, métodos e construtores) no contexto do UML e Java:
+
+Objetos e Classes em UML e Java (introdução):
+
+[![Objetos e Classes em UML e Java - introdução](http://img.youtube.com/vi/4eTc12y7ARk/0.jpg)](https://youtu.be/4eTc12y7ARk)
+
+Objetos e Classes em UML e Java (métodos):
+
+[![Objetos e Classes em UML e Java - métodos](http://img.youtube.com/vi/66PaoPsV0RQ/0.jpg)](https://youtu.be/66PaoPsV0RQ)
+
+Objetos e Classes em UML e Java (construtor):
+
+[![Objetos e Classes em UML e Java - construtor](http://img.youtube.com/vi/0NLxdxbs5S0/0.jpg)](https://youtu.be/0NLxdxbs5S0)
+
+Use o seguinte notebook para acompanhar a atividade:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn/v1.0.0?filepath=notebooks%2Fpt%2Fc02oo%2Fs01basico%2Fclasse-objeto-basico.ipynb?urlpath=lab)
 
 Essas aulas estão sendo colocadas no canal:
 
