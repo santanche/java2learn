@@ -6,15 +6,22 @@ Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org
 
 *Parte da aula de 23/02/2020*
 
-[![Noções de Objetos](http://img.youtube.com/vi/DKFSH5MMPLM/0.jpg)](https://youtu.be/DKFSH5MMPLM)
+Assista este primeiro que introduz noções de objetos em um contexto mais amplo. No tempo 26:35 é apresentado novamente o exercício que vocês já fizeram em aulas anteriores:
+[![Noções de Objetos](http://img.youtube.com/vi/heFIk524VUM/0.jpg)](https://youtu.be/heFIk524VUM)
 
-Noções de objetos
-- até 26:35 - noções
-- de 26:35 em diante - exercício do empréstimo
+Resumão do que foi tratado no vídeo anterior (opcional):
+[![Revisão](http://img.youtube.com/vi/vCaDt0Uz33M/0.jpg)](https://youtu.be/vCaDt0Uz33M)
 
-Laboratório de Empréstimo - Aula 02
-- até 4:22 - exercícios de empréstimo parte 2
-- 4:22 - 13:36 POO
+Assista este vídeo sobre Tipo Abstrato de Dados, ele lhe prepara para refletir sobre o que você vai fazer adiante:
+[![História da POO](http://img.youtube.com/vi/1t-1AnE8dBE/0.jpg)](https://youtu.be/1t-1AnE8dBE)
+
+Assista este vídeo com resolução de parte dos exercícios do Empréstimo e comece a refletir sobre a sua relação com TAD apresentado no vídeo anterior:
+[![História da POO](http://img.youtube.com/vi/7Gy6fKWhS3s/0.jpg)](https://youtu.be/7Gy6fKWhS3s)
+
+Assista este vídeo com resolução de mais uma parte dos exercícios do Empréstimo. Ele vai introduzindo conceitos de orientação a objetos em paralelo. Entre os minutos 4:22 e 13:36 é apresentada um pouco da história da Programação Orientada a Objetos:
+[![História da POO](http://img.youtube.com/vi/xw6RitSC3CA/0.jpg)](https://youtu.be/xw6RitSC3CA)
+
+(ainda hoje serão lançados os vídeos que você deve assistir para 
 
 # Roteiro 02
 
