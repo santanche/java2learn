@@ -4,10 +4,10 @@ public class Circulo {
    int centroX, centroY;
    int raio;
    
-   Circulo(int centroX, int centroY, int raio) {
-      this.centroX = centroX;
-      this.centroY = centroY;
-      this.raio = raio;
+   Circulo(int pCentroX, int pCentroY, int pRaio) {
+      centroX = pCentroX;
+      centroY = pCentroY;
+      raio = pRaio;
    }
    
    double area() {

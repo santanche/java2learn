@@ -2,6 +2,20 @@
 
 Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/master?urlpath=lab) e realize o que for solicitado.
 
+# Roteiro Fundamentos de Classes e Objetos
+
+*Parte da aula de 23/02/2020*
+
+[![Noções de Objetos](http://img.youtube.com/vi/DKFSH5MMPLM/0.jpg)](https://youtu.be/DKFSH5MMPLM)
+
+Noções de objetos
+- até 26:35 - noções
+- de 26:35 em diante - exercício do empréstimo
+
+Laboratório de Empréstimo - Aula 02
+- até 4:22 - exercícios de empréstimo parte 2
+- 4:22 - 13:36 POO
+
 # Roteiro 02
 
 *Executado no laboratório da disciplina em 12/03/2019*

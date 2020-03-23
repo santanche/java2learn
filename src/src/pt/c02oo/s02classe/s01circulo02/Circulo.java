@@ -4,7 +4,7 @@ public class Circulo {
    int centroX, centroY;
    int raio;
    
-   double area() {
-      return Math.PI * raio * raio;
+   void mostraArea() {
+      System.out.println(Math.PI * raio * raio);
    }
 }

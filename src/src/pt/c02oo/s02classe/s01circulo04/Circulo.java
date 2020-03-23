@@ -4,10 +4,10 @@ public class Circulo {
    int centroX, centroY;
    int raio;
    
-   Circulo(int pCentroX, int pCentroY, int pRaio) {
-      centroX = pCentroX;
-      centroY = pCentroY;
-      raio = pRaio;
+   Circulo() {
+      centroX = 5;
+      centroY = 3;
+      raio = 10;
    }
    
    double area() {

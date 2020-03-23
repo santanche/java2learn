@@ -8,6 +8,6 @@ public class AppCirculo02 {
      circ.raio = 10;
      
      System.out.println("Circulo: centro(" + circ.centroX + ", " + circ.centroY + "), raio " + circ.raio);
-     System.out.println("Area do circulo: " + circ.area());
+     circ.mostraArea();
   }
 }
