@@ -47,22 +47,19 @@ Essas aulas estão sendo colocadas no canal:
 
 [![Canal POO 2020](http://img.youtube.com/vi/heFIk524VUM/0.jpg)](https://www.youtube.com/playlist?list=PL3JRjVnXiTBbKQsuMm_rnu31AK8RAy0yO)
 
-# Roteiro 02
+# Roteiro Laboratório de Fundamentos de Classes e Objetos
 
-*Executado no laboratório da disciplina em 12/03/2019*
+*Executado no laboratório da disciplina em 24 e 26/03/2020*
 
-## Parte B - Transformando classe C++ em classe Java
+## Criando uma classe para o Empréstimo
 
-Este roteiro tem início no projeto C++ em: [Parte A](https://github.com/santanche/c2learn/new/master/notebook/pt/c51oo/s01emprestimo)
+Entre no diretório `s01basico` e resolva as tarefas que estão em:
+* Notebook: `emprestimo-oo-java-class.ipynb`
 
-Entre no diretório `s01emprestimo` e veja como a implementação em C++ é transformada em Java:
-* Notebook C: `emprestimo04-java-class.ipynb`
+## Tarefa da Coisa
 
-### Exercícios do Zombie Health
-
-Entre no diretório `s02zombie/s01exercicios` e resolva todos os exercícios que estão nos seguintes dois notebooks desse diretório:
-  * Notebook D: `zombie-health-01.ipynb`
-  * Notebook E: `zombie-health-02-garoto.ipynb`
+Entre no diretório `s02acoisa/s01lab` e resolva todas as tarefas que estão no notebook:
+  * Notebook: `acoisa-01-basico.ipynb`
  
 # Roteiro 03
 *Executado no laboratório da disciplina em 19/03/2019*
