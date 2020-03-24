@@ -1,6 +1,6 @@
 # Seção de Fundamentos de Orientação a Objetos
 
-Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/v1.0.0?urlpath=lab) e realize o que for solicitado.
+Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/v1.0.1?urlpath=lab) e realize o que for solicitado.
 
 # Roteiro Fundamentos de Classes e Objetos
 
@@ -41,7 +41,7 @@ Objetos e Classes em UML e Java (construtor):
 [![Objetos e Classes em UML e Java - construtor](http://img.youtube.com/vi/0NLxdxbs5S0/0.jpg)](https://youtu.be/0NLxdxbs5S0)
 
 Use o seguinte notebook para acompanhar a atividade:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn/v1.0.0?filepath=notebooks%2Fpt%2Fc02oo%2Fs01basico%2Fclasse-objeto-basico.ipynb?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn/v1.0.1?filepath=notebooks%2Fpt%2Fc02oo%2Fs01basico%2Fclasse-objeto-basico.ipynb?urlpath=lab)
 
 Essas aulas estão sendo colocadas no canal:
 

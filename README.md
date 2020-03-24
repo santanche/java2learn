@@ -7,9 +7,9 @@ Todos os exemplos no diretório `notebook` são preparados para o ambiente Jupyt
 
 ## Abrir branch específico em uma instância do [binderhub](https://github.com/jupyterhub/binderhub)
 
-  [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/santanche/java2learn/v1.0.0?urlpath=lab)
+  [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/santanche/java2learn/v1.0.1?urlpath=lab)
 
-  [![launch @ gke.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/santanche/java2learn/v1.0.0?urlpath=lab)
+  [![launch @ gke.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/santanche/java2learn/v1.0.1?urlpath=lab)
 
 
 ## Git tutorial
