@@ -1,4 +1,4 @@
-package pt.c02oo.s03controleacesso.bastiao02;
+package pt.c02oo.s05encapsulamento.s11bastiao;
 
 public class Bastiao
 {
