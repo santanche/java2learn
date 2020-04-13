@@ -3,8 +3,8 @@ package pt.c02oo.s06heranca.s01lista.s04construtor;
 public class ListaUtil extends Lista {
    private boolean duplicatas = true;
    
-   public ListaUtil(boolean duplicatas) {
-      super();
+   public ListaUtil(int tamanho, boolean duplicatas) {
+      super(tamanho);
       this.duplicatas = duplicatas;
    }
    

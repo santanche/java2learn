@@ -1,8 +1,12 @@
 package pt.c02oo.s06heranca.s01lista.s04construtor;
 
 public class Lista {
-   protected int vlista[] = new int[100];
+   protected int vlista[];
    protected int ultimo = -1;
+   
+   public Lista(int tamanho) {
+      vlista = new int[tamanho];
+   }
    
    public void adicionar(int item) {
       if (ultimo+1 < vlista.length) {

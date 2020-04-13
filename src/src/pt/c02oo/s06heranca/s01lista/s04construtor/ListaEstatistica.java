@@ -2,6 +2,10 @@ package pt.c02oo.s06heranca.s01lista.s04construtor;
 
 public class ListaEstatistica extends Lista {
    private int maiorValor = 0;
+   
+   ListaEstatistica(int tamanho) {
+      super(tamanho);
+   }
 
    public void adicionar(int item) {
       super.adicionar(item);
