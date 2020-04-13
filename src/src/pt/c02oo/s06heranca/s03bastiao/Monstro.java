@@ -1,34 +1,17 @@
 package pt.c02oo.s06heranca.s03bastiao;
 
-public class Monstro extends Bastiao
-{
-    public Monstro()
-    {
-        super();
-    }
-    
-    public Monstro(int idade, String estado, String nome)
-    {
-        super(idade, estado, nome);
-    }
-
-    public void aparece(boolean imprimeNome)
-    {
-        super.aparece(false);
-
-        if (idade >= 4)
-            System.out.println("#####");
-        if (idade >= 5)
-            System.out.println("/   \\");
-
-        if (imprimeNome)
-            System.out.println(nome);
-    }
-
-    public void cresce()
-    {
-        if (idade < 5)
-            idade++;
-        aparece();
-    }
+public class Monstro extends Bastiao {
+  private boolean irritado;
+  
+  public Monstro(int idade, String estado, String nome, boolean irritado) {
+     super(idade, estado, nome);
+     this.irritado = irritado;
+  }
+  
+  public void cutuca() {
+     if (irritado)
+        System.out.println("Graur graurrrrr");
+     else
+        System.out.println("Hi hi hi");
+  }
 }
