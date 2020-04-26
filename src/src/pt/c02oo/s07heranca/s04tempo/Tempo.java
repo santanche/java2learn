@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s04tempo;
+package pt.c02oo.s07heranca.s04tempo;
 
 public class Tempo {
 }

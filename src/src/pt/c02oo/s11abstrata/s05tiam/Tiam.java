@@ -1,4 +1,4 @@
-package pt.c02oo.s09abstrata.s05tiam;
+package pt.c02oo.s11abstrata.s05tiam;
 
 public abstract class Tiam {
    

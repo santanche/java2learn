@@ -1,8 +1,8 @@
-package pt.c02oo.s12agregacao.s01bastiao;
+package pt.c02oo.s14agregacao.s01bastiao;
 
-import pt.c02oo.s12agregacao.s01bastiao.partes.Olho;
-import pt.c02oo.s12agregacao.s01bastiao.partes.Topete;
-import pt.c02oo.s12agregacao.s01bastiao.partes.Topete.TipoTopete;
+import pt.c02oo.s14agregacao.s01bastiao.partes.Olho;
+import pt.c02oo.s14agregacao.s01bastiao.partes.Topete;
+import pt.c02oo.s14agregacao.s01bastiao.partes.Topete.TipoTopete;
 
 public class Bastiao
 {

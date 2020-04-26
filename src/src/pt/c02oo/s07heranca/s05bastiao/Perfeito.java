@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s05bastiao;
+package pt.c02oo.s07heranca.s05bastiao;
 
 public class Perfeito extends Bastiao
 {

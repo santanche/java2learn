@@ -1,6 +1,6 @@
-package pt.c02oo.s12agregacao.s04bastiao.partes;
+package pt.c02oo.s14agregacao.s04bastiao.partes;
 
-import pt.c02oo.s12agregacao.s04bastiao.Bastiao;
+import pt.c02oo.s14agregacao.s04bastiao.Bastiao;
 
 public class Topete extends Parte
 {

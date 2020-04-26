@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s01lista.s04construtor;
+package pt.c02oo.s07heranca.s01lista.s04construtor;
 
 public class ListaUtil extends Lista {
    private boolean duplicatas = true;

@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s01lista.s03super;
+package pt.c02oo.s07heranca.s01lista.s03super;
 
 public class App03HerancaLista {
 

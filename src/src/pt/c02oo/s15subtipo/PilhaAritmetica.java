@@ -1,4 +1,4 @@
-package pt.c02oo.s13subtipo;
+package pt.c02oo.s15subtipo;
 
 public class PilhaAritmetica extends Pilha
 {

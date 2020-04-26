@@ -1,4 +1,4 @@
-package pt.c02oo.s08polimorfismo.s06tiam;
+package pt.c02oo.s10polimorfismo.s06tiam;
 
 public class App2001a {
 

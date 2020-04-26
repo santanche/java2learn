@@ -1,6 +1,6 @@
-package pt.c02oo.s12agregacao.s03bastiao.partes;
+package pt.c02oo.s14agregacao.s03bastiao.partes;
 
-import pt.c02oo.s12agregacao.s03bastiao.Bastiao;
+import pt.c02oo.s14agregacao.s03bastiao.Bastiao;
 
 public class Olho implements Parte
 {

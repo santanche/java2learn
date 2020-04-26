@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s02individuo;
+package pt.c02oo.s07heranca.s02individuo;
 
 public class AppIndividuoH01 {
 

@@ -1,4 +1,4 @@
-package pt.c02oo.s07exercicios03.q02;
+package pt.c02oo.s09exercicios03.q02;
 
 // resposta da terceira questao da segunda lista de classes/heranca
 // (esta classe nao precisa ser implementada) 

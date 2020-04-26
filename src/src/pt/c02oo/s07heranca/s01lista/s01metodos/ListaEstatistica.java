@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s01lista.s01metodos;
+package pt.c02oo.s07heranca.s01lista.s01metodos;
 
 public class ListaEstatistica extends Lista {
 

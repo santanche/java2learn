@@ -1,4 +1,4 @@
-package pt.c02oo.s12agregacao.s03bastiao.partes;
+package pt.c02oo.s14agregacao.s03bastiao.partes;
 
 public interface Parte
 {

@@ -1,4 +1,4 @@
-package pt.c02oo.s08polimorfismo.s05bastiao;
+package pt.c02oo.s10polimorfismo.s05bastiao;
 
 public class AppBastiaoP02
 {

@@ -1,4 +1,4 @@
-package pt.c02oo.s09abstrata.s01pessoa;
+package pt.c02oo.s11abstrata.s01pessoa;
 
 public class Alcebiades extends Alguem
 {

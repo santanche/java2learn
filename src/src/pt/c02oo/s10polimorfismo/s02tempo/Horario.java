@@ -1,4 +1,4 @@
-package pt.c02oo.s08polimorfismo.s02tempo;
+package pt.c02oo.s10polimorfismo.s02tempo;
 
 public class Horario extends Tempo
 {

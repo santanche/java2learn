@@ -1,6 +1,6 @@
-package pt.c02oo.s12agregacao.s02bastiao.partes;
+package pt.c02oo.s14agregacao.s02bastiao.partes;
 
-import pt.c02oo.s12agregacao.s02bastiao.Bastiao.TipoEstado;
+import pt.c02oo.s14agregacao.s02bastiao.Bastiao.TipoEstado;
 
 public class Olho
 {

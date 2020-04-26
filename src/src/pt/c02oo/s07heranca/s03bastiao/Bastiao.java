@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s03bastiao;
+package pt.c02oo.s07heranca.s03bastiao;
 
 public class Bastiao
 {

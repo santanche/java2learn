@@ -1,4 +1,4 @@
-package pt.c02oo.s08polimorfismo.s01pessoa;
+package pt.c02oo.s10polimorfismo.s01pessoa;
 
 public class Melissa extends Alguem
 {

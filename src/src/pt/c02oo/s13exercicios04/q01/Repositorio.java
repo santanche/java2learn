@@ -1,4 +1,4 @@
-package pt.c02oo.s11exercicios04.q01;
+package pt.c02oo.s13exercicios04.q01;
 
 //representa genericamente um repositorio
 public interface Repositorio

@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s01lista.s02atributos;
+package pt.c02oo.s07heranca.s01lista.s02atributos;
 
 public class ListaUtil extends Lista {
    private boolean duplicatas = true;

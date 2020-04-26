@@ -1,4 +1,4 @@
-package pt.c02oo.s12agregacao.s04bastiao.partes;
+package pt.c02oo.s14agregacao.s04bastiao.partes;
 
 public abstract class Parte
 {

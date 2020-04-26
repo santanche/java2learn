@@ -1,4 +1,4 @@
-package pt.c02oo.s14exonline.q01generalizada;
+package pt.c02oo.s16exonline.q01generalizada;
 
 public class Produto
 {

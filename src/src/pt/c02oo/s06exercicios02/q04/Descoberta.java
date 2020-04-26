@@ -1,4 +1,4 @@
-package pt.c02oo.s05exercicios02.q04;
+package pt.c02oo.s06exercicios02.q04;
 
 public class Descoberta {
 

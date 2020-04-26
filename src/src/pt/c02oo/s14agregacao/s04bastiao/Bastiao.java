@@ -1,10 +1,10 @@
-package pt.c02oo.s12agregacao.s04bastiao;
+package pt.c02oo.s14agregacao.s04bastiao;
 
-import pt.c02oo.s12agregacao.s04bastiao.partes.Barriga;
-import pt.c02oo.s12agregacao.s04bastiao.partes.Face;
-import pt.c02oo.s12agregacao.s04bastiao.partes.Parte;
-import pt.c02oo.s12agregacao.s04bastiao.partes.Topete;
-import pt.c02oo.s12agregacao.s04bastiao.partes.Topete.TipoTopete;
+import pt.c02oo.s14agregacao.s04bastiao.partes.Barriga;
+import pt.c02oo.s14agregacao.s04bastiao.partes.Face;
+import pt.c02oo.s14agregacao.s04bastiao.partes.Parte;
+import pt.c02oo.s14agregacao.s04bastiao.partes.Topete;
+import pt.c02oo.s14agregacao.s04bastiao.partes.Topete.TipoTopete;
 
 public class Bastiao
 {

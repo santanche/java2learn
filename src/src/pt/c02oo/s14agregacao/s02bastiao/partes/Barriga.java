@@ -1,4 +1,4 @@
-package pt.c02oo.s12agregacao.s02bastiao.partes;
+package pt.c02oo.s14agregacao.s02bastiao.partes;
 
 public class Barriga
 {

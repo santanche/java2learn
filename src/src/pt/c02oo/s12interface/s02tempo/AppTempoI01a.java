@@ -1,4 +1,4 @@
-package pt.c02oo.s10interface.s02tempo;
+package pt.c02oo.s12interface.s02tempo;
 
 import java.util.Scanner;
 

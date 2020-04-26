@@ -1,4 +1,4 @@
-package pt.c02oo.s06heranca.s06super;
+package pt.c02oo.s07heranca.s06super;
 
 public class ClasseD2 extends ClasseA {
   public ClasseD2() {

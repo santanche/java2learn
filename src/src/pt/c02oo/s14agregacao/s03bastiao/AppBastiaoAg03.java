@@ -1,6 +1,6 @@
-package pt.c02oo.s12agregacao.s03bastiao;
+package pt.c02oo.s14agregacao.s03bastiao;
 
-import pt.c02oo.s12agregacao.s03bastiao.Bastiao.TipoEstado;
+import pt.c02oo.s14agregacao.s03bastiao.Bastiao.TipoEstado;
 
 public class AppBastiaoAg03
 {
