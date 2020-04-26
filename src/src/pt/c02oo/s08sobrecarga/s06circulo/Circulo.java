@@ -1,4 +1,4 @@
-package pt.c02oo.s08sobrecarga.s04circulo;
+package pt.c02oo.s08sobrecarga.s06circulo;
 
 public class Circulo {
    int centroX, centroY;
