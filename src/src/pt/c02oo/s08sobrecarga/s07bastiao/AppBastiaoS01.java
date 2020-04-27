@@ -1,4 +1,4 @@
-package pt.c02oo.s08sobrecarga.s05bastiao;
+package pt.c02oo.s08sobrecarga.s07bastiao;
 
 public class AppBastiaoS01
 {

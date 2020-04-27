@@ -4,7 +4,9 @@ public class Horario {
    private int hora, minuto, segundo;
    
    public void define() {
-      this.define(0, 0, 0);
+      this.hora = 0;
+      this.minuto = 0;
+      this.segundo = 0;
    }
    
    public void define(int hora, int minuto, int segundo) {

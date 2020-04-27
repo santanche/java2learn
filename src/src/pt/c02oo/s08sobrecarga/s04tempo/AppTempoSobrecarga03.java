@@ -1,14 +1,10 @@
-package pt.c02oo.s08sobrecarga.s03tempo;
+package pt.c02oo.s08sobrecarga.s04tempo;
 
-public class AppTempoSobrecarga02 {
+public class AppTempoSobrecarga03 {
    public static void main(String args[]) {
       Horario h1 = new Horario(),
-              h2 = new Horario(),
-              h3 = new Horario();
-      
-      h1.define();
-      h2.define(10, 15, 59);
-      h3.define("07:53:02");
+              h2 = new Horario(10, 15, 59),
+              h3 = new Horario("07:53:02");
       
       h1.tick();
       h2.tick();
