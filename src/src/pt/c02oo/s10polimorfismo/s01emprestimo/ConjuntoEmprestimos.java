@@ -1,4 +1,4 @@
-package pt.c02oo.s03relacionamento.s03agregacao;
+package pt.c02oo.s10polimorfismo.s01emprestimo;
 
 public class ConjuntoEmprestimos {
    Emprestimo vEmprestimos[];

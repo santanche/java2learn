@@ -1,4 +1,4 @@
-package pt.c02oo.s10polimorfismo.s03tempo;
+package pt.c02oo.s10polimorfismo.s05tempo;
 
 public class Data extends Tempo
 {
