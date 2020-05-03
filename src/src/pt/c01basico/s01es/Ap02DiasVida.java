@@ -13,5 +13,7 @@ public class Ap02DiasVida
         int diasVida = idade * 365;
 
         System.out.println("Voce tem " + diasVida + " dias de vida");
+        
+        teclado.close();
     }
 }
