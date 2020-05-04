@@ -1,6 +1,6 @@
 # Seção de Fundamentos de Orientação a Objetos
 
-Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/v1.0.4?urlpath=lab) e realize o que for solicitado.
+Para todos os roteiros a seguir, acione o binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/santanche/java2learn.git/v1.0.5?urlpath=lab) e realize o que for solicitado.
 
 # Roteiro Fundamentos de Classes e Objetos
 
