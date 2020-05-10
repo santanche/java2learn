@@ -1,4 +1,4 @@
-package pt.c02oo.s12interface.s04tiam;
+package pt.c02oo.s12interface.s09tiam;
 
 public interface Tiai {
    public String first();

@@ -1,4 +1,4 @@
-package pt.c02oo.s12interface.s05tiam;
+package pt.c02oo.s12interface.s09tiam;
 
 public class Tiam {
 
