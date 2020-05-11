@@ -26,6 +26,6 @@ public class Retangulo implements GeometriaRetangular {
    }
    
    public boolean sameProportions(Retangular toCompare) {
-      return (largura / altura == toCompare.getLargura() / toCompare.getLargura());
+      return (largura / altura == toCompare.getLargura() / toCompare.getAltura());
    }
 }
