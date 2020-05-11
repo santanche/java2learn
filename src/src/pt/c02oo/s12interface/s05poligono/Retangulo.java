@@ -1,6 +1,6 @@
 package pt.c02oo.s12interface.s05poligono;
 
-public class Retangulo implements Geometria, Retangular {
+public class Retangulo implements GeometriaRetangular {
    private int altura;
    private int largura;
 

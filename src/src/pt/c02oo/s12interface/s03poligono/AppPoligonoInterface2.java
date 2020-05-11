@@ -3,15 +3,18 @@ package pt.c02oo.s12interface.s03poligono;
 public class AppPoligonoInterface2 {
 
    public static void main(String[] args) {
-      Geometria g = new Retangulo(6, 10);
+      Retangular tr = new TrianguloRetangulo(60, 100);
+      Retangular rt = new Retangulo(6, 10);
 
-      System.out.println("Perímetro do retângulo: " + g.getPerimetro());
-      System.out.println("Área do retângulo: " + g.getArea());
-
-      g = new Circulo(8);
-
-      System.out.println("Perímetro do círculo: " + g.getPerimetro());
-      System.out.println("Área do círculo: " + g.getArea());
+      System.out.println("Medidas do triangulo retângulo - altura: " +
+         tr.getAltura() + "; largura: " + tr.getLargura());
+      System.out.println("Medidas do retângulo - altura: " +
+         rt.getAltura() + "; largura: " + rt.getLargura());
+      
+      if (tr.sameProportions(rt))
+         System.out.println("Ambos têm as mesmas proporções");
+      else
+         System.out.println("Ambos têm proporções diferentes");
    }
 
 }
