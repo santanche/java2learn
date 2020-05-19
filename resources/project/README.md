@@ -1,6 +1,6 @@
 # Modelo para Documentação de um Componente
 
-O vídeo a seguir debate sobre o detalhemento de um projeto baseado em componentes:
+O vídeo a seguir apresenta um detalhamento de um projeto baseado em componentes:
 
 [![Projeto baseado em Componentes](http://img.youtube.com/vi/1LcSghlin6o/0.jpg)](https://youtu.be/1LcSghlin6o)
 
