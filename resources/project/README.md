@@ -26,13 +26,19 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 
 # Diagrama Geral de Componentes
 
+## Exemplo 1
+
 Este é o diagrama compondo componentes para análise:
 
 ![Diagrama Analise](diagrama-componentes-analise.png)
 
+## Exemplo 2
+
 Este é um diagrama inicial do projeto de jogos:
 
 ![Diagrama Jogos](diagrama-componentes-jogos.png)
+
+## Exemplo 3
 
 Este é outro diagrama de um projeto de vendas:
 
@@ -43,6 +49,8 @@ Para cada componente será apresentado um documento conforme o modelo a seguir:
 # Componente `<Nome do Componente>`
 
 ![Componente](diagrama-componente.png)
+
+## Interfaces
 
 Interfaces associadas a esse componente:
 
@@ -69,8 +77,6 @@ public interface IDataSet extends ITableProducer, IDataSource {
 
 ## Detalhamento das Interfaces
 
-
-
 ### Interface `<nome da interface>`
 `<papel da interface>`.
 
@@ -82,8 +88,6 @@ Método | Objetivo
 
 ### Interface `ITableProducer`
 
-![ITableProducer](diagrama-interface-itableproducer.png)
-
 Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
 
 Método | Objetivo
@@ -92,8 +96,6 @@ Método | Objetivo
 `requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
 
 ### Interface `IDataSetProperties`
-
-![ITableProducer](diagrama-interface-idatasetproperties.png)
 
 Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
 
