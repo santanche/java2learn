@@ -16,7 +16,10 @@ Entre no diretório: `s01conversation/s01exercicios` e resolva todos os exercíc
 
 No jogo a seguir você deve diagnosticar zumbis a partir de seus sintomas e tratá-los. Se você errar o zumbi morre. Tente esboçar um diagrama ligando sintomas a doenças, que permita você diagnosticar essas doenças de forma eficiente.
 
-Jogue o jogo: [Zombie Health](http://santanche.github.io/java2learn/notebooks/pt/c03oo-zombie/s02datasource/s01jogo/index.html)
+Assista o vídeo:
+[![Zombie Health Video](http://img.youtube.com/vi/DygzkfP_nVA/0.jpg)](https://youtu.be/DygzkfP_nVA)
+
+Jogue o jogo: [Zombie Health](http://santanche.github.io/java2learn/notebooks/pt/c03zombie/s02datasource/s01jogo/index.html)
 
 ## Matriz de sintomas e doenças
 
