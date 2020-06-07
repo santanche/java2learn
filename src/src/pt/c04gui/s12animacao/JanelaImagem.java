@@ -1,7 +1,6 @@
-package pt.c04gui.s11imagenslayout;
+package pt.c04gui.s12animacao;
 
 import java.awt.Container;
-import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
@@ -17,10 +16,10 @@ public class JanelaImagem extends JFrame {
    }
     
    public void visual() {
-      setSize(500, 250);
+      setSize(600, 250);
 
       painel = getContentPane();
-      painel.setLayout(new FlowLayout());
+      painel.setLayout(null);
       
       setVisible(true);
    }
