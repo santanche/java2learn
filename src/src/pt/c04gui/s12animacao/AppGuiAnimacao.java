@@ -16,7 +16,7 @@ public class AppGuiAnimacao {
    public static void main(String[] args) {
        JanelaImagem janela = new JanelaImagem();
        
-       Imagem animado = new Imagem(DIRETORIO + "dino.png", 0, 0, 200, 200, 40, 0);
+       ImagemAnimada animado = new ImagemAnimada(DIRETORIO + "dino.png", 0, 0, 200, 200, 40, 0);
        janela.adicionaImagem(animado);
        
        Metronomo metro = new Metronomo(1000, 10);

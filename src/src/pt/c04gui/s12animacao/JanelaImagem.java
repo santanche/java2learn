@@ -24,7 +24,7 @@ public class JanelaImagem extends JFrame {
       setVisible(true);
    }
    
-   public void adicionaImagem(Imagem img) {
+   public void adicionaImagem(ImagemAnimada img) {
       painel.add(img);
       SwingUtilities.updateComponentTreeUI(this);
    }

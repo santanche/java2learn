@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.Timer;
 
-public class Metronomo implements ActionListener {
+public class Metronomo extends ActionSubject implements ActionListener {
    private Timer metro;
    private int quantidade, corrente;
     
@@ -15,14 +15,6 @@ public class Metronomo implements ActionListener {
       metro = new Timer(intervalo, this);
    }
    
-   public void addActionListener(ActionListener listener) {
-      metro.addActionListener(listener);
-   }
-   
-   public void removeActionListener(ActionListener listener) {
-      metro.removeActionListener(listener);
-   }
-    
    public void start() {
       metro.start();
    }
@@ -35,5 +27,6 @@ public class Metronomo implements ActionListener {
       corrente++;
       if (corrente >= quantidade)
          stop();
+      notify(event);
    }
 }

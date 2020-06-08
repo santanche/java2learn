@@ -6,13 +6,13 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-public class Imagem extends JLabel implements ActionListener {
+public class ImagemAnimada extends JLabel implements ActionListener {
    private static final long serialVersionUID = 4310667556938403035L;
 
    private int x, y,
                shiftX, shiftY;
    
-   public Imagem(String arquivoImagem, int x, int y,
+   public ImagemAnimada(String arquivoImagem, int x, int y,
                  int width, int height,
                  int shiftX, int shiftY) {
       super(new ImageIcon(arquivoImagem));
