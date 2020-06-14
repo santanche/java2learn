@@ -14,7 +14,7 @@ public class AppGen01Vector
         System.out.print("Digite um numero: ");
         String entrada = teclado.nextLine();
         while (!entrada.equalsIgnoreCase("fim")) {
-            Integer numero = new Integer(entrada);
+            Integer numero = Integer.parseInt(entrada);
             lista.add(numero);
             
             System.out.print("Digite outro numero: ");
@@ -29,5 +29,7 @@ public class AppGen01Vector
             cumulativa += n.intValue();
             System.out.println("Soma cumulativa: " + cumulativa);
         }
+        
+        teclado.close();
     }
 }
