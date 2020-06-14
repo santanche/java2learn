@@ -1,4 +1,4 @@
-package pt.c04gui.s12animacao;
+package pt.c04gui.s14baseadaeventos;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
