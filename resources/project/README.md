@@ -159,7 +159,8 @@ Para cada componente será apresentado um documento conforme o modelo a seguir:
 
 ![Componente](diagrama-componente.png)
 
-Ficha Técnica
+**Ficha Técnica**
+item | detalhamento
 ----- | -----
 Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
 Autores | `<nome dos membros que criaram o componente>`
@@ -182,10 +183,10 @@ public interface IDataSet extends ITableProducer, IDataSetProperties {
 
 ### Interface `<nome da interface>`
 
-> <Resumo do papel da interface>.
+> <Resumo do papel da interface.>
 
 ~~~
-<Interface en Java.>
+<Interface em Java.>
 ~~~
 
 Método | Objetivo
