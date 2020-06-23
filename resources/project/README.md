@@ -183,7 +183,7 @@ public interface IDataSet extends ITableProducer, IDataSetProperties {
 
 ### Interface `<nome da interface>`
 
-> <Resumo do papel da interface.>
+`<Resumo do papel da interface.>`
 
 ~~~
 <Interface em Java.>
