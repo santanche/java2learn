@@ -1,4 +1,4 @@
-# Modelo para Documentação de um Componente
+# Modelo para Documentação dos Componentes
 
 O vídeo a seguir apresenta um detalhamento de um projeto baseado em componentes:
 
@@ -31,21 +31,21 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 # Slides do Projeto
 `<Coloque um link para os slides do projeto.>`
 
-# Diagrama Geral de Componentes
+## Diagrama Geral de Componentes
 
-## Exemplo 1
+### Exemplo 1
 
 Este é o diagrama compondo componentes para análise:
 
 ![Diagrama Analise](diagrama-componentes-analise.png)
 
-## Exemplo 2
+### Exemplo 2
 
 Este é um diagrama inicial do projeto de jogos:
 
 ![Diagrama Jogos](diagrama-componentes-jogos.png)
 
-## Exemplo 3
+### Exemplo 3
 
 Este é outro diagrama de um projeto de vendas:
 
@@ -53,39 +53,40 @@ Este é outro diagrama de um projeto de vendas:
 
 Para cada componente será apresentado um documento conforme o modelo a seguir:
 
-# Componente `<Nome do Componente>`
+## Componente `<Nome do Componente>`
+
+`<Resumo do papel do componente e serviços que ele oferece.>`
 
 ![Componente](diagrama-componente.png)
 
-## Interfaces
+Ficha Técnica
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `<nome dos membros que criaram o componente>`
+Interfaces | `<listagem das interfaces do componente>`
+
+### Interfaces
 
 Interfaces associadas a esse componente:
 
 ![Diagrama Interfaces](diagrama-interfaces.png)
 
-Campo | Valor
------ | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
-~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+Interface agregadora do componente em Java:
+
+~~~java
+public interface IDataSet extends ITableProducer, IDataSetProperties {
 }
 ~~~
 
 ## Detalhamento das Interfaces
 
 ### Interface `<nome da interface>`
-`<papel da interface>`.
+
+`<Resumo do papel da interface>`.
+
+~~~
+<Interface en Java.>
+~~~
 
 Método | Objetivo
 -------| --------
@@ -97,6 +98,13 @@ Método | Objetivo
 
 Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
 
+~~~java
+public interface ITableProducer {
+  String[] requestAttributes();
+  String[][] requestInstances();
+}
+~~~
+
 Método | Objetivo
 -------| --------
 `requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
@@ -105,6 +113,13 @@ Método | Objetivo
 ### Interface `IDataSetProperties`
 
 Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+
+~~~java
+public interface IDataSetProperties {
+  public String getDataSource();
+  public void setDataSource(String dataSource);
+}
+~~~
 
 Método | Objetivo
 -------| --------
