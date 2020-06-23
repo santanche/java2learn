@@ -1,50 +1,8 @@
-# Modelo de Apresentação do Projeto
+# Modelo para Documentação de um Componente
 
-# Estrutura de Arquivos e Pastas
+O vídeo a seguir apresenta um detalhamento de um projeto baseado em componentes:
 
-A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
-
-~~~
-├── README.md          <- apresentação do projeto
-│
-├── data               <- dados usados pelo jogo (se houver)
-│
-├── notebooks          <- Jupyter notebooks ou equivalentes
-│
-├── src                <- projeto em Java (preferencialmente projeto no Eclipse)
-│   │
-│   ├── src            <- arquivos-fonte do projeto (.java)
-│   │
-│   ├── bin            <- arquivos em bytecode (.class)
-│   │
-│   └── README.md      <- instruções básicas de instalação/execução
-│
-├── bin                <- bytecodes em Java
-│
-└── assets             <- mídias usadas no projeto
-~~~
-
-Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
-
-## `data`
-
-Arquivos de dados usados no projeto, quando isso ocorrer. Por exemplo, se o jogo lê mapas de labirintos que estão em arquivo-texto, coloque os arquivos aqui (mesmo que você mantenha uma cópia no diretório do código).
-
-## `notebooks`
-
-Testes ou prototipos relacionados ao projeto que tenham sido executados no Jupyter. Por exemplo, coloque aqui uma cópia dos testes feitos nas Exceptions.
-
-## `src`
-
-Projeto em Java, preferencialmente em Eclipse, incluindo todos os arquivos de dados e bibliotecas necessários para a sua execução. Dentro dessa pasta sugerimos que você mantenha uma estrutura equivalente ao Eclipse, com uma subpasta `src` onde estarão os fontes e outra subpasta `bin` onde estarão os bytecodes.
-
- Acrescente na raiz um arquivo `README.md` com as instruções básicas de instalação e execução.
-
-## `assets`
-
-Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. Coloque os arquivos aqui (mesmo que você mantenha uma cópia no diretório do código).
-
-# Modelo para Apresentação do Projeto
+[![Projeto baseado em Componentes](http://img.youtube.com/vi/1LcSghlin6o/0.jpg)](https://youtu.be/1LcSghlin6o)
 
 Este é um guia de como produzir documentação em Markdown. Para entender como criar documentos em Markdown no Github, veja o material/vídeo:
 [Guia de Uso do Markdown](https://github.com/mc-unicamp/oficinas/tree/master/docs).
@@ -56,40 +14,6 @@ E mais especificamente sobre tabelas em: [Organizing information with tables](ht
 Segue abaixo o modelo de como deve ser documentado o projeto e cada componente do projeto. Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
 
 Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Diagramas de Classes, Interfaces e Componentes](https://docs.google.com/presentation/d/1ML3WrnDtzh-4wqLmdXN9au1TBIwEqo7TIbMLNOYSMAI/edit?usp=sharing)
-
-# Modelo para Apresentação do Projeto
-
-# Projeto `<Título do Projeto/Jogo>`
-
-# Descrição Resumida do Projeto/Jogo
-~~~
-<Descreva resumidamente o jogo e seu propósito.>
-~~~
-
-# Equipe
-* `<nome completo>` - `<RA>`
-
-# Vídeos do Projeto
-
-## Vídeo da Prévia
-`<Coloque um link para o vídeo da prévia do projeto.>`
-
-## Vídeo do Jogo
-`<Coloque um link para o vídeo em que é demonstrada a versão final do jogo. Esse vídeo deve ter em torno de 5 minutos. Este vídeo não apresenta slides, nem substitui a apresentação final do projeto, que será feita por conferência. Ele mostra apenas o jogo em funcionamento.>`
-
-# Slides do Projeto
-
-## Slides da Prévia
-`<Coloque um link para os slides da prévia do projeto.>`
-
-## Slides da Apresentação Final
-`<Coloque um link para os slides da apresentação final do projeto.>`
-
-# Modelo para Documentação de um Componente
-
-O vídeo a seguir apresenta um detalhamento de um projeto baseado em componentes:
-
-[![Projeto baseado em Componentes](http://img.youtube.com/vi/1LcSghlin6o/0.jpg)](https://youtu.be/1LcSghlin6o)
 
 # Modelo para Documentação do Projeto
 
@@ -103,6 +27,9 @@ O vídeo a seguir apresenta um detalhamento de um projeto baseado em componentes
 
 # Vídeo do Projeto
 `<coloque um link para o vídeo do projeto, se houver>`
+
+# Slides do Projeto
+`<Coloque um link para os slides do projeto.>`
 
 # Diagrama Geral de Componentes
 
