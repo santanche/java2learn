@@ -19,8 +19,6 @@ A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cooki
 │   │
 │   └── README.md      <- instruções básicas de instalação/execução
 │
-├── bin                <- bytecodes em Java
-│
 └── assets             <- mídias usadas no projeto
 ~~~
 
