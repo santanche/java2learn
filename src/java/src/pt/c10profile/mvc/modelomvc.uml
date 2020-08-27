@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_4_0G8P_IEeS4P76IEIk4cg/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_4_0G8P_IEeS4P76IEIk4cg/3 mvc.profile.uml#_4_0uAP_IEeS4P76IEIk4cg">
+  <uml:Model xmi:id="_xvIkEP_HEeS4P76IEIk4cg" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_xvIkEf_HEeS4P76IEIk4cg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0Y2_YP_HEeS4P76IEIk4cg" name="Personagem">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_61X6YP_IEeS4P76IEIk4cg" name="nome">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KtsTYP_IEeS4P76IEIk4cg" name="VPersonagemDesktop">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RTPrEP_IEeS4P76IEIk4cg" name="personagem" type="_0Y2_YP_HEeS4P76IEIk4cg" association="_RTRgQP_IEeS4P76IEIk4cg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTPrEf_IEeS4P76IEIk4cg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RTPrEv_IEeS4P76IEIk4cg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OX-z0P_IEeS4P76IEIk4cg" name="VPersonagemCelular">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_STpYIP_IEeS4P76IEIk4cg" name="personagem" type="_0Y2_YP_HEeS4P76IEIk4cg" association="_STp_MP_IEeS4P76IEIk4cg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_STpYIf_IEeS4P76IEIk4cg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_STpYIv_IEeS4P76IEIk4cg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RTRgQP_IEeS4P76IEIk4cg" memberEnd="_RTRgQf_IEeS4P76IEIk4cg _RTPrEP_IEeS4P76IEIk4cg">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RTRgQf_IEeS4P76IEIk4cg" name="vPersonagemDesktop" type="_KtsTYP_IEeS4P76IEIk4cg" association="_RTRgQP_IEeS4P76IEIk4cg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTRgQv_IEeS4P76IEIk4cg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RTRgQ__IEeS4P76IEIk4cg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_STp_MP_IEeS4P76IEIk4cg" memberEnd="_STp_Mf_IEeS4P76IEIk4cg _STpYIP_IEeS4P76IEIk4cg">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_STp_Mf_IEeS4P76IEIk4cg" name="vPersonagemCelular" type="_OX-z0P_IEeS4P76IEIk4cg" association="_STp_MP_IEeS4P76IEIk4cg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_STp_Mv_IEeS4P76IEIk4cg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_STp_M__IEeS4P76IEIk4cg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-F7hoP_HEeS4P76IEIk4cg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E6-RYP_JEeS4P76IEIk4cg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E6-RYf_JEeS4P76IEIk4cg" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E6-RYv_JEeS4P76IEIk4cg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E6-RY__JEeS4P76IEIk4cg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E6-RZP_JEeS4P76IEIk4cg" key="Date" value="2015-05-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E6-RZf_JEeS4P76IEIk4cg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-GUjMP_HEeS4P76IEIk4cg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-GUjMf_HEeS4P76IEIk4cg" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-GUjMv_HEeS4P76IEIk4cg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-GUjM__HEeS4P76IEIk4cg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-GUjNP_HEeS4P76IEIk4cg" key="Date" value="2015-05-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-GUjNf_HEeS4P76IEIk4cg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-GT8IP_HEeS4P76IEIk4cg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="mvc.profile.uml#_4_0uAP_IEeS4P76IEIk4cg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="mvc.profile.uml#_AxZe0P_HEeS4P76IEIk4cg"/>
+    </profileApplication>
+  </uml:Model>
+  <Profile:Model xmi:id="_Emg5wP_IEeS4P76IEIk4cg" base_Class="_0Y2_YP_HEeS4P76IEIk4cg"/>
+  <Profile:View xmi:id="_URtAQP_IEeS4P76IEIk4cg" base_Class="_KtsTYP_IEeS4P76IEIk4cg"/>
+  <Profile:View xmi:id="_WIvaYP_IEeS4P76IEIk4cg" base_Class="_OX-z0P_IEeS4P76IEIk4cg"/>
+  <Profile:Id xmi:id="_HtPksP_JEeS4P76IEIk4cg" base_Property="_61X6YP_IEeS4P76IEIk4cg"/>
+</xmi:XMI>

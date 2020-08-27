@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/autor-livro" xmlns:tns="http://www.example.org/autor-livro" elementFormDefault="qualified">
+
+    <complexType name="TipoAutor">
+    	<sequence>
+    	</sequence>
+    	<attribute name="nome" type="string"></attribute>
+    	<attribute name="idade" type="int"></attribute>
+    </complexType>
+
+    <complexType name="TipoLivro">
+    	<attribute name="id" type="string"></attribute>
+    	<attribute name="titulo" type="string"></attribute>
+    	<attribute name="ano" type="int"></attribute>
+    </complexType>
+    
+
+
+
+
+
+    <complexType name="TipoCatalogo">
+    	<sequence>
+    		<element name="autor" type="tns:TipoAutor"
+    			maxOccurs="unbounded" minOccurs="1">
+    		</element>
+    		<element name="livro" type="tns:TipoLivro" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="catalogo" type="time"></element>
+</schema>

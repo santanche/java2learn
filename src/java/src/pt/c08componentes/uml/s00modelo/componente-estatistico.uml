@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_50jAkECNEeap24deZ60bAA" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_555aoECNEeap24deZ60bAA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Qc67oECOEeap24deZ60bAA" name="Statistics">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_1PU3AECPEeap24deZ60bAA" name="Port1" type="_noIokECPEeap24deZ60bAA" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NcsZ8ECQEeap24deZ60bAA" client="_Qc67oECOEeap24deZ60bAA" supplier="_YK-XAECPEeap24deZ60bAA" contract="_YK-XAECPEeap24deZ60bAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_e-sjAECOEeap24deZ60bAA" name="IInputData">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_m6D3EECOEeap24deZ60bAA" name="addNumber">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_uDibMECOEeap24deZ60bAA" name="number">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="__KR5sECOEeap24deZ60bAA" name="InputData">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_t-twIECPEeap24deZ60bAA" client="__KR5sECOEeap24deZ60bAA" supplier="_e-sjAECOEeap24deZ60bAA" contract="_e-sjAECOEeap24deZ60bAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_KsAQcECPEeap24deZ60bAA" name="DislayAverage">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_Q-zOwECQEeap24deZ60bAA" name="Port1" type="_Vf2YEECQEeap24deZ60bAA" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YK-XAECPEeap24deZ60bAA" name="IOutputAvg">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eOjqEECPEeap24deZ60bAA" name="getAverage">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_j2gxEECPEeap24deZ60bAA" name="average" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_noIokECPEeap24deZ60bAA" name="IStatistics"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_87obYECPEeap24deZ60bAA" client="_noIokECPEeap24deZ60bAA" supplier="_e-sjAECOEeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_EwSDcECQEeap24deZ60bAA" client="_e-sjAECOEeap24deZ60bAA" supplier="_e-sjAECOEeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Vf2YEECQEeap24deZ60bAA" name="IDisplay"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_gLA6QECQEeap24deZ60bAA" client="_Vf2YEECQEeap24deZ60bAA" supplier="_YK-XAECPEeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_o7obUECQEeap24deZ60bAA" client="_YK-XAECPEeap24deZ60bAA" supplier="_YK-XAECPEeap24deZ60bAA"/>
+</uml:Model>

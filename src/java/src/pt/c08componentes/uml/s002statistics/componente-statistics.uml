@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_lJyw8EBaEeaOWai-472Hmg" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_lie9wEBaEeaOWai-472Hmg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="__sArYEBaEeaOWai-472Hmg" name="IStatistics">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LgHLkEBbEeaOWai-472Hmg" name="include">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_TUDpAEBbEeaOWai-472Hmg" name="number">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_8a2AIEBbEeaOWai-472Hmg" name="StatisticsComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_sTdwEEBfEeaOWai-472Hmg" name="Port1" type="__sArYEBaEeaOWai-472Hmg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__DFQ4EBfEeaOWai-472Hmg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__DfgkEBfEeaOWai-472Hmg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_A7La8EBgEeaOWai-472Hmg" name="Port2" type="_8a2AIEBbEeaOWai-472Hmg" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_H_1JcEBgEeaOWai-472Hmg" client="_8a2AIEBbEeaOWai-472Hmg" supplier="__sArYEBaEeaOWai-472Hmg" contract="__sArYEBaEeaOWai-472Hmg"/>
+  </packagedElement>
+</uml:Model>

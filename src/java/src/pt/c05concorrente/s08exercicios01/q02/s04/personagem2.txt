@@ -1,0 +1,5 @@
+Tudo bem?
+Estou bem. Posso te interromper?
+Eh porque eu nao estou entendendo este programa de Chat.
+Foi esse mesmo, vc entendeu?
+Ninguem merece ver programa de Chat multithread 7 e meia da manha.

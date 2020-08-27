@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EqR1IHnsEee6DuGzC1IMPA" name="industry-model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_FDrzoHnsEee6DuGzC1IMPA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eDm04HnsEee6DuGzC1IMPA" name="TermometerRandom">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FeiHIHntEee6DuGzC1IMPA" name="interval" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NWDqwXnyEee6DuGzC1IMPA" client="_eDm04HnsEee6DuGzC1IMPA" supplier="_cJpNIHntEee6DuGzC1IMPA" contract="_cJpNIHntEee6DuGzC1IMPA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_hGsjsHnyEee6DuGzC1IMPA" client="_eDm04HnsEee6DuGzC1IMPA" supplier="_fS9ugHntEee6DuGzC1IMPA" contract="_fS9ugHntEee6DuGzC1IMPA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ZqgRMHntEee6DuGzC1IMPA" name="IRun">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_nO2KgHnuEee6DuGzC1IMPA" name="start"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_otFDEHnuEee6DuGzC1IMPA" name="stop"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_cJpNIHntEee6DuGzC1IMPA" name="ISubject">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_6nCBAHoLEeekVv8oyHk7aQ" name="ISubject">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_6nCBAXoLEeekVv8oyHk7aQ" name="attach">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_6nCBAnoLEeekVv8oyHk7aQ" name="observer" type="_mt6dIHntEee6DuGzC1IMPA"/>
+      </ownedOperation>
+    </nestedClassifier>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sKVNEHnuEee6DuGzC1IMPA" name="attach">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_weYcMHnuEee6DuGzC1IMPA" name="observer" type="_mt6dIHntEee6DuGzC1IMPA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_fS9ugHntEee6DuGzC1IMPA" name="ITermometer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_0vStMHntEee6DuGzC1IMPA" general="_ZqgRMHntEee6DuGzC1IMPA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_V8vJgHnuEee6DuGzC1IMPA" name="getInterval">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cWgH8HnuEee6DuGzC1IMPA" name="return" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fMhS0HnuEee6DuGzC1IMPA" name="setInterval">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_kHew8HnuEee6DuGzC1IMPA" name="interval">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_jpFaMHntEee6DuGzC1IMPA" name="IStatistics">
+    <generalization xmi:type="uml:Generalization" xmi:id="_3tN24HntEee6DuGzC1IMPA" general="_mt6dIHntEee6DuGzC1IMPA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7ywTcHnuEee6DuGzC1IMPA" name="insertValue">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Aml14HnvEee6DuGzC1IMPA" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DZ3OwHnvEee6DuGzC1IMPA" name="sum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IC_WAHnvEee6DuGzC1IMPA" name="return" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ig4L4HnvEee6DuGzC1IMPA" name="average">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LbJkoHnvEee6DuGzC1IMPA" name="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_mt6dIHntEee6DuGzC1IMPA" name="IObserver">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0_cMkHnuEee6DuGzC1IMPA" name="update">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5kpdIHnuEee6DuGzC1IMPA" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_qcfnsHntEee6DuGzC1IMPA" name="IDisplay">
+    <generalization xmi:type="uml:Generalization" xmi:id="_A0HJ8HnuEee6DuGzC1IMPA" general="_mt6dIHntEee6DuGzC1IMPA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q7yisHnvEee6DuGzC1IMPA" name="getLimit">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_UrJwYHnvEee6DuGzC1IMPA" name="return" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VQIswHnvEee6DuGzC1IMPA" name="setLimit">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YSBwcHnvEee6DuGzC1IMPA" name="limit">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YxM_wHnvEee6DuGzC1IMPA" name="getLabel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cr-zQHnvEee6DuGzC1IMPA" name="return" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dL5pcHnvEee6DuGzC1IMPA" name="setLabel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gjGOwHnvEee6DuGzC1IMPA" name="label">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tsh1EHntEee6DuGzC1IMPA" name="Display">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sEP9wHnvEee6DuGzC1IMPA" name="limit" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yW0vEHnvEee6DuGzC1IMPA" name="label" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_MJa1UHnuEee6DuGzC1IMPA" client="_tsh1EHntEee6DuGzC1IMPA" supplier="_qcfnsHntEee6DuGzC1IMPA" contract="_qcfnsHntEee6DuGzC1IMPA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_nnrH8HnzEee6DuGzC1IMPA" client="_tsh1EHntEee6DuGzC1IMPA" supplier="_mt6dIHntEee6DuGzC1IMPA" contract="_mt6dIHntEee6DuGzC1IMPA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vABdQHntEee6DuGzC1IMPA" name="Statistics">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lDlXYHnvEee6DuGzC1IMPA" name="valueSet" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oaEyEHnvEee6DuGzC1IMPA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oalvcHnvEee6DuGzC1IMPA" value="*"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__GxhkHnxEee6DuGzC1IMPA" client="_vABdQHntEee6DuGzC1IMPA" supplier="_mt6dIHntEee6DuGzC1IMPA" contract="_mt6dIHntEee6DuGzC1IMPA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_gCNA0HnyEee6DuGzC1IMPA" client="_vABdQHntEee6DuGzC1IMPA" supplier="_jpFaMHntEee6DuGzC1IMPA" contract="_jpFaMHntEee6DuGzC1IMPA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ErTrsHnzEee6DuGzC1IMPA" client="_vABdQHntEee6DuGzC1IMPA" supplier="_cJpNIHntEee6DuGzC1IMPA" contract="_cJpNIHntEee6DuGzC1IMPA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_xuoRMHnwEee6DuGzC1IMPA" name="TermometerRandomComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_-wp9EHnwEee6DuGzC1IMPA" name="Port1" type="_eDm04HnsEee6DuGzC1IMPA" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_EtnOQHnyEee6DuGzC1IMPA" name="Port2" type="_eDm04HnsEee6DuGzC1IMPA" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_0nfUsHnwEee6DuGzC1IMPA" name="DisplayComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_IxCyAHnzEee6DuGzC1IMPA" name="Port1" type="_tsh1EHntEee6DuGzC1IMPA" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_rHfdwHnzEee6DuGzC1IMPA" name="Port2" type="_tsh1EHntEee6DuGzC1IMPA" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_2jRr8HnwEee6DuGzC1IMPA" name="StatisticsComponent">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_hyQeoHnxEee6DuGzC1IMPA" name="Port1" type="_vABdQHntEee6DuGzC1IMPA" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_aG1OkHnyEee6DuGzC1IMPA" name="Port2" type="_vABdQHntEee6DuGzC1IMPA" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_LhdEIHnzEee6DuGzC1IMPA" name="Port3" type="_vABdQHntEee6DuGzC1IMPA" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_tOKhQHnxEee6DuGzC1IMPA" client="_vABdQHntEee6DuGzC1IMPA" supplier="_cJpNIHntEee6DuGzC1IMPA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_NWDqwHnyEee6DuGzC1IMPA" client="_eDm04HnsEee6DuGzC1IMPA" supplier="_mt6dIHntEee6DuGzC1IMPA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ErJ6sHnzEee6DuGzC1IMPA" client="_vABdQHntEee6DuGzC1IMPA" supplier="_mt6dIHntEee6DuGzC1IMPA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_nne6sHnzEee6DuGzC1IMPA" client="_tsh1EHntEee6DuGzC1IMPA" supplier="_cJpNIHntEee6DuGzC1IMPA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ArfaMH9kEeerbrZfNRHhOQ" client="_tsh1EHntEee6DuGzC1IMPA" supplier="_mt6dIHntEee6DuGzC1IMPA"/>
+</uml:Model>

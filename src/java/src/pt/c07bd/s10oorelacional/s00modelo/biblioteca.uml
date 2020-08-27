@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_q-J-0ZbaEeG36L3hw8XxTQ" name="Model">
+  <packageImport xmi:id="_q-J-0pbaEeG36L3hw8XxTQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vFvfQJbaEeG36L3hw8XxTQ" name="Marcador">
+    <ownedAttribute xmi:id="_5solcJbaEeG36L3hw8XxTQ" name="titulo" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Dl8M4JbbEeG36L3hw8XxTQ" name="endereco" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Iyua0JbbEeG36L3hw8XxTQ" name="acessos" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NZH-MJbbEeG36L3hw8XxTQ" name="Property1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YaeLwJbbEeG36L3hw8XxTQ" name="Taxonomia">
+    <ownedAttribute xmi:id="_c8MqgJbbEeG36L3hw8XxTQ" name="categoria" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qtXUUJbbEeG36L3hw8XxTQ" name="marcador" type="_vFvfQJbaEeG36L3hw8XxTQ" aggregation="composite" association="_qtZJgJbbEeG36L3hw8XxTQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qtXUUZbbEeG36L3hw8XxTQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qtXUUpbbEeG36L3hw8XxTQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qtZJgJbbEeG36L3hw8XxTQ" name="taxonomia_marcador_1" memberEnd="_qtZJgZbbEeG36L3hw8XxTQ _qtXUUJbbEeG36L3hw8XxTQ">
+    <ownedEnd xmi:id="_qtZJgZbbEeG36L3hw8XxTQ" name="taxonomia" type="_YaeLwJbbEeG36L3hw8XxTQ" association="_qtZJgJbbEeG36L3hw8XxTQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qtZJgpbbEeG36L3hw8XxTQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qtZJg5bbEeG36L3hw8XxTQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

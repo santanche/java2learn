@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/invoice" xmlns:tns="http://www.example.org/invoice" elementFormDefault="qualified">
+
+
+
+
+    <simpleType name="InvoiceNumberType">
+    	<restriction base="ID">
+    		<length value="7"></length>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="InvoiceType">
+    	<sequence>
+    		<element name="issueDate" type="date"></element>
+    		<element name="item" type="tns:ItemType" minOccurs="1"
+    			maxOccurs="30">
+    		</element>
+    		<element ref="tns:repository"></element>
+    		<element ref="tns:client"></element>
+    	</sequence>
+    	<attribute name="invoiceNumber" type="tns:InvoiceNumberType"></attribute>
+    </complexType>
+
+
+    <complexType name="ItemType">
+    	<sequence>
+    		<element name="description">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="10"></minLength>
+    					<maxLength value="200"></maxLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="quantity" type="int"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ClientType">
+    	<attribute name="id" type="ID"></attribute>
+    	<attribute name="name" type="string"></attribute>
+    </complexType>
+
+
+    <complexType name="RepositoryType">
+    	<sequence>
+    		<element name="client" type="tns:ClientType" minOccurs="1"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="invoice" type="tns:InvoiceType" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="repository" type="tns:RepositoryType"></element>
+
+    <element name="client" type="tns:ClientType"></element>
+</schema>

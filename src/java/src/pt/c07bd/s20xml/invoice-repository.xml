@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:repository xmlns:tns="http://www.example.org/invoice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/invoice invoice.xsd ">
+  <tns:client id="a0101" name="Asdrubal e Cia"/>
+  <tns:invoice invoiceNumber="aaaaaa5">
+    <tns:issueDate>2016-10-18</tns:issueDate>
+    <tns:item>
+      <tns:description>Parafuso XYZ</tns:description>
+      <tns:quantity>5</tns:quantity>
+    </tns:item>
+    <tns:client>a0101</tns:client>
+  </tns:invoice>
+</tns:repository>

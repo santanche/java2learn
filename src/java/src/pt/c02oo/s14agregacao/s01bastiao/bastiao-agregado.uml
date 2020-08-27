@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_YuHbYVZWEeCQ8YM6Uo4NXw" name="bastiao-agregado">
+  <elementImport xmi:id="_Yw8s8FZWEeCQ8YM6Uo4NXw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_YxGd8FZWEeCQ8YM6Uo4NXw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_YxGd8VZWEeCQ8YM6Uo4NXw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_YxGd8lZWEeCQ8YM6Uo4NXw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s-EtkFZWEeCQ8YM6Uo4NXw" name="Bastiao">
+    <ownedAttribute xmi:id="_v5rjEFZWEeCQ8YM6Uo4NXw" name="idade" visibility="private" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zqe7MFZWEeCQ8YM6Uo4NXw" name="estado" visibility="private" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1HwxgFZWEeCQ8YM6Uo4NXw" name="nome" visibility="private" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_2Q7ZAFZWEeCQ8YM6Uo4NXw" name="aparece">
+      <ownedParameter xmi:id="_3t6UYFZWEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4e8IsFZWEeCQ8YM6Uo4NXw" name="cresce">
+      <ownedParameter xmi:id="_5DJpAFZWEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_uGDQAFZbEeCQ8YM6Uo4NXw" name="dorme">
+      <ownedParameter xmi:id="_uhU2wFZbEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_u_INEFZbEeCQ8YM6Uo4NXw" name="acorda">
+      <ownedParameter xmi:id="_vYTiEFZbEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_vwAQYFZbEeCQ8YM6Uo4NXw" name="penteia">
+      <ownedParameter xmi:id="_wM6O0FZbEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xTifsFZbEeCQ8YM6Uo4NXw" name="Topete">
+    <ownedOperation xmi:id="_4dTXsFZbEeCQ8YM6Uo4NXw" name="aparece">
+      <ownedParameter xmi:id="_5I0Z4FZbEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7LpNQFZbEeCQ8YM6Uo4NXw" name="mudaTopete">
+      <ownedParameter xmi:id="_NdFkUFZcEeCQ8YM6Uo4NXw" direction="return"/>
+      <ownedParameter xmi:id="_NdFkUVZcEeCQ8YM6Uo4NXw" name="tipo" type="__XbRMFZbEeCQ8YM6Uo4NXw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_QDipMFZcEeCQ8YM6Uo4NXw" name="Topete">
+      <ownedParameter xmi:id="_TN5FUFZcEeCQ8YM6Uo4NXw" direction="return"/>
+      <ownedParameter xmi:id="_TN5FUVZcEeCQ8YM6Uo4NXw" name="tipo" type="__XbRMFZbEeCQ8YM6Uo4NXw"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0Etm0FZbEeCQ8YM6Uo4NXw" name="Olhos">
+    <ownedOperation xmi:id="_XF2OUFZcEeCQ8YM6Uo4NXw" name="aparece">
+      <ownedParameter xmi:id="_X2lHsFZcEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_YpGJwFZcEeCQ8YM6Uo4NXw" name="dorme">
+      <ownedParameter xmi:id="_ZMGwMFZcEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ZwBVkFZcEeCQ8YM6Uo4NXw" name="acorda">
+      <ownedParameter xmi:id="_aPA-sFZcEeCQ8YM6Uo4NXw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="__XbRMFZbEeCQ8YM6Uo4NXw" name="TipoTopete">
+    <ownedLiteral xmi:id="_BBhbgFZcEeCQ8YM6Uo4NXw" name="PENTEADO"/>
+    <ownedLiteral xmi:id="_IITQ8FZcEeCQ8YM6Uo4NXw" name="ESPALHADO"/>
+    <ownedLiteral xmi:id="_JgOGIFZcEeCQ8YM6Uo4NXw" name="FINO"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qeJ_cFZfEeCQ8YM6Uo4NXw" memberEnd="_qeJ_cVZfEeCQ8YM6Uo4NXw _qeJ_dFZfEeCQ8YM6Uo4NXw">
+    <ownedEnd xmi:id="_qeJ_cVZfEeCQ8YM6Uo4NXw" name="src" type="_s-EtkFZWEeCQ8YM6Uo4NXw" association="_qeJ_cFZfEeCQ8YM6Uo4NXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qeJ_c1ZfEeCQ8YM6Uo4NXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qeJ_clZfEeCQ8YM6Uo4NXw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qeJ_dFZfEeCQ8YM6Uo4NXw" name="teste" type="_xTifsFZbEeCQ8YM6Uo4NXw" aggregation="composite" association="_qeJ_cFZfEeCQ8YM6Uo4NXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qeJ_dlZfEeCQ8YM6Uo4NXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qeJ_dVZfEeCQ8YM6Uo4NXw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xs1zsFZfEeCQ8YM6Uo4NXw" memberEnd="_xs1zsVZfEeCQ8YM6Uo4NXw _xs1ztFZfEeCQ8YM6Uo4NXw">
+    <ownedEnd xmi:id="_xs1zsVZfEeCQ8YM6Uo4NXw" name="src" type="_s-EtkFZWEeCQ8YM6Uo4NXw" association="_xs1zsFZfEeCQ8YM6Uo4NXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xs1zs1ZfEeCQ8YM6Uo4NXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xs1zslZfEeCQ8YM6Uo4NXw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xs1ztFZfEeCQ8YM6Uo4NXw" name="dst" type="_0Etm0FZbEeCQ8YM6Uo4NXw" aggregation="composite" association="_xs1zsFZfEeCQ8YM6Uo4NXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xs1ztlZfEeCQ8YM6Uo4NXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xs1ztVZfEeCQ8YM6Uo4NXw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>

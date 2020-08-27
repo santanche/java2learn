@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_GO5B0UykEeCpGLPji5rt0w" name="equipamento">
+  <elementImport xmi:id="_GSLmYEykEeCpGLPji5rt0w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_GSa28EykEeCpGLPji5rt0w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_GSa28UykEeCpGLPji5rt0w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_GSa28kykEeCpGLPji5rt0w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IV8N4EykEeCpGLPji5rt0w" name="Equipamento">
+    <ownedAttribute xmi:id="_PhlVMEykEeCpGLPji5rt0w" name="valor" visibility="private" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l0W-QEylEeCpGLPji5rt0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l0XlUEylEeCpGLPji5rt0w" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_u3ZhgEykEeCpGLPji5rt0w" name="Equipamento">
+      <ownedParameter xmi:id="_1aCvIEykEeCpGLPji5rt0w" direction="return"/>
+      <ownedParameter xmi:id="_1aCvIUykEeCpGLPji5rt0w" name="numeroEquipamentos">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-oro8EykEeCpGLPji5rt0w" name="getNumeroEquipamentos">
+      <ownedParameter xmi:id="_AO2VgEylEeCpGLPji5rt0w" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_X8Zv8EylEeCpGLPji5rt0w" name="getValor">
+      <ownedParameter xmi:id="_jrcJ8EylEeCpGLPji5rt0w" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_jrcJ8UylEeCpGLPji5rt0w" name="numero">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_kQpTUEymEeCpGLPji5rt0w" name="setValor">
+      <ownedParameter xmi:id="_mk2KkEymEeCpGLPji5rt0w" direction="return"/>
+      <ownedParameter xmi:id="_mk2KkUymEeCpGLPji5rt0w" name="numero">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_mk2KkkymEeCpGLPji5rt0w" name="valor">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rmwlQEymEeCpGLPji5rt0w" name="EquipamentoCorrigido">
+    <generalization xmi:id="_-ohmAEymEeCpGLPji5rt0w" general="_IV8N4EykEeCpGLPji5rt0w"/>
+    <ownedAttribute xmi:id="_bwOqEEypEeCpGLPji5rt0w" name="mesCorrente" visibility="private" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MW2XMEynEeCpGLPji5rt0w" name="EquipamentoCorrigido">
+      <ownedParameter xmi:id="_emMxoEypEeCpGLPji5rt0w" direction="return"/>
+      <ownedParameter xmi:id="_emMxoUypEeCpGLPji5rt0w" name="numeroEquipamentos">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_aRjXgEynEeCpGLPji5rt0w" name="getMesCompra">
+      <ownedParameter xmi:id="_dvVF8EynEeCpGLPji5rt0w" direction="return"/>
+      <ownedParameter xmi:id="_dvVtAEynEeCpGLPji5rt0w" name="numero">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_gColUEynEeCpGLPji5rt0w" name="setMesCompra">
+      <ownedParameter xmi:id="_iWrrkEynEeCpGLPji5rt0w" direction="return"/>
+      <ownedParameter xmi:id="_iWrrkUynEeCpGLPji5rt0w" name="numero">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iWsSoEynEeCpGLPji5rt0w" name="mes">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ls71sEynEeCpGLPji5rt0w" name="corrige">
+      <ownedParameter xmi:id="_odsGEEynEeCpGLPji5rt0w" direction="return"/>
+      <ownedParameter xmi:id="_odsGEUynEeCpGLPji5rt0w" name="percentual">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ti8IoEynEeCpGLPji5rt0w" name="substitui">
+      <ownedParameter xmi:id="_wq270EynEeCpGLPji5rt0w" direction="return"/>
+      <ownedParameter xmi:id="_wq3i4EynEeCpGLPji5rt0w" name="outro" type="_rmwlQEymEeCpGLPji5rt0w"/>
+    </ownedOperation>
+  </packagedElement>
+</uml:Package>

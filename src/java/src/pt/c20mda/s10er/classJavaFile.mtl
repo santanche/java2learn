@@ -1,0 +1,138 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module classJavaFile.
+ */]
+[module classJavaFile('http://www.eclipse.org/uml2/4.0.0/UML')]
+
+[import org::eclipse::acceleo::examples::uml2java::common::fileUtils /]
+
+[**
+ * The documentation of the template genClassJavaFile.
+ * @param aClass
+ */]
+[template public genClassJavaFile(aClass : Class)]
+[file (aClass.genFilePath(), false, 'UTF-8')]
+[aClass.genCopyrightHeader()/]
+package [aClass.genPackageValue()/];
+
+[aClass.genDefaultImport()/]
+
+/**
+ * The documentation of the class [aClass.name.toUpperFirst()/]
+ * 
+ * @author Acceleo 3 Example - UML to Java generator
+ * @generated
+ */
+[aClass.entity()/]
+public class [aClass.name.toUpperFirst()/][aClass.inheritance()/] {
+	[aClass.fields()/]
+	/**
+	 * The documentation of the constructor.
+	 * 
+	 * @generated
+	 */
+	public [aClass.name.toUpperFirst()/]() {
+		super();
+	}
+	[aClass.classBody()/]
+}
+[/file]
+[/template]
+
+[template private classBody(aClass : Class) post(trim())]
+
+[aClass.operations()/]
+[aClass.accessors()/]
+[/template]
+
+[template private entity(aClass : Class)]
+[for (aStereotype : Stereotype | aClass.getAppliedStereotypes())][if aStereotype.name.toLowerCase() = 'entity']@Entity @Access(AccessType.PROPERTY)[/if][/for]
+[/template]
+
+[template private inheritance(aClass : Class)]
+[aClass.extendedClasses()/][aClass.implementedInterfaces()/]
+[/template]
+
+[template private extendedClasses(aClass : Class)]
+[for (aSuperClass : Class | aClass.superClass) before(' extends ') separator(', ')][aSuperClass.name.toUpperFirst()/][/for]
+[/template]
+
+[template private implementedInterfaces(aClass : Class)]
+[for (anInterface : Interface | aClass.getImplementedInterfaces()) before(' implements ') separator(', ')][anInterface.name.toUpperFirst()/][/for]
+[/template]
+
+[template private fields(aClass : Class)]
+[for (aProperty : Property | aClass.attribute)]
+/**
+ * The documentation of the attribute [aProperty.name.toLowerFirst()/].
+ * 
+ * @generated
+ */
+private [if (aProperty.upper = -1 or aProperty.upper > 1)]List<String>[else][aProperty.type.name.toUpperFirst()/][/if] [aProperty.name.toLowerFirst()/];
+
+[/for]
+[/template]
+
+[template private operations(aClass : Class)]
+[for (anOperation : Operation | aClass.getOperations()->union(aClass.getImplementedInterfaces().ownedOperation))]
+/**
+ * The documentation of the method [anOperation.name.toLowerFirst()/].
+ * [for (aComment : Comment | anOperation.ownedComment)] [aComment._body/][/for]
+[for (aParameter : Parameter | anOperation.ownedParameter) ? (aParameter.direction <> ParameterDirectionKind::return)]
+ * @param [aParameter.name/]
+[/for]
+[if (not anOperation.type.oclIsUndefined())]
+ * @return
+[/if]
+ * 
+ * @generated
+ */
+public [if (anOperation.type.oclIsUndefined())]void[else][anOperation.type.name/][/if] [anOperation.name.toLowerFirst()/]([anOperation.parameters()/]) {
+	// [protected ('for the body of ' + anOperation.name.toLowerFirst())]
+	// TODO should be implemented
+	[if (not anOperation.type.oclIsUndefined())]
+	return null;
+	[/if]
+	// [/protected]
+}
+
+[/for]
+[/template]
+
+[template private parameters(anOperation : Operation)]
+[for (aParameter : Parameter | anOperation.ownedParameter->reject(aParameter : Parameter | aParameter.direction = ParameterDirectionKind::return)) separator(', ')][aParameter.type.name.toUpperFirst()/] [aParameter.name.toLowerFirst()/][/for]
+[/template]
+
+[query private allAbstractOperationsInherited(aClass : Class) : Sequence(Operation) =
+	aClass.superClass.ownedOperation->select(anOperation: Operation | anOperation.isAbstract)->asSequence()
+/]
+
+[template private accessors(aClass : Class)]
+[for (aProperty : Property | aClass.attribute)]
+/**
+ * The documentation of the getter get[aProperty.name.toUpperFirst()/].
+ * 
+ * @generated
+ */
+[aProperty.column()/]
+public [if (aProperty.upper = -1 or aProperty.upper > 1)]List<String>[else][aProperty.type.name.toUpperFirst()/][/if] get[aProperty.name.toUpperFirst()/]() {
+	return this.[aProperty.name.toLowerFirst()/];
+}
+
+/**
+ * The documentation of the setter set[aProperty.name.toUpperFirst()/].
+ * 
+ * @generated
+ */
+public void set[aProperty.name.toUpperFirst()/]([if (aProperty.upper = -1 or aProperty.upper > 1)]List<String>[else][aProperty.type.name.toUpperFirst()/][/if] new[aProperty.name.toUpperFirst()/]) {
+	this.[aProperty.name.toLowerFirst()/] = new[aProperty.name.toUpperFirst()/];
+}
+
+[/for]
+
+[/template]
+
+[template private column(aProperty: Property)]
+[for (aStereotype : Stereotype | aProperty.getAppliedStereotypes())][if aStereotype.name.toLowerCase() = 'pk']@Id [/if][if aStereotype.name.toLowerCase() = 'Transient']@Transient[else]@Column[/if]
+[/for]
+[/template]

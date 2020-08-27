@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EqXjUEB9Eeap24deZ60bAA" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_E1l74EB9Eeap24deZ60bAA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ULboAEB-Eeap24deZ60bAA" name="Asdrubal">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_oWtHIECBEeap24deZ60bAA" name="Port1" visibility="private" type="_0tGcEECBEeap24deZ60bAA" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_VNy8kECBEeap24deZ60bAA" client="_ULboAEB-Eeap24deZ60bAA" supplier="_s7cIgEB_Eeap24deZ60bAA" contract="_s7cIgEB_Eeap24deZ60bAA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_BabwsECKEeap24deZ60bAA" client="_ULboAEB-Eeap24deZ60bAA" supplier="_0tGcEECBEeap24deZ60bAA" contract="_0tGcEECBEeap24deZ60bAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_X7tbsEB-Eeap24deZ60bAA" name="Doriana">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_M-WrYECAEeap24deZ60bAA" client="_X7tbsEB-Eeap24deZ60bAA" supplier="_s7cIgEB_Eeap24deZ60bAA" contract="_s7cIgEB_Eeap24deZ60bAA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_s7cIgEB_Eeap24deZ60bAA" name="IDadosVenda">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_a3mcsECMEeap24deZ60bAA" name="proximaVenda">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ixfKEECMEeap24deZ60bAA" name="documento" type="_fTC_MECKEeap24deZ60bAA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_0tGcEECBEeap24deZ60bAA" name="IMediaVendas">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_He0NoECNEeap24deZ60bAA" name="proximoResultado">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_OJZPQECNEeap24deZ60bAA" name="resultado" type="_yGMDMECMEeap24deZ60bAA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ApbEIECCEeap24deZ60bAA" client="_0tGcEECBEeap24deZ60bAA" supplier="_s7cIgEB_Eeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_UvW3oECCEeap24deZ60bAA" client="_s7cIgEB_Eeap24deZ60bAA" supplier="_s7cIgEB_Eeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_a3eoQECJEeap24deZ60bAA" name="Bonerges">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_eCGxMECJEeap24deZ60bAA" name="Port1" visibility="protected" type="_lIaskECJEeap24deZ60bAA" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_lIaskECJEeap24deZ60bAA" name="IBonerges"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_1O_ukECJEeap24deZ60bAA" client="_lIaskECJEeap24deZ60bAA" supplier="_0tGcEECBEeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_EAw5wECKEeap24deZ60bAA" client="_0tGcEECBEeap24deZ60bAA" supplier="_0tGcEECBEeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fTC_MECKEeap24deZ60bAA" name="DocumentoVenda">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tIRCkECKEeap24deZ60bAA" name="item_venda">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__kDBYECKEeap24deZ60bAA" name="valor_venda">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yGMDMECMEeap24deZ60bAA" name="DocumentoResultados">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2g8XQECMEeap24deZ60bAA" name="media_vendas">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="__3hsIECMEeap24deZ60bAA" client="_s7cIgEB_Eeap24deZ60bAA" supplier="_fTC_MECKEeap24deZ60bAA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_QASfcECNEeap24deZ60bAA" client="_0tGcEECBEeap24deZ60bAA" supplier="_yGMDMECMEeap24deZ60bAA"/>
+</uml:Model>
