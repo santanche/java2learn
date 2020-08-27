@@ -14,5 +14,10 @@ __pycache__
 .iconda
 .*
 !/.gitignore
+!.project
+!.metadata
+!.settings
+!.mylin
+!.plugins
 .bash_logout
 .profile
