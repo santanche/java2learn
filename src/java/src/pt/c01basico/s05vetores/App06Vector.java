@@ -1,8 +1,8 @@
-package pt.c01basico.s04vetores;
+package pt.c01basico.s05vetores;
 
 import java.util.Vector;
 
-public class App04Vector {
+public class App06Vector {
 
 	public static void main(String[] args) {
         Vector v = new Vector();

@@ -1,7 +1,7 @@
 package pt.c01basico.s01es;
 import java.util.Scanner;
 
-public class Ap03DiasVidaArgs
+public class Ap04DiasVidaArgs
 {
     public static void main(String args[])
     {

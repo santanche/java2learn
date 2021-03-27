@@ -1,18 +1,17 @@
-package pt.c01basico.s03funcoes;
+package pt.c01basico.s05vetores;
 import java.util.Scanner;
 
 
-public class DiaSemana
+public class App02DiaSemanaA
 {
 	static int converte(String entrada)
 	{
+      String nomeDia[] = {"domingo", "segunda", "terca"};
+        
 		int resultado = 0;
-		if (entrada.equalsIgnoreCase("domingo"))
-			resultado = 1;
-		else if (entrada.equalsIgnoreCase("segunda"))
-			resultado = 2;
-		else if (entrada.equalsIgnoreCase("terca"))
-			resultado = 3;
+		for (int i = 0; i < nomeDia.length; i++)
+			if (entrada.equalsIgnoreCase(nomeDia[i]))
+				resultado = i + 1;
 		return resultado;
 	}
 	

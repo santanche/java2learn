@@ -1,6 +1,6 @@
 package pt.c01basico.s01es;
 
-public class Ap01Quadrado
+public class Ap02Quadrado
 {
     public static void main(String args[])
     {

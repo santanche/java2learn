@@ -1,6 +1,6 @@
-package pt.c01basico.s02progtr;
+package pt.c01basico.s03progtr;
 
-public class Ap04Repeticao {
+public class Ap06Repeticao {
 
    public static void main(String[] args) {
       System.out.println("Meses do ano:");

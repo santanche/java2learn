@@ -1,8 +1,8 @@
-package pt.c01basico.s04vetores;
+package pt.c01basico.s05vetores;
 import java.util.Scanner;
 
 
-public class App03MergeVetores
+public class App05MergeVetores
 {
 
 	/**
