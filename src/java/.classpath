@@ -6,15 +6,15 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/derby-10.8.1.2.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/fluidweb-build20110523.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/genson-1.6.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/hsqldb-2.2.9.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/mqttv3-1.1.2.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/mysql-connector-java-5.1.17-bin.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/weka-3.8.2.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/weka-3.9.3.jar"/>
-	<classpathentry kind="lib" path="/home/santanche/git/java2learn/src/java/lib/xchart-3.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/derby-10.8.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/fluidweb-build20110523.jar"/>
+	<classpathentry kind="lib" path="lib/genson-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/hsqldb-2.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/mqttv3-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.17-bin.jar"/>
+	<classpathentry kind="lib" path="lib/weka-3.8.2.jar"/>
+	<classpathentry kind="lib" path="lib/weka-3.9.3.jar"/>
+	<classpathentry kind="lib" path="lib/xchart-3.5.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
