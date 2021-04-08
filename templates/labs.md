@@ -56,7 +56,7 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 
 <hr>
 
-# Lab01
+# Lab01 - Empréstimos em C
 
 Estrutura de pastas:
 
@@ -74,7 +74,7 @@ Estrutura de pastas:
 
 > Coloque um link para o arquivo do notebook com a resolução da segunda tarefa. Ele estará dentro da pasta `notebook`.
 
-# Lab02
+# Lab02 - Do C para o Java
 
 Estrutura de pastas:
 
@@ -89,7 +89,7 @@ Estrutura de pastas:
 > Coloque um link para o arquivo do notebook com a resolução da tarefa. Ele estará dentro da pasta `notebook`.
 
 
-# Lab02
+# Lab03 - Lombriga no Aquário
 
 Estrutura de pastas:
 
