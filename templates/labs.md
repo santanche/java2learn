@@ -73,3 +73,43 @@ Estrutura de pastas:
 ## Notebook 2 sobre Empréstimos e TAD (opcional)
 
 > Coloque um link para o arquivo do notebook com a resolução da segunda tarefa. Ele estará dentro da pasta `notebook`.
+
+# Lab02
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+└── notebook   <- arquivos do notebook
+~~~
+
+## Notebook sobre Java Estruturas
+
+> Coloque um link para o arquivo do notebook com a resolução da tarefa. Ele estará dentro da pasta `notebook`.
+
+
+# Lab02
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+└── notebook   <- arquivos do notebook
+│
+└── src
+    │
+    └── mc322 <- raiz do seu pacote
+        │
+        └── lab03 <- arquivos do .java (feitos no eclipse ou equivalente)
+
+~~~
+
+## Notebook sobre Lombriga no Aquário
+
+> Coloque um link para o arquivo do notebook com a resolução da tarefa. Ele estará dentro da pasta `notebook`.
+
+## Arquivos Java sobre Lombriga no Aquário
+
+> Coloque um link para a pasta `src/mc322/lab03` onde estão os arquivos java da resolução da tarefa.
