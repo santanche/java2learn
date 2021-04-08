@@ -98,11 +98,17 @@ Estrutura de pastas:
 │
 └── notebook   <- arquivos do notebook
 │
-└── src
-    │
-    └── mc322 <- raiz do seu pacote
-        │
-        └── lab03 <- arquivos do .java (feitos no eclipse ou equivalente)
+└── src <- pasta de arquivos fonte Java (.java)
+|   │
+|   └── mc322 <- raiz do seu pacote
+|       │
+|       └── lab03 <- arquivos fonte .java (feitos no eclipse ou equivalente)
+│
+└── bin <- pasta de arquivos binários Java (.class)
+   │
+   └── mc322 <- raiz do seu pacote
+       │
+       └── lab03 <- arquivos binários .class
 
 ~~~
 
