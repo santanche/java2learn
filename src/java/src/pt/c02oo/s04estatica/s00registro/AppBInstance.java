@@ -1,9 +1,9 @@
-package pt.c02oo.s04estatica.s01registro;
+package pt.c02oo.s04estatica.s00registro;
 
-public class App1bStatic {
+public class AppBInstance {
    public static void main(String args[]) {
-      RegistroS r1 = new RegistroS(),
-               r2 = new RegistroS();
+      RegistroI r1 = new RegistroI(),
+                r2 = new RegistroI();
       r1.contador = 5;
       r2.contador = 7;
       
