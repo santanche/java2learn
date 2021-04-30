@@ -119,3 +119,65 @@ Estrutura de pastas:
 ## Arquivos Java sobre Lombriga no Aquário
 
 > Coloque um link para a pasta `src/mc322/lab03` onde estão os arquivos java da resolução da tarefa.
+
+# Lab04 - Resta Um
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+├── data       <- dados usados pelo jogo (arquivos CSV)
+│
+└── src <- pasta de arquivos fonte Java (.java)
+|   │
+|   └── mc322 <- raiz do seu pacote
+|       │
+|       └── lab04 <- arquivos fonte .java (feitos no eclipse ou equivalente)
+│
+└── bin <- pasta de arquivos binários Java (.class)
+   │
+   └── mc322 <- raiz do seu pacote
+       │
+       └── lab04 <- arquivos binários .class
+
+~~~
+
+## Arquivos Java do Jogo
+
+> Coloque instruções sobre como acionar o jogo.
+>
+> Coloque um link para a pasta `src/mc322/lab04` onde estão os arquivos java da resolução da tarefa.
+
+# Lab05 A e B - Jogo de Damas
+
+Estrutura de pastas:
+
+~~~
+├── README.md  <- arquivo apresentando a tarefa
+│
+├── data       <- dados usados pelo jogo (arquivos CSV)
+│
+└── src <- pasta de arquivos fonte Java (.java)
+|   │
+|   └── mc322 <- raiz do seu pacote
+|       │
+|       └── lab05a <- arquivos fonte .java da parte A
+|       │
+|       └── lab05b <- arquivos fonte .java da parte B
+│
+└── bin <- pasta de arquivos binários Java (.class)
+   │
+   └── mc322 <- raiz do seu pacote
+       │
+       └── lab05a <- arquivos binários .class
+       │
+       └── lab05b <- arquivos binários .class
+
+~~~
+
+## Arquivos Java do Jogo
+
+> Coloque instruções sobre como acionar o jogo.
+>
+> Coloque um link para a pasta `src/mc322/lab04` onde estão os arquivos java da resolução da tarefa.
