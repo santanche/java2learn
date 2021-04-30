@@ -180,4 +180,4 @@ Estrutura de pastas:
 
 > Coloque instruções sobre como acionar o jogo.
 >
-> Coloque um link para a pasta `src/mc322/lab04` onde estão os arquivos java da resolução da tarefa.
+> Coloque um link para a pasta `src/mc322/lab05a` e `src/mc322/lab05b` onde estão os arquivos java da resolução da tarefa.
