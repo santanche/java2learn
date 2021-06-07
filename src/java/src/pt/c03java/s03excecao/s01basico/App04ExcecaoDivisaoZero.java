@@ -1,4 +1,4 @@
-package pt.c03java.s03excecao;
+package pt.c03java.s03excecao.s01basico;
 
 import java.util.Scanner;
 
@@ -37,7 +37,7 @@ public class App04ExcecaoDivisaoZero
         } finally {
             System.out.println("Mesmo assim eu fui no finally");
         }
-        System.out.println("Esta mensagem nao aparece se houver erro");
+        System.out.println("Operação realizada com sucesso!");
             
         return divisao;
     }

@@ -1,4 +1,4 @@
-package pt.c03java.s03excecao;
+package pt.c03java.s03excecao.s01basico;
 
 public class DivisaoInutil extends Exception {
 	

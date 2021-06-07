@@ -1,8 +1,8 @@
-package pt.c03java.s03excecao;
+package pt.c03java.s03excecao.s01basico;
 
 import java.util.Scanner;
 
-public class App02bExcecaoDivisaoZero
+public class App01aExcecaoDivisaoZero
 {
     public static void main(String args[])
     {
@@ -16,15 +16,14 @@ public class App02bExcecaoDivisaoZero
         
         teclado.close();
 
-        try {
-            int x = Integer.parseInt(xs),
-                y = Integer.parseInt(ys);
+        int x = Integer.parseInt(xs),
+            y = Integer.parseInt(ys);
         
+        try {
             int divisao = x / y;
             System.out.println("Resultado da divisao: " + divisao);
-        } catch (Exception erro) {
+        } catch (ArithmeticException erro) {
             System.err.println("Erro: " + erro.getMessage());
         }
-
-}
+    }
 }
