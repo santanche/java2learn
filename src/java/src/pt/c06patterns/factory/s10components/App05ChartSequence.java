@@ -5,8 +5,8 @@ import java.util.Scanner;
 import pt.c06patterns.factory.s10components.chart.BarChartFactory;
 import pt.c06patterns.factory.s10components.chart.IBarChart;
 import pt.c06patterns.factory.s10components.chart.exception.PlotException;
-import pt.c06patterns.factory.s10components.sequence.IMathSequenceRatio;
-import pt.c06patterns.factory.s10components.sequence.MathSequenceFactory;
+import pt.c06patterns.factory.s10components.sequence.IMathRatioSequence;
+import pt.c06patterns.factory.s10components.sequence.SequenceFactory;
 
 public class App05ChartSequence {
    public static void main(String args[]) {
@@ -19,7 +19,7 @@ public class App05ChartSequence {
       
       keyboard.close();
       
-      IMathSequenceRatio gp = MathSequenceFactory.createSequenceRatio(sequenceType);
+      IMathRatioSequence gp = SequenceFactory.createSequence(sequenceType);
       gp.setInitial(1);
       gp.setRatio(2);
       

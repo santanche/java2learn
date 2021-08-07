@@ -1,23 +1,22 @@
 package pt.c08componentes.s01chartseq.s02sequences;
 
-import pt.c08componentes.s01chartseq.s02sequences.chart.BarChart;
+import pt.c08componentes.s01chartseq.s02sequences.chart.GraphicBarChart;
 import pt.c08componentes.s01chartseq.s02sequences.chart.IBarChart;
 import pt.c08componentes.s01chartseq.s02sequences.sequence.Fibonacci;
 import pt.c08componentes.s01chartseq.s02sequences.sequence.GeometricProgression;
+import pt.c08componentes.s01chartseq.s02sequences.sequence.IMathRatioSequence;
 import pt.c08componentes.s01chartseq.s02sequences.sequence.IMathSequence;
-import pt.c08componentes.s01chartseq.s02sequences.sequence.IMathSequenceRatio;
 
 public class App02ChartSequence {
    public static void main(String args[]) {
       System.out.println("Geometric Progression:");
       
-      IMathSequenceRatio gp = new GeometricProgression();
+      IMathRatioSequence gp = new GeometricProgression();
       gp.setInitial(1);
       gp.setRatio(2);
       
-      IBarChart bcg = new BarChart();
+      IBarChart bcg = new GraphicBarChart();
       bcg.setFilled(true);
-      bcg.setCharacter('#');
       bcg.setN(5);
       
       bcg.connect(gp);
@@ -28,9 +27,8 @@ public class App02ChartSequence {
       IMathSequence fb = new Fibonacci();
       fb.setInitial(1);
       
-      IBarChart bcf = new BarChart();
+      IBarChart bcf = new GraphicBarChart();
       bcf.setFilled(true);
-      bcf.setCharacter('*');
       bcf.setN(5);
       
       bcf.connect(fb);

@@ -1,6 +1,6 @@
 package pt.c06patterns.factory.s10components.sequence;
 
-public class GeometricProgression implements IMathSequenceRatio {
+public class GeometricProgression implements IMathRatioSequence {
    private int initial,
                ratio;
    private int current;

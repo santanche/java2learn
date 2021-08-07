@@ -2,16 +2,14 @@ package pt.c08componentes.s01chartseq.s02sequences.chart;
 
 import pt.c08componentes.s01chartseq.s02sequences.sequence.ISequence;
 
-public class BarChart implements IBarChart {
-   private boolean filled;
-   private char character;
-   private int n;
+public abstract class BarChart implements IBarChart {
+   protected boolean filled;
+   protected int n;
    
-   private ISequence sequence;
+   protected ISequence sequence;
    
    public BarChart() {
       filled = true;
-      character = '*';
       n = 3;
    }
 
@@ -21,14 +19,6 @@ public class BarChart implements IBarChart {
 
    public void setFilled(boolean filled) {
       this.filled = filled;
-   }
-
-   public char getCharacter() {
-      return character;
-   }
-
-   public void setCharacter(char character) {
-      this.character = character;
    }
 
    public int getN() {
@@ -43,15 +33,5 @@ public class BarChart implements IBarChart {
       this.sequence = sequence;
    }
    
-   public void plot() {
-      if (sequence != null) {
-         int value = sequence.first();
-         for (int s = 1; s <= n; s++) {
-            for (int v = 1; v < value; v++)
-               System.out.print((filled) ? character : ' ');
-            System.out.println(character);
-            value = sequence.next();
-         }
-      }
-   }
+   public abstract void plot();
 }

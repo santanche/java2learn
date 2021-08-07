@@ -1,6 +1,6 @@
 package pt.c08componentes.s01chartseq.s02sequences.sequence;
 
-public class GeometricProgression implements IMathSequenceRatio {
+public class GeometricProgression implements IMathRatioSequence {
    private int initial,
                ratio;
    private int current;

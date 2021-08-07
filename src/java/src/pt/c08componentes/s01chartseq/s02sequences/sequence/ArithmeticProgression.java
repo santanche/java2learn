@@ -1,4 +1,6 @@
-package pt.c06patterns.factory.s10components.sequence;
+package pt.c08componentes.s01chartseq.s02sequences.sequence;
+
+import pt.c06patterns.factory.s10components.sequence.IMathRatioSequence;
 
 public class ArithmeticProgression implements IMathRatioSequence {
    private int initial,
