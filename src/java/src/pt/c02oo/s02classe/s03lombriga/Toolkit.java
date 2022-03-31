@@ -8,8 +8,8 @@ import java.io.PrintWriter;
 import java.util.Vector;
 
 public class Toolkit {
-   public static String DIRETORIO =
-         Toolkit.class.getResource(".").getPath() + "/";
+   public static String DIRETORIO = System.getProperty("user.dir") +
+		                            "/src/pt/c02oo/s02classe/s03lombriga/";
    
    private static Toolkit tk;
    
@@ -17,6 +17,7 @@ public class Toolkit {
    
    public static Toolkit start() {
       tk = new Toolkit();
+      System.out.println("current: " + DIRETORIO);
       try {
          tk.pw = new PrintWriter(
                 new FileWriter(DIRETORIO + "anima.csv"));
