@@ -96,8 +96,6 @@ Estrutura de pastas:
 ~~~
 ├── README.md  <- arquivo apresentando a tarefa
 │
-└── notebook   <- arquivos do notebook
-│
 └── src <- pasta de arquivos fonte Java (.java)
 |   │
 |   └── pt <- raiz do seu pacote
