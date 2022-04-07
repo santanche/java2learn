@@ -3,7 +3,11 @@ package pt.c02oo.s03relacionamento.s04restaum;
 public class AppRestaUm {
 
    public static void main(String[] args) {
-      Toolkit tk = Toolkit.start(null, null);
+      AppRestaUm.executaJogo(null, null);
+   }
+   
+   public static void executaJogo(String arquivoEntrada, String arquivoSaida) {
+      Toolkit tk = Toolkit.start(arquivoEntrada, arquivoSaida);
       
       String commands[] = tk.retrieveCommands();
       
