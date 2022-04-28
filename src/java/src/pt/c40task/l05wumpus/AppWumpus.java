@@ -6,7 +6,7 @@ public class AppWumpus {
       AppWumpus.executaJogo(
             (args.length > 0) ? args[0] : null,
             (args.length > 1) ? args[1] : null,
-            (args.length > 2) ? args[1] : null);
+            (args.length > 2) ? args[2] : null);
    }
    
    public static void executaJogo(String arquivoCaverna, String arquivoSaida,
