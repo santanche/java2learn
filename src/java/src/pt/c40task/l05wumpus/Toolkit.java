@@ -13,22 +13,28 @@ public class Toolkit {
    
    private static Toolkit tk;
    
-   private BufferedReader inputStr;
+   private BufferedReader moveStr, caveStr;
    private PrintWriter outputStr;
    
-   public static Toolkit start(String inputPath, String outputPath) {
+   public static Toolkit start(String cavePath, String outputPath,
+                               String movePath) {
       tk = new Toolkit();
-      String inputFile = (inputPath == null)
-            ? DIRETORIO + "cave.csv" : inputPath;
+      String caveFile = (cavePath == null)
+            ? DIRETORIO + "cave.csv" : cavePath;
       String outputFile = (outputPath == null)
             ? DIRETORIO + "results.csv" : outputPath;
-      System.out.println("files - input: " + inputFile +
-                         "; output: " + outputFile);
+      String moveFile = (movePath == null)
+            ? DIRETORIO + "movements.csv" : movePath;
+      System.out.println("files - cave: " + caveFile +
+                         "; output: " + outputFile +
+                         "; movements: " + moveFile);
       try {
-         tk.inputStr = new BufferedReader(
-               new FileReader(inputFile));
+         tk.caveStr = new BufferedReader(
+               new FileReader(caveFile));
          tk.outputStr = new PrintWriter(
                new FileWriter(outputFile));
+         tk.moveStr = new BufferedReader(
+               new FileReader(moveFile));
       } catch(IOException erro){
          erro.printStackTrace();
       }
@@ -38,17 +44,32 @@ public class Toolkit {
    public String[][] retrieveCave() {
       Vector<String[]> v = new Vector<String[]>();
       try {
-         String line = inputStr.readLine();
+         String line = caveStr.readLine();
          while (line != null) {
             String ln[]  = line.split(",");
             v.add(ln);
-            line = inputStr.readLine();
+            line = caveStr.readLine();
          }
-         inputStr.close();
+         caveStr.close();
       } catch (Exception erro) {
          erro.printStackTrace();
       }
       return (String[][])v.toArray(new String[v.size()][]);
+   }
+   
+   public String retrieveMovements() {
+      String v = "";
+      try {
+         String line = moveStr.readLine();
+         while (line != null) {
+            v += line;
+            line = moveStr.readLine();
+         }
+         moveStr.close();
+      } catch (Exception erro) {
+         erro.printStackTrace();
+      }
+      return v;
    }
    
    public void writeBoard(char board[][], int score, char status){
@@ -72,8 +93,9 @@ public class Toolkit {
    
    public void stop() {
       try {
-         inputStr.close();
+         caveStr.close();
          outputStr.close();
+         moveStr.close();
       } catch(Exception erro){
          erro.printStackTrace();
       }
