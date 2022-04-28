@@ -11,9 +11,11 @@ public class AppRestaUm {
       
       String commands[] = tk.retrieveCommands();
       
+      System.out.println("=== Entrada");
       for (int l = 0; l < commands.length; l++)
          System.out.println(commands[l]);
       
+      System.out.println("=== Primeira Saída");
       char board[][] = {
          {' ', ' ', 'P', 'P', 'P', ' ', ' '},
          {' ', ' ', 'P', 'P', 'P', ' ', ' '},
