@@ -25,6 +25,17 @@ public class AppWumpus {
       System.out.println("=== Movimentos");
       System.out.println(movements);
       
+      System.out.println("=== Caverna Intermediaria");
+      char partialCave[][] = {
+         {'#', '#', 'b', '-'},
+         {'#', 'b', '-', '-'},
+         {'b', '-', '-', '-'},
+         {'p', '-', '-', '-'}
+      };
+      int score = -120;
+      char status = 'x'; // 'w' para venceu; 'n' para perdeu; 'x' intermediárias
+      tk.writeBoard(partialCave, score, status);
+
       System.out.println("=== Última Caverna");
       char finalCave[][] = {
          {'#', '#', 'b', '-'},
@@ -32,9 +43,8 @@ public class AppWumpus {
          {'b', '-', '-', 'w'},
          {'#', '-', '-', '-'}
       };
-      int score = -1210;
-      char status = 'l'; // 'w' para venceu; 'l' para perdeu; ' ' sem status
-            
+      score = -1210;
+      status = 'n'; // 'w' para venceu; 'n' para perdeu; 'x' intermediárias
       tk.writeBoard(finalCave, score, status);
       
       tk.stop();

@@ -16,6 +16,8 @@ public class Toolkit {
    private BufferedReader moveStr, caveStr;
    private PrintWriter outputStr;
    
+   private boolean firstBoard = true;
+   
    public static Toolkit start(String cavePath, String outputPath,
                                String movePath) {
       tk = new Toolkit();
@@ -74,18 +76,16 @@ public class Toolkit {
    
    public void writeBoard(char board[][], int score, char status){
       try {
+         if (!firstBoard)
+            outputStr.println("=====");
          for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length; j++) {
-               System.out.print(board[i][j]);
+            for (int j = 0; j < board[i].length; j++)
                outputStr.print(board[i][j]);
-            }
-            System.out.println();
             outputStr.println();
          }
-         System.out.println("score: " + score);
          outputStr.println("score: " + score);
-         System.out.println("status: " + status);
          outputStr.println("status: " + status);
+         firstBoard = false;
       } catch(Exception erro){
          erro.printStackTrace();
       }
