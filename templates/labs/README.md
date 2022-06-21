@@ -28,28 +28,14 @@ Arquivos e diretórios referentes à entrega de um laboratório específico. Cad
 
 # Modelo para Apresentação do Aluno e Laboratórios
 
-Este vídeo mostra como usar o Github e o Markdown para criar as suas submissões:
-
-[![Fundamentos de Markdown - Criando documentos e sites no Github](http://img.youtube.com/vi/fDyGs18_ITQ/0.jpg)](https://youtu.be/fDyGs18_ITQ)
-
-Este é um guia de como produzir documentação em Markdown. Para entender como criar documentos em Markdown no Github, veja o material/vídeo:
-[Guia de Uso do Markdown](https://github.com/mc-unicamp/oficinas/tree/master/docs).
-
-Vide detalhes sobre o Markdown em: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-E mais especificamente sobre tabelas em: [Organizing information with tables](https://help.github.com/en/articles/organizing-information-with-tables)
-
 Segue abaixo o modelo de como devem ser documentadas as entregas.
-> Tudo o que aparecer neste modo de citação se refere algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos da sua apresentação.
-
-Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Diagramas de Classes, Interfaces e Componentes](https://docs.google.com/presentation/d/1ML3WrnDtzh-4wqLmdXN9au1TBIwEqo7TIbMLNOYSMAI/edit?usp=sharing)
 
 <hr>
 
 # Modelo para Apresentação do Aluno
 
 # Aluno
-* `<nome completo>`
+* `<nome completo>` - `<RA>`
 
 # Curso
 * `<curso do aluno>`
