@@ -16,6 +16,7 @@ public class App02cExcecaoDivisaoZero
         
         teclado.close();
 
+        // selecionando erro dentro do catch genérico
         try {
             int x = Integer.parseInt(xs),
                 y = Integer.parseInt(ys);
@@ -23,6 +24,7 @@ public class App02cExcecaoDivisaoZero
             int divisao = x / y;
             System.out.println("Resultado da divisao: " + divisao);
         } catch (Exception erro) {
+            System.out.println("Houve um erro no cálculo, tente novamente.");
             if (erro instanceof NumberFormatException)
                 System.err.println("Erro na conversao: " + erro.getMessage());
             else if (erro instanceof ArithmeticException)

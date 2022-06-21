@@ -19,6 +19,7 @@ public class App03cExcecaoDivisaoZero
         int x = Integer.parseInt(xs),
             y = Integer.parseInt(ys);
         
+        // capturando do módulo -- printStackTrace
         try {
             int divisao = divide(x, y);
             System.out.println("Resultado da divisao: " + divisao);

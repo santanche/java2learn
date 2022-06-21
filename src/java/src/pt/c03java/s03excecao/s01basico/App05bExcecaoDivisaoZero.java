@@ -24,7 +24,8 @@ public class App05bExcecaoDivisaoZero
 		System.out.println("Resultado da divisao: " + divisao);
 	}
 	
-    public static int divide(String xs, String ys)
+    // movendo o parseInt para o terceiro nível
+	 public static int divide(String xs, String ys)
     {
         int x = Integer.parseInt(xs),
             y = Integer.parseInt(ys);

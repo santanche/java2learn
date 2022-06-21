@@ -16,6 +16,7 @@ public class App02aExcecaoDivisaoZero
         
         teclado.close();
 
+        // incluindo o parse no try/catch
         try {
             int x = Integer.parseInt(xs),
                 y = Integer.parseInt(ys);

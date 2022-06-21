@@ -27,6 +27,7 @@ public class App04ExcecaoDivisaoZero
         }
     }
     
+    // módulo repassa try/catch
     public static int divide(int x, int y) throws ArithmeticException
     {
         int divisao;

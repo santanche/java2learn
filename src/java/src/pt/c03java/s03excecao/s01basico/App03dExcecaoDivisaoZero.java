@@ -23,6 +23,7 @@ public class App03dExcecaoDivisaoZero
     		System.out.println("Resultado da divisao: " + divisao);
     }
     
+    // tornando o repasse de exception explícito
     public static int divide(int x, int y) throws ArithmeticException
     {
         int divisao;

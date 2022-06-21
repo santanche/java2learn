@@ -20,6 +20,7 @@ public class App01bExcecaoDivisaoZero
     			int x = Integer.parseInt(xs),
     				  y = Integer.parseInt(ys);
     			
+    			// try/catch com loop até estar correto
     			try {
     				int divisao = x / y;
     				System.out.println("Resultado da divisao: " + divisao);

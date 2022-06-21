@@ -23,6 +23,7 @@ public class App03aExcecaoDivisaoZero
         System.out.println("Resultado da divisao: " + divisao);
     }
     
+    // erro no módulo
     public static int divide(int x, int y)
     {
         int divisao;

@@ -23,10 +23,12 @@ public class App06aExcecaoDivisaoZero
     			int divisao = divide(x, y);
     			System.out.println("Resultado da divisao: " + divisao);
     		} catch (Exception erro) {
-    			erro.printStackTrace();
+    			System.out.println("Ocorreu um erro, veja o rastreamento a seguir:");
+    		   erro.printStackTrace();
     		}
     }
     
+    // criando uma nova exception
     public static int divide(int x, int y)  throws ArithmeticException, DivisaoInutil
     {
         int divisao;

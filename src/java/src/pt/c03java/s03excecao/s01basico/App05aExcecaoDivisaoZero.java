@@ -27,12 +27,13 @@ public class App05aExcecaoDivisaoZero
   		  System.out.println("Resultado da divisao: " + divisao);
   	}
 	
-    public static int divide(int x, int y)
-    {
-        int divisao;
+   // três níveis de repasse 
+  	public static int divide(int x, int y)
+   {
+       int divisao;
 
-        divisao = x / y;
+       divisao = x / y;
             
-        return divisao;
-    }
+       return divisao;
+   }
 }

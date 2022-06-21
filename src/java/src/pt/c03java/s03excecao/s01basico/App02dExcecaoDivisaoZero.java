@@ -16,6 +16,7 @@ public class App02dExcecaoDivisaoZero
         
         teclado.close();
 
+        // catch mais específico -> mais genérico
         try {
             int x = Integer.parseInt(xs),
                 y = Integer.parseInt(ys);

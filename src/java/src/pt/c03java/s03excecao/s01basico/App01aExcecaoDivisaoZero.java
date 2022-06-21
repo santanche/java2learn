@@ -19,6 +19,7 @@ public class App01aExcecaoDivisaoZero
         int x = Integer.parseInt(xs),
             y = Integer.parseInt(ys);
         
+        // try/catch básico para a divisão
         try {
             int divisao = x / y;
             System.out.println("Resultado da divisao: " + divisao);
