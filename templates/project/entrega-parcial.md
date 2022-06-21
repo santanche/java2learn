@@ -54,6 +54,10 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 * `<nome completo>` - `<RA>`
 * `<nome completo>` - `<RA>`
 
+# Arquivo Executável do Jogo
+
+> Coloque aqui um link para download do arquivo `jar` ou equivalente para execução do seu jogo.
+
 # Slides do Projeto
 
 ## Slides da Prévia
@@ -62,39 +66,8 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 ## Slides da Apresentação Final
 > Coloque um link para os slides da apresentação final do projeto.
 
-> Os Destaques de Código e Pattern detalhados a seguir são opcionais na apresentação parcial. Pode ser interessante copiá-los aqui se você fizer destaques nos slides.
-
-# Destaques de Código
-
-> Escolha trechos relevantes e/ou de destaque do seu código. Apresente um recorte (você pode usar reticências para remover partes menos importantes). Veja como foi usado o highlight de Java para o código.
-
-~~~java
-// Recorte do seu código
-public void algoInteressante(…) {
-   …
-   trechoInteressante = 100;
-}
-~~~
-
-# Destaques de Pattern
-> Destaque de patterns adotados pela equipe. Sugestão de estrutura:
-
-## Diagrama do Pattern
-> Diagrama do pattern dentro do contexto da aplicação.
-
-## Código do Pattern
-~~~java
-// Recorte do código do pattern seguindo as mesmas diretrizes de outros destaques
-public void algoInteressante(…) {
-   …
-   trechoInteressante = 100;
-}
-~~~
-
-> Explicação de como o pattern foi adotado e quais suas vantagens, referenciando o diagrama.
-
 # Diagramas
 
-## Diagrama Geral do Projeto
+## Diagrama Geral da Arquitetura do Jogo
 
-> Apresente um diagrama geral de organização da organização do seu sistema. O formato é livre. A escolha de um ou mais estilos arquiteturais será considerado um diferencial.
+> Apresente um diagrama geral da arquitetura do jogo. O formato é livre. A escolha de um ou mais estilos arquiteturais será considerado um diferencial.

@@ -54,6 +54,10 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 * `<nome completo>` - `<RA>`
 * `<nome completo>` - `<RA>`
 
+# Arquivo Executável do Jogo
+
+> Coloque aqui um link para download do arquivo `jar` ou equivalente para execução do seu jogo.
+
 # Slides do Projeto
 
 ## Slides da Prévia
@@ -72,6 +76,21 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 ~~~java
 // Recorte do seu código
+public void algoInteressante(…) {
+   …
+   trechoInteressante = 100;
+}
+~~~
+
+# Destaques de Orientação a Objetos
+> Destaque partes do código em que a orientação a objetos foi aplicada para aprimorar seu código. Por exemplo, o uso de polimorfismo para ajustar ações conforme o contexto. Sugestão de estrutura:
+
+## Diagrama de Classes usada no destaque OO:
+> Sugere-se um diagrama de classes para o destaque, mas podem ser usados outros tipos de diagrama, conforme a necessidade.
+
+## Código do Destaque OO
+~~~java
+// Recorte do código do pattern seguindo as mesmas diretrizes de outros destaques
 public void algoInteressante(…) {
    …
    trechoInteressante = 100;
@@ -107,9 +126,9 @@ O vídeo a seguir apresenta um detalhamento de um projeto baseado em componentes
 
 # Diagramas
 
-## Diagrama Geral do Projeto
+## Diagrama Geral da Arquitetura do Jogo
 
-> Apresente um diagrama geral de organização da organização do seu sistema. O formato é livre. A escolha de um ou mais estilos arquiteturais será considerado um diferencial.
+> Apresente um diagrama geral da arquitetura do jogo. O formato é livre. A escolha de um ou mais estilos arquiteturais será considerado um diferencial.
 
 > Faça uma breve descrição do diagrama.
 
